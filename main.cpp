@@ -212,6 +212,6 @@ void readFile(const wstring_t& filename)
 
 int main()
 {
-   readFile(L"github-2009-descrs-0.u16");
+   readFile(L"db_input.u16");
    return 0;
 }
