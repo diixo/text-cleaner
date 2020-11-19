@@ -136,8 +136,6 @@ void readFile(const std::wstring& filename)
    setlocale(LC_ALL, "Russian");
    //////////////////////////////////////////////////////////////////////////
 
-   FILE *pOutput = _wfopen(L"db-out.u16", L"w, ccs=UTF-16LE");
-
    FILE *pFile = _wfopen(filename.c_str(), L"rt, ccs=UTF-8");
    // MSDN: Allowed values of encoding are UNICODE, UTF-8, and UTF-16LE.
 
@@ -146,6 +144,9 @@ void readFile(const std::wstring& filename)
       wprintf(L"can't load file: %s\n", filename.c_str());
       return;
    }
+   
+   FILE *pOutput = _wfopen(L"db-out.u16", L"w, ccs=UTF-16LE");
+   //////////////////////////////////////////////////////////////////////////
 
    wchar_t buff[2048];
    buff[0] = 0;
