@@ -2,29 +2,15 @@
 #include <string>
 #include <time.h>
 
-typedef std::wstring wstring_t;
 typedef unsigned int UInt32;
 
 UInt32 i = 0;
 
 FILE *pOutput = 0;
 
-// stub
 bool processString(wchar_t* str)
 {
-   if (str[0] == L'@')
-   {
-      i++;
-
-      //fputws(buff, stdout);
-      // TODO: string processing with @-beginning.
-   }
-   else
-   {
-      // TODO: process string of current repository.
-      fputws(str, stdout);
-   }
-
+   // stub
    return true;
 }
 
@@ -138,7 +124,7 @@ wchar_t translateChar(const wchar_t ch)
       return apostrophe;
    }
 
-   // skip china symbols
+   // skip hieroglyph symbols
    if (ch > 2048)
    {
       return space;
@@ -147,7 +133,7 @@ wchar_t translateChar(const wchar_t ch)
    return ch;
 }
 
-void readFile(const wstring_t& filename)
+void readFile(const std::wstring& filename)
 {
    setlocale(LC_ALL, "Russian");
    //////////////////////////////////////////////////////////////////////////
@@ -212,6 +198,6 @@ void readFile(const wstring_t& filename)
 
 int main()
 {
-   readFile(L"db_input.u16");
+   readFile(L"db-input.u16");
    return 0;
 }
