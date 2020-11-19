@@ -6,8 +6,6 @@ typedef unsigned int UInt32;
 
 UInt32 i = 0;
 
-FILE *pOutput = 0;
-
 bool processString(wchar_t* str)
 {
    // stub
@@ -138,9 +136,9 @@ void readFile(const std::wstring& filename)
    setlocale(LC_ALL, "Russian");
    //////////////////////////////////////////////////////////////////////////
 
-   pOutput = _wfopen(L"db-out.u16", L"w, ccs=UTF-16LE");
+   FILE *pOutput = _wfopen(L"db-out.u16", L"w, ccs=UTF-16LE");
 
-   FILE 	*pFile = _wfopen(filename.c_str(), L"rt, ccs=UTF-8");
+   FILE *pFile = _wfopen(filename.c_str(), L"rt, ccs=UTF-8");
    // MSDN: Allowed values of encoding are UNICODE, UTF-8, and UTF-16LE.
 
    if (pFile == NULL)
