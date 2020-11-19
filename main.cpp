@@ -122,7 +122,7 @@ wchar_t translateChar(const wchar_t ch)
    }
 
    // skip hieroglyph symbols
-   if (ch > 2048)
+   if (ch > 1328) // 0x0530
    {
       return space;
    }
