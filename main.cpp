@@ -60,7 +60,7 @@ wchar_t translateChar(const wchar_t ch)
       }
    }
 
-   if (ch == 0x00ad)  // shy NL, should be skip
+   if (ch == 0x00ad)  // soft NL, should be skip
    {
       return 0;
    }
