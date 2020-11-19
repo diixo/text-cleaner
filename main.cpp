@@ -1,9 +1,5 @@
 
 #include <string>
-#include <map>
-#include <list>
-#include <vector>
-#include <set>
 #include <time.h>
 
 typedef std::wstring wstring_t;
@@ -12,16 +8,6 @@ typedef unsigned int UInt32;
 UInt32 i = 0;
 
 FILE *pOutput = 0;
-
-/* TODO: trimming
-   ("#")	23
-   ("'") 27
-   ("%")	25
-   ("/") 2F
-   ("<")	3C
-   (">") 3E
-   ("~")	7E
-*/
 
 // stub
 bool processString(wchar_t* str)
