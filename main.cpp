@@ -82,15 +82,14 @@ wchar_t translateChar(const wchar_t ch)
    }
 
    // separated symbols
-   const wchar_t separated[21] = 
+   const wchar_t separated[20] = 
    {
       0x00a1,
       0x00a6,
       0x00a8,
-      0x00aa,
-      0x00ab,
-      0x00ac,
-      0x00ad,
+      0x00aa,  // indicator
+      0x00ab,  // l-double quotation mark
+      0x00ac,  // Not sign
       //
       0x00af,  // LF (U+000A): line feed
       0x00b0,  // CR (U+000D): carriage return
@@ -98,15 +97,15 @@ wchar_t translateChar(const wchar_t ch)
       0x00b2,  // LS (U+2028): line separator
       0x00b3,  // PS (U+2029): paragraph separator
       //
-      0x00b6,
-      0x00b7,
-      0x00b8,
-      0x00ba,
-      0x00bb,
-      0x00bc,
-      0x00bd,
-      0x00be,
-      0x00bf
+      0x00b6,  // paragraph
+      0x00b7,  // middle dot 
+      0x00b8,  // cedilla
+      0x00ba,  // indicator
+      0x00bb,  // r-double quotation mark
+      0x00bc,  // fraction
+      0x00bd,  // fraction
+      0x00be,  // fraction
+      0x00bf   // inverted question
    };
 
    for (UInt32 i = 0; i < sizeof(separated)/sizeof(separated[0]); i++)
