@@ -6,12 +6,6 @@ typedef unsigned int UInt32;
 
 UInt32 i = 0;
 
-bool processString(wchar_t* str)
-{
-   // stub
-   return true;
-}
-
 bool isApostrophe(int c)
 {
    bool result = false;
@@ -128,6 +122,12 @@ wchar_t translateChar(const wchar_t ch)
    }
 
    return ch;
+}
+
+bool processString(wchar_t* str)
+{
+   // stub
+   return true;
 }
 
 void readFile(const std::wstring& filename)
