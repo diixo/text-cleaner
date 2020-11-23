@@ -120,7 +120,7 @@ wchar_t translateChar(const wchar_t ch)
       return apostrophe;
    }
 
-   // skip hieroglyph symbols
+   // replace hieroglyph symbols
    if (ch >= 1280) // 0x0500
    {
       return space;
