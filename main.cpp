@@ -10,6 +10,46 @@ typedef unsigned int UInt32;
 // https://secure.n-able.com/webhelp/NC_9-1-0_SO_en/Content/SA_docs/API_Level_Integration/API_Integration_URLEncoding.html
 //////////////////////////////////////////////////////////////////////////
 
+bool isModificator(wchar_t ch)
+{
+   // general group: 02B0—02FF
+   return ((ch >= 0x02b0) && (ch <= 0x02ff));
+}
+
+bool isDiacritical(wchar_t ch)
+{
+   // general group: 0300—036F
+   const wchar_t diacr[] = //=22
+   {
+      0x0301,
+      0x0300,
+      0x0308,
+      0x0302,
+      0x0311,
+      0x030c,
+      0x030b,
+      0x030f,
+      0x030a,
+      0x0307,
+      0x0303,
+      0x0342,
+      0x0304,
+      0x0306,
+
+      0x0326,
+
+      0x032f,
+      0x0331,
+      0x032c,
+
+      0x0327,
+      0x0328,
+      0x0337,
+      0x0338
+   };
+   return ((ch >= 0x0300) && (ch <= 0x036F));
+}
+
 bool isApostrophe(wchar_t c)
 {
    if (
