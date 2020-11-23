@@ -19,7 +19,7 @@ bool isModificatorGroup(const wchar_t ch)
 bool isDiacriticalGroup(const wchar_t ch)
 {
    // general group: 0300—036F
-   const wchar_t diacr[] = //=22
+   const wchar_t diacr[] = // [22]
    {
       0x0301,
       0x0300,
