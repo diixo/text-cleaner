@@ -76,9 +76,10 @@ wchar_t translateChar(const wchar_t ch)
    }
 
    // separated symbols
-   const wchar_t separated[20] = 
+   const wchar_t separated[21] = 
    {
       0x00a1,
+      0x00a4,  // general currency sign (164)
       0x00a6,
       0x00a8,
       0x00aa,  // indicator
