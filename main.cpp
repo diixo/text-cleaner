@@ -10,13 +10,13 @@ typedef unsigned int UInt32;
 // https://secure.n-able.com/webhelp/NC_9-1-0_SO_en/Content/SA_docs/API_Level_Integration/API_Integration_URLEncoding.html
 //////////////////////////////////////////////////////////////////////////
 
-bool isModificator(wchar_t ch)
+bool isModificatorGroup(wchar_t ch)
 {
    // general group: 02B0—02FF
    return ((ch >= 0x02b0) && (ch <= 0x02ff));
 }
 
-bool isDiacritical(wchar_t ch)
+bool isDiacriticalGroup(wchar_t ch)
 {
    // general group: 0300—036F
    const wchar_t diacr[] = //=22
