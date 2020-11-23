@@ -7,7 +7,8 @@
 typedef std::wstring wstring_t;
 typedef unsigned int UInt32;
 
-UInt32 i = 0;
+// https://secure.n-able.com/webhelp/NC_9-1-0_SO_en/Content/SA_docs/API_Level_Integration/API_Integration_URLEncoding.html
+//////////////////////////////////////////////////////////////////////////
 
 bool isApostrophe(wchar_t c)
 {
@@ -26,7 +27,6 @@ bool isApostrophe(wchar_t c)
    return result;
 }
 
-// https://secure.n-able.com/webhelp/NC_9-1-0_SO_en/Content/SA_docs/API_Level_Integration/API_Integration_URLEncoding.html
 wchar_t translateChar(const wchar_t ch)
 {
    const wchar_t space = 0x0020;
@@ -57,7 +57,7 @@ wchar_t translateChar(const wchar_t ch)
       }
    }
 
-   if (ch == 0x00ad)  // soft NL, should be skip
+   if (ch == 0x00ad)  // soft NewLine, symbol should be skip
    {
       return 0;
    }
@@ -127,7 +127,9 @@ wchar_t translateChar(const wchar_t ch)
 
    return ch;
 }
-
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
 bool processString(wchar_t* str)
 {
    // stub
