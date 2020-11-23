@@ -126,6 +126,7 @@ wchar_t translateChar(const wchar_t ch)
       return space;
    }
 
+   // return input symbol without modifications
    return ch;
 }
 //////////////////////////////////////////////////////////////////////////
