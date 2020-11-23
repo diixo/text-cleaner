@@ -1,12 +1,15 @@
-
-#include <string>
+#include <iostream>
 #include <time.h>
+#include <string>
+#include <wchar.h>
+#include <wctype.h>
 
+typedef std::wstring wstring_t;
 typedef unsigned int UInt32;
 
 UInt32 i = 0;
 
-bool isApostrophe(int c)
+bool isApostrophe(wchar_t c)
 {
    bool result = false;
 
