@@ -57,7 +57,8 @@ wchar_t translateChar(const wchar_t ch)
       }
    }
 
-   if (ch == 0x00ad)  // soft NewLine, symbol should be skip
+   // check outside if return 0, to skip this symbol 
+   if (ch == 0x00ad)  // soft NewLine-symbol
    {
       return 0;
    }
