@@ -12,8 +12,6 @@ typedef unsigned int UInt32;
 
 bool isApostrophe(wchar_t c)
 {
-   bool result = false;
-
    if (
       (c == 0x0027) ||  // 39
       (c == 0x0060) ||  // 96
@@ -22,9 +20,9 @@ bool isApostrophe(wchar_t c)
       (c == 0x2019)     // 8217
       )
    {
-      result = true;
+      return true;
    }
-   return result;
+   return false;
 }
 
 wchar_t translateChar(const wchar_t ch)
