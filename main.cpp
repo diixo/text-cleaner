@@ -130,7 +130,7 @@ wchar_t translateChar(const wchar_t ch)
 //////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////
-bool processString(wchar_t* str)
+bool onStringEvent(wchar_t* str)
 {
    // stub
    return true;
@@ -174,7 +174,7 @@ void readFile(const std::wstring& filename)
             *pBuff = 0;
             pBuff = buff;
 
-            processString(buff);
+            onStringEvent(buff);
          }
          else
          {
