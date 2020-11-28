@@ -81,8 +81,9 @@ wchar_t translateChar(const wchar_t ch)
       return space;
    }
 
-   const wchar_t replaceTable[11] = 
+   const wchar_t replaceTable[12] = 
    {
+      0x0022,  // """
       0x0028,  // ("(")
       0x0029,  // (")") 29
       0x00a0,  // NBPS = 160
