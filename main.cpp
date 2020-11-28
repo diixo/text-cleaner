@@ -50,14 +50,14 @@ bool isDiacriticalGroup(const wchar_t ch)
    return ((ch >= 0x0300) && (ch <= 0x036F));
 }
 
-bool isApostrophe(wchar_t c)
+bool isApostrophe(wchar_t ch)
 {
    if (
-      (c == 0x0027) ||  // 39
-      (c == 0x0060) ||  // 96
-      (c == 0x0091) ||  // 145
-      (c == 0x00b4) ||  // 180 
-      (c == 0x2019)     // 8217
+      (ch == 0x0027) ||  // 39
+      (ch == 0x0060) ||  // 96
+      (ch == 0x0091) ||  // 145
+      (ch == 0x00b4) ||  // 180 
+      (ch == 0x2019)     // 8217
       )
    {
       return true;
@@ -69,6 +69,17 @@ wchar_t translateChar(const wchar_t ch)
 {
    const wchar_t space = 0x0020;
    const wchar_t apostrophe = 0x0027;
+   
+   if (isApostrophe(ch))
+   {
+      return apostrophe;
+   }
+
+   // replace hieroglyph symbols, also: (0x2028, 0x2029)
+   if (ch >= 1280) // 0x0500
+   {
+      return space;
+   }
 
    const wchar_t replaceTable[11] = 
    {
@@ -100,10 +111,15 @@ wchar_t translateChar(const wchar_t ch)
    {
       return 0;
    }
-
-   if ((ch == 0x2028) || (ch == 0x2029))
+   
+   if (isDiacriticalGroup(ch))
    {
-      return space;
+      return ch;
+   }
+
+   if (isModificatorGroup(ch))
+   {
+      return ch;
    }
 
    if (ch < space)
@@ -153,27 +169,15 @@ wchar_t translateChar(const wchar_t ch)
       }
    }
 
-   if (isApostrophe(ch))
-   {
-      return apostrophe;
-   }
-
-   // replace hieroglyph symbols
-   if (ch >= 1280) // 0x0500
-   {
-      return space;
-   }
-
    // return input symbol without modifications
    return ch;
 }
 //////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////
-bool onStringEvent(wchar_t* str)
+void processLineString(const wchar_t* str)
 {
    // stub
-   return true;
 }
 
 void readFile(const std::wstring& filename)
@@ -214,7 +218,7 @@ void readFile(const std::wstring& filename)
             *pBuff = 0;
             pBuff = buff;
 
-            onStringEvent(buff);
+            processLineString(buff);
          }
          else
          {
