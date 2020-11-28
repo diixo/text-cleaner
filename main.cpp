@@ -16,7 +16,7 @@ bool isModificatorGroup(const wchar_t ch)
    return ((ch >= 0x02b0) && (ch <= 0x02ff));
 }
 
-bool isDiacriticalGroup(const wchar_t ch)
+bool isDiacriticGroup(const wchar_t ch)
 {
    // general group: 0300—036F
    const wchar_t diacr[] = // [22]
@@ -50,6 +50,11 @@ bool isDiacriticalGroup(const wchar_t ch)
    return ((ch >= 0x0300) && (ch <= 0x036F));
 }
 
+bool isOutdatedGroup(const wchar_t ch)
+{
+   return ((ch >= 0x0370) && (ch <= 0x03FF));
+}
+
 bool isApostrophe(const wchar_t ch)
 {
    if (
@@ -69,6 +74,11 @@ wchar_t translateChar(const wchar_t ch)
 {
    const wchar_t space = 0x0020;
    const wchar_t apostrophe = 0x0027;
+   
+   if (ch < space)
+   {
+      return space;
+   }
    
    if (isApostrophe(ch))
    {
@@ -113,19 +123,20 @@ wchar_t translateChar(const wchar_t ch)
       return 0;
    }
    
-   if (isDiacriticalGroup(ch))
-   {
-      return ch;
-   }
-
    if (isModificatorGroup(ch))
    {
+      printf("isModificator=%d\n", int(ch));
       return ch;
    }
-
-   if (ch < space)
+   else if (isDiacriticGroup(ch))
    {
-      return space;
+      printf("isDiacritic=%d\n", int(ch));
+      return ch;
+   }
+   else if (isOutdatedGroup(ch))
+   {
+      printf("isOutdated=%d\n", int(ch));
+      return ch;
    }
 
    // special symbols
