@@ -50,7 +50,7 @@ bool isDiacriticalGroup(const wchar_t ch)
    return ((ch >= 0x0300) && (ch <= 0x036F));
 }
 
-bool isApostrophe(wchar_t ch)
+bool isApostrophe(const wchar_t ch)
 {
    if (
       (ch == 0x0027) ||  // 39
