@@ -224,9 +224,6 @@ void readFile(const std::wstring& filename)
 
          if (pBuff != buff)
          {
-            *pBuff = wch;
-            pBuff++;
-            //
             *pBuff = 0;
             pBuff = buff;
 
