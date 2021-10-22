@@ -4,11 +4,30 @@
 #include <wchar.h>
 #include <wctype.h>
 
+#include <fcntl.h>
+#include <io.h>
+#include <ostream>
+#include <assert.h>
+
 typedef std::wstring wstring_t;
 typedef unsigned int UInt32;
 
 // https://secure.n-able.com/webhelp/NC_9-1-0_SO_en/Content/SA_docs/API_Level_Integration/API_Integration_URLEncoding.html
 //////////////////////////////////////////////////////////////////////////
+
+const wchar_t eu_upper[48] = {
+	L'\x00c0', L'\x00c1', L'\x00c2', L'\x00c3', L'\x00c4', L'\x00c5', L'\x0102', L'\x00c6', L'\x00c7',  L'\x0106', L'\x010c',L'\x010e',
+	L'\x00d0', L'\x00c9', L'\x00c8', L'\x00ca', L'\x00cb', L'\x011e', L'\x00cc', L'\x00cd', L'\x00ce', L'\x00cf', L'\x0141', L'\x0147',
+	L'\x00d1', L'\x00d2', L'\x00d3', L'\x00d4', L'\x00d5', L'\x00d6', L'\x00d8', L'\x0158', L'\x015a', L'\x0218', L'\x1e9e', L'\x0164',
+	L'\x021a', L'\x00da', L'\x00d9', L'\x00db', L'\x016e', L'\x00dc', L'\x00dd', L'\x0178', L'\x0179', L'\x017b', L'\x017d', L'\x00de'
+};
+
+const wchar_t eu_lower[48] = {
+	L'\x00e0', L'\x00e1', L'\x00e2', L'\x00e3', L'\x00e4', L'\x00e5', L'\x0103', L'\x00e6', L'\x00e7', L'\x0107', L'\x010d', L'\x010f',
+	L'\x00f0', L'\x00e9', L'\x00e8', L'\x00ea', L'\x00eb', L'\x011f', L'\x00ec', L'\x00ed', L'\x00ee', L'\x00ef', L'\x0142', L'\x0148',
+	L'\x00f1', L'\x00f2', L'\x00f3', L'\x00f4', L'\x00f5', L'\x00f6', L'\x00f8', L'\x0159', L'\x015b', L'\x0219', L'\x00df', L'\x0165',
+	L'\x021b', L'\x00fa', L'\x00f9', L'\x00fb', L'\x016f', L'\x00fc', L'\x00fd', L'\x00ff', L'\x017a', L'\x017e', L'\x017c', L'\x00fe'
+};
 
 bool isModificatorGroup(const wchar_t ch)
 {
@@ -88,6 +107,10 @@ wchar_t translateChar(const wchar_t ch)
    // replace hieroglyph symbols, also: (0x2028, 0x2029)
    if (ch >= 1280) // 0x0500
    {
+      if ((ch >= 0x1e00) && (ch <= 0x1eff))
+      {
+		  return ch;
+      }
       return space;
    }
 
@@ -184,6 +207,31 @@ wchar_t translateChar(const wchar_t ch)
    // return input symbol without modifications
    return ch;
 }
+
+void test_translateChar()
+{
+   _setmode(_fileno(stdout), _O_U16TEXT);
+
+   for (size_t i = 0; i < 48; i++)
+   {
+      if (translateChar(eu_lower[i]) != eu_lower[i])
+      {
+         assert(false);
+      }
+      if (translateChar(eu_upper[i]) != eu_upper[i])
+      {
+         assert(false);
+      }
+   }
+
+   for (size_t i = 0; i < 48; i++)
+   {
+      putwchar(eu_lower[i]);
+      putwchar(L'-');
+      putwchar(eu_upper[i]);
+      putwchar(L'\n');
+   }
+}
 //////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////
@@ -192,21 +240,21 @@ void processLineString(const wchar_t* str)
    // stub
 }
 
-void readFile(const std::wstring& filename)
+void readFile(const std::wstring& filename_in, const std::wstring& filename_out)
 {
    setlocale(LC_ALL, "Russian");
    //////////////////////////////////////////////////////////////////////////
 
-   FILE *pFile = _wfopen(filename.c_str(), L"rt, ccs=UTF-8");
+   FILE *pFile = _wfopen(filename_in.c_str(), L"rt, ccs=UTF-8");
    // MSDN: Allowed values of encoding are UNICODE, UTF-8, and UTF-16LE.
 
    if (pFile == NULL)
    {
-      wprintf(L"can't load file: %s\n", filename.c_str());
+      wprintf(L"can't load file: %s\n", filename_in.c_str());
       return;
    }
    
-   FILE *pOutput = _wfopen(L"db-out.u16", L"w, ccs=UTF-16LE");
+   FILE *pOutput = _wfopen(filename_out.c_str(), L"w, ccs=UTF-16LE");
    //////////////////////////////////////////////////////////////////////////
 
    wchar_t buff[2048];
@@ -255,6 +303,8 @@ void readFile(const std::wstring& filename)
 
 int main()
 {
-   readFile(L"db-input.u16");
+   readFile(L"db-input.u16", L"db-out.u16");
+   //test_translateChar();
+
    return 0;
 }
