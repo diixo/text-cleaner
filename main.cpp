@@ -26,8 +26,18 @@ const wchar_t eu_lower[48] = {
 	L'\x00e0', L'\x00e1', L'\x00e2', L'\x00e3', L'\x00e4', L'\x00e5', L'\x0103', L'\x00e6', L'\x00e7', L'\x0107', L'\x010d', L'\x010f',
 	L'\x00f0', L'\x00e9', L'\x00e8', L'\x00ea', L'\x00eb', L'\x011f', L'\x00ec', L'\x00ed', L'\x00ee', L'\x00ef', L'\x0142', L'\x0148',
 	L'\x00f1', L'\x00f2', L'\x00f3', L'\x00f4', L'\x00f5', L'\x00f6', L'\x00f8', L'\x0159', L'\x015b', L'\x0219', L'\x00df', L'\x0165',
-	L'\x021b', L'\x00fa', L'\x00f9', L'\x00fb', L'\x016f', L'\x00fc', L'\x00fd', L'\x00ff', L'\x017a', L'\x017e', L'\x017c', L'\x00fe'
+	L'\x021b', L'\x00fa', L'\x00f9', L'\x00fb', L'\x016f', L'\x00fc', L'\x00fd', L'\x00ff', L'\x017a', L'\x017c', L'\x017e', L'\x00fe'
 };
+
+const wchar_t eu_upper_ext[] = {
+   L'\x00c5', L'\x0100', L'\x0104', /*L'\x1e02',*/ L'\x0112', L'\x0116', L'\x0118', L'\x012a', L'\x012e', L'\x0136', L'\x013b', L'\x0145', L'\x014c', L'\x0160', L'\x016a', L'\x0172', L'\x017b'
+};
+
+const wchar_t eu_lower_ext[] = {
+   L'\x00e5', L'\x0101', L'\x0105', /*L'\x1e03',*/ L'\x0113', L'\x0117', L'\x0119', L'\x012b', L'\x012d', L'\x0137', L'\x013c', L'\x0146', L'\x014d', L'\x0161', L'\x016b', L'\x0173', L'\x017c'
+};
+
+const size_t SZ = 3;
 
 bool isModificatorGroup(const wchar_t ch)
 {
@@ -229,6 +239,14 @@ void test_translateChar()
       putwchar(eu_lower[i]);
       putwchar(L'-');
       putwchar(eu_upper[i]);
+      putwchar(L'\n');
+   }
+   std::wcout << L"########\n";
+   for (size_t i = 0; i < 16; i++)
+   {
+      putwchar(eu_lower_ext[i]);
+      putwchar(L'-');
+      putwchar(eu_upper_ext[i]);
       putwchar(L'\n');
    }
 }
