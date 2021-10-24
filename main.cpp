@@ -16,25 +16,25 @@ typedef unsigned int UInt32;
 //////////////////////////////////////////////////////////////////////////
 
 const wchar_t eu_upper[48] = {
-	L'\x00c0', L'\x00c1', L'\x00c2', L'\x00c3', L'\x00c4', L'\x00c5', L'\x0102', L'\x00c6', L'\x00c7',  L'\x0106', L'\x010c',L'\x010e',
-	L'\x00d0', L'\x00c9', L'\x00c8', L'\x00ca', L'\x00cb', L'\x011e', L'\x00cc', L'\x00cd', L'\x00ce', L'\x00cf', L'\x0141', L'\x0147',
+	L'\x00c0', L'\x00c1', L'\x00c2', L'\x00c3', L'\x00c4', L'\x00c5', L'\x0102', L'\x00c6', L'\x00c7', L'\x0106', L'\x010c', L'\x010e',
+	L'\x0110', L'\x00c9', L'\x00c8', L'\x00ca', L'\x00cb', L'\x011e', L'\x00cc', L'\x00cd', L'\x00ce', L'\x00cf', L'\x0141', L'\x0147',
 	L'\x00d1', L'\x00d2', L'\x00d3', L'\x00d4', L'\x00d5', L'\x00d6', L'\x00d8', L'\x0158', L'\x015a', L'\x0218', L'\x1e9e', L'\x0164',
 	L'\x021a', L'\x00da', L'\x00d9', L'\x00db', L'\x016e', L'\x00dc', L'\x00dd', L'\x0178', L'\x0179', L'\x017b', L'\x017d', L'\x00de'
 };
 
 const wchar_t eu_lower[48] = {
 	L'\x00e0', L'\x00e1', L'\x00e2', L'\x00e3', L'\x00e4', L'\x00e5', L'\x0103', L'\x00e6', L'\x00e7', L'\x0107', L'\x010d', L'\x010f',
-	L'\x00f0', L'\x00e9', L'\x00e8', L'\x00ea', L'\x00eb', L'\x011f', L'\x00ec', L'\x00ed', L'\x00ee', L'\x00ef', L'\x0142', L'\x0148',
+	L'\x0111', L'\x00e9', L'\x00e8', L'\x00ea', L'\x00eb', L'\x011f', L'\x00ec', L'\x00ed', L'\x00ee', L'\x00ef', L'\x0142', L'\x0148',
 	L'\x00f1', L'\x00f2', L'\x00f3', L'\x00f4', L'\x00f5', L'\x00f6', L'\x00f8', L'\x0159', L'\x015b', L'\x0219', L'\x00df', L'\x0165',
 	L'\x021b', L'\x00fa', L'\x00f9', L'\x00fb', L'\x016f', L'\x00fc', L'\x00fd', L'\x00ff', L'\x017a', L'\x017c', L'\x017e', L'\x00fe'
 };
 
 const wchar_t eu_upper_ext[] = {
-   L'\x00c5', L'\x0100', L'\x0104', /*L'\x1e02',*/ L'\x0112', L'\x0116', L'\x0118', L'\x012a', L'\x012e', L'\x0136', L'\x013b', L'\x0145', L'\x014c', L'\x0160', L'\x016a', L'\x0172', L'\x017b'
+   L'\x0100', L'\x0104', /*L'\x1e02',*/ L'\x0112', L'\x0116', L'\x0118', L'\x012a', L'\x012e', L'\x0136', L'\x013b', L'\x0145', L'\x014c', L'\x0150', L'\x0160', L'\x016a', L'\x0170', L'\x0172'
 };
 
 const wchar_t eu_lower_ext[] = {
-   L'\x00e5', L'\x0101', L'\x0105', /*L'\x1e03',*/ L'\x0113', L'\x0117', L'\x0119', L'\x012b', L'\x012d', L'\x0137', L'\x013c', L'\x0146', L'\x014d', L'\x0161', L'\x016b', L'\x0173', L'\x017c'
+   L'\x0101', L'\x0105', /*L'\x1e03',*/ L'\x0113', L'\x0117', L'\x0119', L'\x012b', L'\x012f', L'\x0137', L'\x013c', L'\x0146', L'\x014d', L'\x0151', L'\x0161', L'\x016b', L'\x0171', L'\x0173'
 };
 
 const size_t SZ = 3;
