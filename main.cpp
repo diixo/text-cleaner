@@ -30,11 +30,15 @@ const wchar_t eu_lower[48] = {
 };
 
 const wchar_t eu_upper_ext[] = {
-   L'\x0100', L'\x0104', L'\x0112', L'\x0116', L'\x0118', L'\x012a', L'\x012e', L'\x0136', L'\x0139',  L'\x013b', L'\x013d', L'\x0145', L'\x014c', L'\x0150', L'\x0154', L'\x0160', L'\x016a', L'\x0170', L'\x0172'
+   L'\x0100', L'\x0104', L'\x0112', L'\x0116', L'\x0118', L'\x012a', L'\x012e', 
+   L'\x0136', L'\x0139', L'\x013b', L'\x013d', L'\x0143', L'\x0145', L'\x014c', 
+   L'\x0150', L'\x0154', L'\x0160', L'\x016a', L'\x0170', L'\x0172'
 };
 
 const wchar_t eu_lower_ext[] = {
-   L'\x0101', L'\x0105', L'\x0113', L'\x0117', L'\x0119', L'\x012b', L'\x012f', L'\x0137', L'\x013a',  L'\x013c', L'\x013e', L'\x0146', L'\x014d', L'\x0151', L'\x0155', L'\x0161', L'\x016b', L'\x0171', L'\x0173'
+   L'\x0101', L'\x0105', L'\x0113', L'\x0117', L'\x0119', L'\x012b', L'\x012f', 
+   L'\x0137', L'\x013a', L'\x013c', L'\x013e', L'\x0144', L'\x0146', L'\x014d', 
+   L'\x0151', L'\x0155', L'\x0161', L'\x016b', L'\x0171', L'\x0173'
 };
 
 const size_t SZ = 3;
@@ -242,7 +246,7 @@ void test_translateChar()
       putwchar(L'\n');
    }
    std::wcout << L"########\n";
-   for (size_t i = 0; i < 19; i++)
+   for (size_t i = 0; i < 20; i++)
    {
       putwchar(eu_lower_ext[i]);
       putwchar(L'-');
