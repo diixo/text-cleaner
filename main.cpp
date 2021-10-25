@@ -277,6 +277,7 @@ void readFile(const std::wstring& filename_in, const std::wstring& filename_out)
    }
    
    FILE *pOutput = _wfopen(filename_out.c_str(), L"w, ccs=UTF-16LE");
+   UInt32 lineCounter = 0;
    //////////////////////////////////////////////////////////////////////////
 
    wchar_t buff[2048];
@@ -292,6 +293,7 @@ void readFile(const std::wstring& filename_in, const std::wstring& filename_out)
       if (wch == L'\n')
       {
          fputwc(wch, pOutput);
+         lineCounter++;
 
          if (pBuff != buff)
          {
