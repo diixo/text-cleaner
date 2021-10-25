@@ -162,17 +162,17 @@ wchar_t translateChar(const wchar_t ch)
    
    if (isModificatorGroup(ch))
    {
-      printf("isModificator=%d\n", int(ch));
+      wprintf(L"isModificator=%x\n", ch);
       return ch;
    }
    else if (isDiacriticGroup(ch))
    {
-      printf("isDiacritic=%d\n", int(ch));
+      wprintf(L"isDiacritic=%x\n", ch);
       return ch;
    }
    else if (isOutdatedGroup(ch))
    {
-      printf("isOutdated=%d\n", int(ch));
+      wprintf(L"isOutdated=%x\n", ch);
       return ch;
    }
 
@@ -257,7 +257,7 @@ void test_translateChar()
 //////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////
-void processLineString(const wchar_t* str)
+void processString(const wchar_t* str, size_t str_sz)
 {
    // stub
 }
@@ -284,6 +284,7 @@ void readFile(const std::wstring& filename_in, const std::wstring& filename_out)
    wchar_t* pBuff = buff;
   
    wchar_t wch = 0;
+   size_t str_sz = 0;
 
    //////////////////////////////////////////////////////////////////////////
    while ((wch = fgetwc(pFile)) != WEOF)
@@ -297,7 +298,9 @@ void readFile(const std::wstring& filename_in, const std::wstring& filename_out)
             *pBuff = 0;
             pBuff = buff;
 
-            processLineString(buff);
+            processString(buff, str_sz);
+
+            str_sz = 0;
          }
          else
          {
@@ -315,6 +318,7 @@ void readFile(const std::wstring& filename_in, const std::wstring& filename_out)
 
             *pBuff = tch;
             pBuff++;
+            str_sz++;
          }
       }
    }
