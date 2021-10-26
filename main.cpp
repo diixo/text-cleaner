@@ -29,19 +29,19 @@ const wchar_t eu_lower[48] = {
 	L'\x021b', L'\x00fa', L'\x00f9', L'\x00fb', L'\x016f', L'\x00fc', L'\x00fd', L'\x00ff', L'\x017a', L'\x017c', L'\x017e', L'\x00fe'
 };
 
-const wchar_t eu_upper_ext[] = {
+const size_t SZ = 20;
+
+const wchar_t eu_upper_ext[SZ] = {
    L'\x0100', L'\x0104', L'\x0112', L'\x0116', L'\x0118', L'\x012a', L'\x012e', 
    L'\x0136', L'\x0139', L'\x013b', L'\x013d', L'\x0143', L'\x0145', L'\x014c', 
    L'\x0150', L'\x0154', L'\x0160', L'\x016a', L'\x0170', L'\x0172'
 };
 
-const wchar_t eu_lower_ext[] = {
+const wchar_t eu_lower_ext[SZ] = {
    L'\x0101', L'\x0105', L'\x0113', L'\x0117', L'\x0119', L'\x012b', L'\x012f', 
    L'\x0137', L'\x013a', L'\x013c', L'\x013e', L'\x0144', L'\x0146', L'\x014d', 
    L'\x0151', L'\x0155', L'\x0161', L'\x016b', L'\x0171', L'\x0173'
 };
-
-const size_t SZ = 3;
 
 bool isModificatorGroup(const wchar_t ch)
 {
@@ -107,7 +107,7 @@ wchar_t translateChar(const wchar_t ch)
 {
    const wchar_t space = 0x0020;
    const wchar_t apostrophe = 0x0027;
-   
+
    if (ch < space)
    {
       return space;
@@ -128,7 +128,7 @@ wchar_t translateChar(const wchar_t ch)
       return space;
    }
 
-   const wchar_t replaceTable[12] = 
+   const wchar_t replaceTable[12] =
    {
       0x0022,  // """
       0x0028,  // ("(")
@@ -146,7 +146,7 @@ wchar_t translateChar(const wchar_t ch)
       0x005d   // ("]")
    };
 
-   for (UInt32 i = 0; i < sizeof(replaceTable)/sizeof(replaceTable[0]); i++)
+   for (UInt32 i = 0; i < sizeof(replaceTable) / sizeof(replaceTable[0]); i++)
    {
       if (replaceTable[i] == ch)
       {
@@ -159,7 +159,7 @@ wchar_t translateChar(const wchar_t ch)
    {
       return 0;
    }
-   
+
    if (isModificatorGroup(ch))
    {
       wprintf(L"isModificator=%x\n", ch);
@@ -183,7 +183,7 @@ wchar_t translateChar(const wchar_t ch)
    }
 
    // separated symbols
-   const wchar_t separated[21] = 
+   const wchar_t separated[21] =
    {
       0x00a1,
       0x00a4,  // general currency sign (164)
@@ -210,7 +210,7 @@ wchar_t translateChar(const wchar_t ch)
       0x00bf   // inverted question
    };
 
-   for (UInt32 i = 0; i < sizeof(separated)/sizeof(separated[0]); i++)
+   for (UInt32 i = 0; i < sizeof(separated) / sizeof(separated[0]); i++)
    {
       if (separated[i] == ch)
       {
@@ -246,7 +246,7 @@ void test_translateChar()
       putwchar(L'\n');
    }
    std::wcout << L"########\n";
-   for (size_t i = 0; i < 20; i++)
+   for (size_t i = 0; i < SZ; i++)
    {
       putwchar(eu_lower_ext[i]);
       putwchar(L'-');
@@ -257,7 +257,7 @@ void test_translateChar()
 //////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////
-void processString(const wchar_t* str, size_t str_sz)
+void processString(const wchar_t* str, const size_t str_sz)
 {
    // stub
 }
@@ -278,7 +278,7 @@ void readFile(const std::wstring& filename_in, const std::wstring& filename_out)
    
    FILE *pOutput = _wfopen(filename_out.c_str(), L"w, ccs=UTF-16LE");
    UInt32 lineNumber = 0;
-   //////////////////////////////////////////////////////////////////////////
+   /////////////////////////////////////////////////////////////////////////
 
    wchar_t buff[8192];
    buff[0] = 0;
@@ -305,7 +305,7 @@ void readFile(const std::wstring& filename_in, const std::wstring& filename_out)
          }
          else
          {
-            printf("!!! skip empty\n");
+            printf("!!! NL empty, skipped\n");
          }
          lineNumber++;
       }
