@@ -1,9 +1,15 @@
+
+#include <map>
+#include <list>
+#include <vector>
+#include <set>
+
 #include <iostream>
-#include <time.h>
 #include <string>
 #include <wchar.h>
 #include <wctype.h>
 
+#include <time.h>
 #include <fcntl.h>
 #include <io.h>
 #include <ostream>
@@ -11,6 +17,8 @@
 
 typedef std::wstring wstring_t;
 typedef unsigned int UInt32;
+
+std::map <wstring_t, size_t> tokenMap;
 
 // https://secure.n-able.com/webhelp/NC_9-1-0_SO_en/Content/SA_docs/API_Level_Integration/API_Integration_URLEncoding.html
 //////////////////////////////////////////////////////////////////////////
@@ -254,6 +262,150 @@ void test_translateChar()
       putwchar(L'\n');
    }
 }
+
+// Split by scanning inStr for the first occurrence of any of the wide characters that are part of Delim.
+// Return filled list by tokens.
+void wcstok(const wstring_t& inStr, const wchar_t* Delim, std::list <wstring_t>& outList)
+{
+   size_t offset = 0;
+   while (offset < inStr.size())
+   {
+      const size_t pn = wcscspn(&inStr[offset], Delim);
+      if (pn > 0)
+      {
+         outList.push_back(wstring_t(&inStr[offset], pn));
+      }
+      offset += pn + 1;
+   }
+}
+
+//const wchar_t* wsltrim(const wstring_t& inStr, const wchar_t* Delim)
+//{
+//   const wchar_t * pwc = inStr.c_str();
+//   const wchar_t * result = 0;
+//
+//   while ((pwc != NULL) && (*pwc != 0))
+//   {
+//      if (wcspbrk(pwc, Delim) == pwc)
+//      {
+//         pwc++;
+//      }
+//      else
+//      {
+//         result = pwc;
+//         pwc = 0;
+//      }
+//   }
+//   return result;
+//}
+
+inline
+wstring_t& ltrim(wstring_t& inStr, const wstring_t& Delim)
+{
+   inStr.erase(0, inStr.find_first_not_of(Delim));
+   return inStr;
+}
+
+inline
+wstring_t& rtrim(wstring_t& inStr, const wstring_t& Delim)
+{
+   inStr.erase(inStr.find_last_not_of(Delim) + 1);
+   return inStr;
+}
+
+inline
+wstring_t& trim(wstring_t& inStr, const wstring_t& Delim)
+{
+   return ltrim(rtrim(inStr, Delim), Delim);
+}
+
+bool is_number(const wstring_t& inStr, size_t start_id = 0)
+{
+   bool result = (start_id < inStr.size());
+   while (start_id < inStr.size())
+   {
+      if (!iswdigit(inStr[start_id]))
+      {
+         result = false;
+         break;
+      }
+      start_id++;
+   }
+   return result;
+}
+
+void appendToMap(const std::list <wstring_t>& inList)
+{
+   for (std::list <wstring_t>::const_iterator it = inList.begin(); it != inList.end(); ++it)
+   {
+      wstring_t str = *it;
+
+      // 53440
+      rtrim(str, L"\x0027\x002e\x002f\x003a\x003f\x005c");  // 48658
+      ltrim(str, L"\x0027");                                // 48401
+
+      bool checked = true;
+      for (auto ch : str)
+      {
+         if (
+            (ch >= 0x00c0 && ch <= 0x00d6) ||
+            (ch >= 0x00d8 && ch <= 0x00f6) ||
+            (ch >= 0x00f8 && ch <= 0x00ff) ||
+            (ch >= 0x0100 && ch <= 0x024f) ||   // extended latin A,B
+            isDiacriticGroup(ch) ||
+            isOutdatedGroup(ch) ||
+            (wcsstr(str.c_str(), L"www")  != 0) ||
+            (wcsstr(str.c_str(), L"http") != 0) ||
+            (wcsstr(str.c_str(), L"::")   != 0) ||
+            (wcsstr(str.c_str(), L"==")   != 0) ||
+            (wcsstr(str.c_str(), L"//")   != 0) ||
+            (wcsstr(str.c_str(), L"&&")   != 0) ||
+            (wcsstr(str.c_str(), L"><")   != 0) ||
+            (wcsstr(str.c_str(), L"</")   != 0) ||
+            (wcsstr(str.c_str(), L"<<")   != 0) ||
+            (wcsstr(str.c_str(), L">>")   != 0) ||
+            (wcsstr(str.c_str(), L">=")   != 0) ||
+            (wcsstr(str.c_str(), L"<=")   != 0) ||
+            (wcsstr(str.c_str(), L"=>")   != 0) ||
+            (wcsstr(str.c_str(), L">-")   != 0) ||
+            (wcsstr(str.c_str(), L"<-")   != 0) ||
+            (wcsstr(str.c_str(), L"->")   != 0) ||
+            (wcsstr(str.c_str(), L"*.")   != 0) ||
+            (wcsstr(str.c_str(), L"...")  != 0)
+            )
+         {
+            checked = false;
+            break;
+         }
+      }
+
+      if (checked && !str.empty())
+      {
+         checked =
+            (str[0] != L':') &&
+            (str[0] != L'$') &&
+            (str[0] != 0x0025) &&
+            (str[0] != L'_') &&
+            (str[0] != L'>') &&
+            (str[0] != L'<') &&
+            (str[0] != L'?');
+      }
+
+      if (!str.empty() && !is_number(str) && checked)
+      {
+         std::map <wstring_t, size_t>::iterator itMap = tokenMap.find(str);
+         if (itMap != tokenMap.end())
+         {
+            itMap->second = itMap->second + 1;
+         }
+         else
+         {
+            tokenMap[str] = 1;
+         }
+      }
+   }
+}
+
 //////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////
