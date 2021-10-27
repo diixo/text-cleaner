@@ -416,7 +416,15 @@ void appendToMap(const std::list <wstring_t>& inList)
 //////////////////////////////////////////////////////////////////////////
 void processString(const wchar_t* str, const size_t str_sz)
 {
-   // stub
+   const wstring_t wstr(str);
+
+   assert(str_sz == wstr.size());
+
+   std::list <wstring_t> tokenList;
+
+   wcstok(wstr, L"\x0020\x0021\x002c\x003b", tokenList);   // " !,;"
+
+   appendToMap(tokenList);
 }
 
 void readFile(const std::wstring& filename_in, const std::wstring& filename_out)
