@@ -120,7 +120,13 @@ wchar_t translateChar(const wchar_t ch)
    {
       return space;
    }
-   
+
+   if ((ch >= 0x0041) && (ch <= 0x005a)) // check latin symbols
+   {
+      //return ch;
+      return towlower(ch);
+   }
+
    if (isApostrophe(ch))
    {
       return apostrophe;
@@ -340,9 +346,8 @@ void appendToMap(const std::list <wstring_t>& inList)
    {
       wstring_t str = *it;
 
-      // 53440
-      rtrim(str, L"\x0027\x002e\x002f\x003a\x003f\x005c");  // 48658
-      ltrim(str, L"\x0027");                                // 48401
+      rtrim(str, L"\x0027\x002e\x002f\x003a\x003f\x005c");
+      ltrim(str, L"\x0027");
 
       bool checked = true;
       for (auto ch : str)
@@ -353,7 +358,7 @@ void appendToMap(const std::list <wstring_t>& inList)
             (ch >= 0x00f8 && ch <= 0x00ff) ||
             (ch >= 0x0100 && ch <= 0x024f) ||   // extended latin A,B
             isDiacriticGroup(ch) ||
-            isOutdatedGroup(ch) ||
+            isOutdatedGroup(ch)  ||
             (wcsstr(str.c_str(), L"www")  != 0) ||
             (wcsstr(str.c_str(), L"http") != 0) ||
             (wcsstr(str.c_str(), L"::")   != 0) ||
@@ -432,7 +437,7 @@ void readFile(const std::wstring& filename_in, const std::wstring& filename_out)
    UInt32 lineNumber = 0;
    /////////////////////////////////////////////////////////////////////////
 
-   wchar_t buff[8192];
+   wchar_t buff[16384];
    buff[0] = 0;
    wchar_t* pBuff = buff;
   
