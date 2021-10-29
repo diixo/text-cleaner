@@ -19,22 +19,23 @@ typedef std::wstring wstring_t;
 typedef unsigned int UInt32;
 
 std::map <wstring_t, size_t> tokenMap;
+std::set <wstring_t> verbMap;
 
 // https://secure.n-able.com/webhelp/NC_9-1-0_SO_en/Content/SA_docs/API_Level_Integration/API_Integration_URLEncoding.html
 //////////////////////////////////////////////////////////////////////////
 
 const wchar_t eu_upper[48] = {
-	L'\x00c0', L'\x00c1', L'\x00c2', L'\x00c3', L'\x00c4', L'\x00c5', L'\x0102', L'\x00c6', L'\x00c7', L'\x0106', L'\x010c', L'\x010e',
-	L'\x00d0', L'\x00c9', L'\x00c8', L'\x00ca', L'\x00cb', L'\x011e', L'\x00cc', L'\x00cd', L'\x00ce', L'\x00cf', L'\x0141', L'\x0147',
-	L'\x00d1', L'\x00d2', L'\x00d3', L'\x00d4', L'\x00d5', L'\x00d6', L'\x00d8', L'\x0158', L'\x015a', L'\x0218', L'\x0164', L'\x021a',
-   L'\x00da', L'\x00d9', L'\x00db', L'\x016e', L'\x00dc', L'\x00dd', L'\x0178', L'\x0179', L'\x017b', L'\x017d', L'\x00de', L'\x1e9e'
+	L'\x00c0', L'\x00c1', L'\x00c2', L'\x00c3', L'\x00c4', L'\x00c5', L'\x0102', L'\x00c7', L'\x0106', L'\x010c', L'\x010e', L'\x00d0',
+   L'\x00c9', L'\x00c8', L'\x00ca', L'\x00cb', L'\x011e', L'\x00cc', L'\x00cd', L'\x00ce', L'\x00cf', L'\x0141', L'\x0147', L'\x00d1',
+   L'\x00d2', L'\x00d3', L'\x00d4', L'\x00d5', L'\x0158', L'\x015a', L'\x0218', L'\x0164', L'\x021a', L'\x00da', L'\x00d9', L'\x00db',
+   L'\x016e', L'\x00dc', L'\x00dd', L'\x0178', L'\x0179', L'\x017b', L'\x017d', L'\x00de', L'\x00c6', L'\x00d6', L'\x00d8', L'\x1e9e'
 };
 
 const wchar_t eu_lower[48] = {
-	L'\x00e0', L'\x00e1', L'\x00e2', L'\x00e3', L'\x00e4', L'\x00e5', L'\x0103', L'\x00e6', L'\x00e7', L'\x0107', L'\x010d', L'\x010f',
-	L'\x00f0', L'\x00e9', L'\x00e8', L'\x00ea', L'\x00eb', L'\x011f', L'\x00ec', L'\x00ed', L'\x00ee', L'\x00ef', L'\x0142', L'\x0148',
-	L'\x00f1', L'\x00f2', L'\x00f3', L'\x00f4', L'\x00f5', L'\x00f6', L'\x00f8', L'\x0159', L'\x015b', L'\x0219', L'\x0165', L'\x021b',
-   L'\x00fa', L'\x00f9', L'\x00fb', L'\x016f', L'\x00fc', L'\x00fd', L'\x00ff', L'\x017a', L'\x017c', L'\x017e', L'\x00fe', L'\x00df'
+	L'\x00e0', L'\x00e1', L'\x00e2', L'\x00e3', L'\x00e4', L'\x00e5', L'\x0103', L'\x00e7', L'\x0107', L'\x010d', L'\x010f', L'\x00f0',
+   L'\x00e9', L'\x00e8', L'\x00ea', L'\x00eb', L'\x011f', L'\x00ec', L'\x00ed', L'\x00ee', L'\x00ef', L'\x0142', L'\x0148', L'\x00f1',
+   L'\x00f2', L'\x00f3', L'\x00f4', L'\x00f5', L'\x0159', L'\x015b', L'\x0219', L'\x0165', L'\x021b', L'\x00fa', L'\x00f9', L'\x00fb',
+   L'\x016f', L'\x00fc', L'\x00fd', L'\x00ff', L'\x017a', L'\x017c', L'\x017e', L'\x00fe', L'\x00e6', L'\x00f6', L'\x00f8', L'\x00df'
 };
 
 const size_t SZ = 21;
@@ -257,7 +258,7 @@ void test_translateChar()
       putwchar(eu_lower[i]);
       putwchar(L'-');
       putwchar(eu_upper[i]);
-      putwchar(L'\n');
+      wprintf(L" [%u]\n", i);
    }
    std::wcout << L"########\n";
    for (size_t i = 0; i < SZ; i++)
@@ -346,54 +347,64 @@ void appendToMap(const std::list <wstring_t>& inList)
    {
       wstring_t str = *it;
 
-      rtrim(str, L"\x0027\x002e\x002f\x003a\x003f\x005c");
-      ltrim(str, L"\x0027");
+      rtrim(str, L"\x0023\x0027\x0029\x002a\x002e\x002f\x003a\x003b\x003c\x003d\x003e\x003f\x005c\x007e");
+      ltrim(str, L"\x0023\x0028\x0029\x002a\x007e");
 
       bool checked = true;
-      for (auto ch : str)
+      if (!str.empty())
       {
          if (
-            (ch >= 0x00c0 && ch <= 0x00d6) ||
-            (ch >= 0x00d8 && ch <= 0x00f6) ||
-            (ch >= 0x00f8 && ch <= 0x00ff) ||
-            (ch >= 0x0100 && ch <= 0x024f) ||   // extended latin A,B
-            isDiacriticGroup(ch) ||
-            isOutdatedGroup(ch)  ||
-            (wcsstr(str.c_str(), L"www")  != 0) ||
-            (wcsstr(str.c_str(), L"http") != 0) ||
-            (wcsstr(str.c_str(), L"::")   != 0) ||
-            (wcsstr(str.c_str(), L"==")   != 0) ||
-            (wcsstr(str.c_str(), L"//")   != 0) ||
-            (wcsstr(str.c_str(), L"&&")   != 0) ||
-            (wcsstr(str.c_str(), L"><")   != 0) ||
-            (wcsstr(str.c_str(), L"</")   != 0) ||
-            (wcsstr(str.c_str(), L"<<")   != 0) ||
-            (wcsstr(str.c_str(), L">>")   != 0) ||
-            (wcsstr(str.c_str(), L">=")   != 0) ||
-            (wcsstr(str.c_str(), L"<=")   != 0) ||
-            (wcsstr(str.c_str(), L"=>")   != 0) ||
-            (wcsstr(str.c_str(), L">-")   != 0) ||
-            (wcsstr(str.c_str(), L"<-")   != 0) ||
-            (wcsstr(str.c_str(), L"->")   != 0) ||
-            (wcsstr(str.c_str(), L"*.")   != 0) ||
-            (wcsstr(str.c_str(), L"...")  != 0)
-            )
-         {
+            wcschr(str.c_str(), L':') ||
+            wcschr(str.c_str(), L'$') ||
+            wcschr(str.c_str(), L'%') ||
+            wcschr(str.c_str(), L'_') ||
+            wcschr(str.c_str(), L'.') ||
+            wcschr(str.c_str(), L'>') ||
+            wcschr(str.c_str(), L'<') ||
+            wcschr(str.c_str(), L'=') ||
+            wcschr(str.c_str(), L'~') ||
+            wcschr(str.c_str(), L'@') ||
+            wcschr(str.c_str(), L'#') ||
+            wcschr(str.c_str(), L'(') ||
+            wcschr(str.c_str(), L')') ||
+            wcschr(str.c_str(), L'?') )
             checked = false;
-            break;
-         }
       }
 
-      if (checked && !str.empty())
+      if (checked)
       {
-         checked =
-            (str[0] != L':') &&
-            (str[0] != L'$') &&
-            (str[0] != 0x0025) &&
-            (str[0] != L'_') &&
-            (str[0] != L'>') &&
-            (str[0] != L'<') &&
-            (str[0] != L'?');
+         for (auto ch : str)
+         {
+            if (
+               (ch >= 0x00c0 && ch <= 0x00d6) ||
+               (ch >= 0x00d8 && ch <= 0x00f6) ||
+               (ch >= 0x00f8 && ch <= 0x00ff) ||
+               (ch >= 0x0100 && ch <= 0x024f) ||   // extended latin A,B
+               isDiacriticGroup(ch) ||
+               isOutdatedGroup(ch)  ||
+               (wcsstr(str.c_str(), L"www")  != 0) ||
+               (wcsstr(str.c_str(), L"http") != 0) ||
+               (wcsstr(str.c_str(), L"::")   != 0) ||
+               (wcsstr(str.c_str(), L"==")   != 0) ||
+               (wcsstr(str.c_str(), L"//")   != 0) ||
+               (wcsstr(str.c_str(), L"&&")   != 0) ||
+               (wcsstr(str.c_str(), L"><")   != 0) ||
+               (wcsstr(str.c_str(), L"</")   != 0) ||
+               (wcsstr(str.c_str(), L"<<")   != 0) ||
+               (wcsstr(str.c_str(), L">>")   != 0) ||
+               (wcsstr(str.c_str(), L">=")   != 0) ||
+               (wcsstr(str.c_str(), L"<=")   != 0) ||
+               (wcsstr(str.c_str(), L"=>")   != 0) ||
+               (wcsstr(str.c_str(), L">-")   != 0) ||
+               (wcsstr(str.c_str(), L"<-")   != 0) ||
+               (wcsstr(str.c_str(), L"->")   != 0) ||
+               (wcsstr(str.c_str(), L"*.")   != 0) ||
+               (wcsstr(str.c_str(), L"...")  != 0) )
+            {
+               checked = false;
+               break;
+            }
+         }
       }
 
       if (!str.empty() && !is_number(str) && checked)
@@ -406,6 +417,11 @@ void appendToMap(const std::list <wstring_t>& inList)
          else
          {
             tokenMap[str] = 1;
+         }
+
+         if (it == inList.begin())
+         {
+            verbMap.insert(str);
          }
       }
    }
@@ -427,7 +443,7 @@ void processString(const wchar_t* str, const size_t str_sz)
    appendToMap(tokenList);
 }
 
-void readFile(const std::wstring& filename_in, const std::wstring& filename_out)
+void cleanFile(const std::wstring& filename_in, const std::wstring& filename_out)
 {
    setlocale(LC_ALL, "Russian");
    //////////////////////////////////////////////////////////////////////////
@@ -494,9 +510,31 @@ void readFile(const std::wstring& filename_in, const std::wstring& filename_out)
    fclose(pOutput);
 }
 
+void wtofile()
+{
+   FILE* pOutFile = _wfopen(L"db-dict-out.u16", L"w, ccs=UTF-16LE");
+
+   const wstring_t delim = L" #";
+
+   for (std::map <wstring_t, size_t>::const_iterator it = tokenMap.begin(); it != tokenMap.end(); ++it)
+   {
+      fputws(&(it->first[0]), pOutFile);
+      
+      fputws(&(delim[0]), pOutFile);
+      
+      //wstring_t  istr = std::to_wstring(it->second);
+      //fputws(&(istr[0]), pOutFile);
+      
+      fputwc(L'\n', pOutFile);
+   }
+
+   fclose(pOutFile);
+}
+
 int main()
 {
-   readFile(L"db-input.u16", L"db-out.u16");
+   cleanFile(L"db-input.u16", L"db-out.u16");
+   //cleanFile(L"verbs-out.u16", L"db-out.u16");
    //test_translateChar();
 
    return 0;
