@@ -17,6 +17,7 @@
 
 typedef std::wstring wstring_t;
 typedef unsigned int UInt32;
+UInt32 insertCounter = 0;
 
 std::map <wstring_t, size_t> tokenMap;
 std::set <wstring_t> verbMap;
@@ -266,7 +267,7 @@ void test_translateChar()
       putwchar(eu_lower_ext[i]);
       putwchar(L'-');
       putwchar(eu_upper_ext[i]);
-      putwchar(L'\n');
+      wprintf(L" [%u]\n", i);
    }
 }
 
@@ -347,7 +348,7 @@ void appendToMap(const std::list <wstring_t>& inList)
    {
       wstring_t str = *it;
 
-      rtrim(str, L"\x0023\x0027\x0029\x002a\x002e\x002f\x003a\x003b\x003c\x003d\x003e\x003f\x005c\x007e");
+      rtrim(str, L"\x0023\x0027\x0028\x0029\x002a\x002e\x002f\x003a\x003b\x003c\x003d\x003e\x003f\x005c\x007e");
       ltrim(str, L"\x0023\x0028\x0029\x002a\x007e");
 
       bool checked = true;
@@ -417,6 +418,7 @@ void appendToMap(const std::list <wstring_t>& inList)
          else
          {
             tokenMap[str] = 1;
+            insertCounter++;
          }
 
          if (it == inList.begin())
@@ -425,6 +427,12 @@ void appendToMap(const std::list <wstring_t>& inList)
          }
       }
    }
+}
+
+void report()
+{
+   wprintf(L"words: inserted=%u\n", insertCounter);
+   wprintf(L"words: total=%u\n",    tokenMap.size());
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -508,6 +516,8 @@ void cleanFile(const std::wstring& filename_in, const std::wstring& filename_out
 
    fclose(pFile);
    fclose(pOutput);
+
+   report();
 }
 
 void wtofile()
@@ -522,8 +532,8 @@ void wtofile()
       
       fputws(&(delim[0]), pOutFile);
       
-      //wstring_t  istr = std::to_wstring(it->second);
-      //fputws(&(istr[0]), pOutFile);
+      //wstring_t str = std::to_wstring(it->second);
+      //fputws(&(str[0]), pOutFile);
       
       fputwc(L'\n', pOutFile);
    }
@@ -536,6 +546,7 @@ int main()
    cleanFile(L"db-input.u16", L"db-out.u16");
    //cleanFile(L"verbs-out.u16", L"db-out.u16");
    //test_translateChar();
+
 
    return 0;
 }
