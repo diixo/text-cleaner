@@ -17,10 +17,6 @@
 
 typedef std::wstring wstring_t;
 typedef unsigned int UInt32;
-UInt32 insertCounter = 0;
-
-std::map <wstring_t, size_t> tokenMap;
-std::set <wstring_t> verbMap;
 
 // https://secure.n-able.com/webhelp/NC_9-1-0_SO_en/Content/SA_docs/API_Level_Integration/API_Integration_URLEncoding.html
 //////////////////////////////////////////////////////////////////////////
@@ -342,7 +338,7 @@ bool is_number(const wstring_t& inStr, size_t start_id = 0)
    return result;
 }
 
-void appendToMap(const std::list <wstring_t>& inList)
+void appendToMap(const std::list <wstring_t>& inList, std::map <wstring_t, size_t>& ioMap)
 {
    for (std::list <wstring_t>::const_iterator it = inList.begin(); it != inList.end(); ++it)
    {
@@ -355,6 +351,7 @@ void appendToMap(const std::list <wstring_t>& inList)
       if (!str.empty())
       {
          if (
+            wcschr(str.c_str(), L'*') ||
             wcschr(str.c_str(), L':') ||
             wcschr(str.c_str(), L'$') ||
             wcschr(str.c_str(), L'%') ||
@@ -410,35 +407,36 @@ void appendToMap(const std::list <wstring_t>& inList)
 
       if (!str.empty() && !is_number(str) && checked)
       {
-         std::map <wstring_t, size_t>::iterator itMap = tokenMap.find(str);
-         if (itMap != tokenMap.end())
+         std::map <wstring_t, size_t>::iterator it = ioMap.find(str);
+         if (it != ioMap.end())
          {
-            itMap->second = itMap->second + 1;
+            it->second = it->second + 1;
          }
          else
          {
-            tokenMap[str] = 1;
-            insertCounter++;
-         }
-
-         if (it == inList.begin())
-         {
-            verbMap.insert(str);
+            ioMap[str] = 1;
          }
       }
    }
 }
 
-void report()
+void report(
+   const std::map <wstring_t, size_t>& baseMap,
+   const std::map <wstring_t, size_t>& newMap,
+   const std::map <wstring_t, size_t>& diffMap,
+   const std::map <wstring_t, size_t>& resultMap)
 {
-   wprintf(L"words: inserted=%u\n", insertCounter);
-   wprintf(L"words: total=%u\n",    tokenMap.size());
+   wprintf(L"words: base (%u) done.\n",     baseMap.size());
+   wprintf(L"words: new (%u) done.\n",      newMap.size());
+   wprintf(L"words: inserted (%u/%u) done.\n", diffMap.size(), newMap.size());
+   wprintf(L"words: total (%u) done.\n",    resultMap.size());
+   wprintf(L"========== Build: succeeded ==========\n");
 }
 
 //////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////
-void processString(const wchar_t* str, const size_t str_sz)
+void processString(const wchar_t* str, const size_t str_sz, std::map <wstring_t, size_t>& ioMap)
 {
    const wstring_t wstr(str);
 
@@ -448,10 +446,10 @@ void processString(const wchar_t* str, const size_t str_sz)
 
    wcstok(wstr, L"\x0020\x0021\x002c\x003b", tokenList);   // " !,;"
 
-   appendToMap(tokenList);
+   appendToMap(tokenList, ioMap);
 }
 
-void cleanFile(const std::wstring& filename_in, const std::wstring& filename_out)
+void loadFile(const std::wstring& filename_in, const std::wstring& filename_out, std::map <wstring_t, size_t>& ioMap)
 {
    setlocale(LC_ALL, "Russian");
    //////////////////////////////////////////////////////////////////////////
@@ -465,7 +463,7 @@ void cleanFile(const std::wstring& filename_in, const std::wstring& filename_out
       return;
    }
    
-   FILE *pOutput = _wfopen(filename_out.c_str(), L"w, ccs=UTF-16LE");
+   FILE *pOutput = (filename_out.length() > 0) ? _wfopen(filename_out.c_str(), L"w, ccs=UTF-16LE") : 0;
    UInt32 lineNumber = 0;
    /////////////////////////////////////////////////////////////////////////
 
@@ -481,14 +479,14 @@ void cleanFile(const std::wstring& filename_in, const std::wstring& filename_out
    {
       if (wch == L'\n')
       {
-         fputwc(wch, pOutput);
+         if (pOutput) fputwc(wch, pOutput);
 
          if (pBuff != buff)
          {
             *pBuff = 0;
             pBuff = buff;
 
-            processString(buff, str_sz);
+            processString(buff, str_sz, ioMap);
 
             str_sz = 0;
          }
@@ -505,7 +503,7 @@ void cleanFile(const std::wstring& filename_in, const std::wstring& filename_out
          // check if need to skip symbol.
          if (tch > 0)
          {
-            fputwc(tch, pOutput);
+            if (pOutput) fputwc(tch, pOutput);
 
             *pBuff = tch;
             pBuff++;
@@ -515,38 +513,89 @@ void cleanFile(const std::wstring& filename_in, const std::wstring& filename_out
    }
 
    fclose(pFile);
-   fclose(pOutput);
-
-   report();
+   if (pOutput) fclose(pOutput);
 }
 
-void wtofile()
+void mergeMaps(
+   const std::map <wstring_t, size_t>& baseMap, 
+   const std::map <wstring_t, size_t>& newMap, 
+   std::map <wstring_t, size_t>& diffMap, 
+   std::map <wstring_t, size_t>& resultMap)
 {
-   FILE* pOutFile = _wfopen(L"db-dict-out.u16", L"w, ccs=UTF-16LE");
+   resultMap = baseMap;
+
+   for (std::map <wstring_t, size_t>::const_iterator it = newMap.begin(); it != newMap.end(); ++it)
+   {
+      auto its = resultMap.find(it->first);
+      if (its != resultMap.end())
+      {
+         its->second++;
+      }
+      else
+      {
+         resultMap[it->first] = 1;
+         diffMap[it->first] = 1;
+      }
+   }
+}
+
+void maptofile(const wstring_t filepath, const std::map <wstring_t, size_t>& iMap)
+{
+   FILE* pOutFile = _wfopen(filepath.c_str(), L"w, ccs=UTF-16LE");
 
    const wstring_t delim = L" #";
+   wstring_t str;
 
-   for (std::map <wstring_t, size_t>::const_iterator it = tokenMap.begin(); it != tokenMap.end(); ++it)
+   for (std::map <wstring_t, size_t>::const_iterator it = iMap.begin(); it != iMap.end(); ++it)
    {
       fputws(&(it->first[0]), pOutFile);
-      
       fputws(&(delim[0]), pOutFile);
-      
-      //wstring_t str = std::to_wstring(it->second);
+
+      //str = std::to_wstring(it->second);
       //fputws(&(str[0]), pOutFile);
-      
+
       fputwc(L'\n', pOutFile);
    }
 
    fclose(pOutFile);
 }
 
-int main()
+void wtofile(const wstring_t filepath, const std::map <wstring_t, size_t>& iMap)
 {
-   cleanFile(L"db-input.u16", L"db-out.u16");
-   //cleanFile(L"verbs-out.u16", L"db-out.u16");
-   //test_translateChar();
+   FILE* pOutFile = _wfopen(wstring_t(filepath + L".dictionary").c_str(), L"w, ccs=UTF-16LE");
 
+   for (std::map <wstring_t, size_t>::const_iterator it = iMap.begin(); it != iMap.end(); ++it)
+   {
+      fputws(&(it->first[0]), pOutFile);
+      fputwc(L'\n', pOutFile);
+   }
+   fclose(pOutFile);
+}
+
+int main(int argc, char* argv[])
+{
+   std::map <wstring_t, size_t> baseMap;
+   std::map <wstring_t, size_t> newMap;
+   std::map <wstring_t, size_t> diffMap;
+   std::map <wstring_t, size_t> resultMap;
+   
+   const wstring_t baseFile(L"base.u16");
+   const wstring_t newFile(L"new.u16");
+
+   const wstring_t diffFile(L"diff");
+   const wstring_t resultFile(L"result");
+
+   loadFile(baseFile, L"", baseMap);
+   loadFile(newFile,  L"", newMap);
+
+   mergeMaps(baseMap, newMap, diffMap, resultMap);
+
+   wtofile(baseFile, baseMap);
+   wtofile(newFile, newMap);
+   wtofile(diffFile, diffMap);
+   wtofile(resultFile, resultMap);
+
+   report(baseMap, newMap, diffMap, resultMap);
 
    return 0;
 }
