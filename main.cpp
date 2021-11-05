@@ -35,18 +35,16 @@ const wchar_t eu_lower[48] = {
    L'\x016f', L'\x00fc', L'\x00fd', L'\x00ff', L'\x017a', L'\x017c', L'\x017e', L'\x00fe', L'\x00e6', L'\x00f6', L'\x00f8', L'\x00df'
 };
 
-const size_t SZ = 21;
+const size_t SZ = 22;
 
 const wchar_t eu_upper_ext[SZ] = {
-   L'\x0100', L'\x0104', L'\x0110', L'\x0112', L'\x0116', L'\x0118', L'\x012a',
-   L'\x012e', L'\x0136', L'\x0139', L'\x013b', L'\x013d', L'\x0143', L'\x0145',
-   L'\x014c', L'\x0150', L'\x0154', L'\x0160', L'\x016a', L'\x0170', L'\x0172'
+   L'\x0100', L'\x0104', L'\x0110', L'\x0112', L'\x0116', L'\x0118', L'\x012a', L'\x012e', L'\x0136', L'\x0139', L'\x013b',
+   L'\x013d', L'\x0143', L'\x0145', L'\x014c', L'\x0150', L'\x0154', L'\x0160', L'\x016a', L'\x0170', L'\x0172', L'\x01b5'
 };
 
 const wchar_t eu_lower_ext[SZ] = {
-   L'\x0101', L'\x0105', L'\x0111', L'\x0113', L'\x0117', L'\x0119', L'\x012b',
-   L'\x012f', L'\x0137', L'\x013a', L'\x013c', L'\x013e', L'\x0144', L'\x0146',
-   L'\x014d', L'\x0151', L'\x0155', L'\x0161', L'\x016b', L'\x0171', L'\x0173'
+   L'\x0101', L'\x0105', L'\x0111', L'\x0113', L'\x0117', L'\x0119', L'\x012b', L'\x012f', L'\x0137', L'\x013a', L'\x013c',
+   L'\x013e', L'\x0144', L'\x0146', L'\x014d', L'\x0151', L'\x0155', L'\x0161', L'\x016b', L'\x0171', L'\x0173', L'\x01b6'
 };
 
 bool isModificatorGroup(const wchar_t ch)
@@ -426,6 +424,7 @@ void report(
    const std::map <wstring_t, size_t>& diffMap,
    const std::map <wstring_t, size_t>& resultMap)
 {
+   wprintf(L"TextCleaner, version 0.50 (UTF-16LE)\n");
    wprintf(L"words: base (%u) done.\n",     baseMap.size());
    wprintf(L"words: new (%u) done.\n",      newMap.size());
    wprintf(L"words: inserted (%u/%u) done.\n", diffMap.size(), newMap.size());
@@ -560,9 +559,20 @@ void maptofile(const wstring_t filepath, const std::map <wstring_t, size_t>& iMa
    fclose(pOutFile);
 }
 
-void wtofile(const wstring_t filepath, const std::map <wstring_t, size_t>& iMap)
+void wtofile(const wstring_t filepath, const std::map <wstring_t, size_t>& iMap, const wstring_t title)
 {
    FILE* pOutFile = _wfopen(wstring_t(filepath + L".dictionary").c_str(), L"w, ccs=UTF-16LE");
+
+   if (!title.empty())
+   {
+      const wstring_t prefix(L"###");
+      fputws(prefix.c_str(), pOutFile);
+      fputwc(L' ', pOutFile);
+      fputws(title.c_str(), pOutFile);
+      fputwc(L' ', pOutFile);
+      fputws(prefix.c_str(), pOutFile);
+      fputwc(L'\n', pOutFile);
+   }
 
    for (std::map <wstring_t, size_t>::const_iterator it = iMap.begin(); it != iMap.end(); ++it)
    {
@@ -572,15 +582,29 @@ void wtofile(const wstring_t filepath, const std::map <wstring_t, size_t>& iMap)
    fclose(pOutFile);
 }
 
+wstring_t cstring_to_wstring(const char* c_str)
+{
+   std::string cstr(c_str);
+   wstring_t w_str(cstr.begin(), cstr.end());
+   return w_str;
+}
+
 int main(int argc, char* argv[])
 {
+   if (argc != 3)
+   {
+      printf("No extra command-line arguments passed.\n");
+      printf("%s <basefile.u16> <newfile.u16>\n", argv[0]);
+      return 1;
+   }
+
    std::map <wstring_t, size_t> baseMap;
    std::map <wstring_t, size_t> newMap;
    std::map <wstring_t, size_t> diffMap;
    std::map <wstring_t, size_t> resultMap;
    
-   const wstring_t baseFile(L"base.u16");
-   const wstring_t newFile(L"new.u16");
+   const wstring_t baseFile = cstring_to_wstring(argv[1]);
+   const wstring_t newFile = cstring_to_wstring(argv[2]);
 
    const wstring_t diffFile(L"diff");
    const wstring_t resultFile(L"result");
@@ -590,10 +614,10 @@ int main(int argc, char* argv[])
 
    mergeMaps(baseMap, newMap, diffMap, resultMap);
 
-   wtofile(baseFile, baseMap);
-   wtofile(newFile, newMap);
-   wtofile(diffFile, diffMap);
-   wtofile(resultFile, resultMap);
+   wtofile(baseFile, baseMap, wstring_t());
+   wtofile(newFile, newMap, wstring_t());
+   wtofile(diffFile, diffMap, wstring_t());
+   wtofile(resultFile, resultMap, baseFile + wstring_t(L"/") + newFile);
 
    report(baseMap, newMap, diffMap, resultMap);
 
