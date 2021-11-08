@@ -424,7 +424,7 @@ void report(
    const std::map <wstring_t, size_t>& diffMap,
    const std::map <wstring_t, size_t>& resultMap)
 {
-   wprintf(L"TextCleaner, version 0.50 (UTF-16LE)\n");
+   wprintf(L"TextCleaner, version 0.51 (UTF-16LE)\n");
    wprintf(L"words: base (%u) done.\n",     baseMap.size());
    wprintf(L"words: new (%u) done.\n",      newMap.size());
    wprintf(L"words: inserted (%u/%u) done.\n", diffMap.size(), newMap.size());
@@ -591,9 +591,10 @@ wstring_t cstring_to_wstring(const char* c_str)
 
 int main(int argc, char* argv[])
 {
-   if (argc != 3)
+   if ((argc < 2) || (argc > 3))
    {
       printf("No extra command-line arguments passed.\n");
+      printf("%s <basefile.u16>\n", argv[0]);
       printf("%s <basefile.u16> <newfile.u16>\n", argv[0]);
       return 1;
    }
@@ -604,20 +605,24 @@ int main(int argc, char* argv[])
    std::map <wstring_t, size_t> resultMap;
    
    const wstring_t baseFile = cstring_to_wstring(argv[1]);
-   const wstring_t newFile = cstring_to_wstring(argv[2]);
-
-   const wstring_t diffFile(L"diff");
-   const wstring_t resultFile(L"result");
-
    loadFile(baseFile, L"", baseMap);
-   loadFile(newFile,  L"", newMap);
-
-   mergeMaps(baseMap, newMap, diffMap, resultMap);
-
    wtofile(baseFile, baseMap, wstring_t());
-   wtofile(newFile, newMap, wstring_t());
-   wtofile(diffFile, diffMap, wstring_t());
-   wtofile(resultFile, resultMap, baseFile + wstring_t(L"/") + newFile);
+
+   if (argc == 3)
+   {
+      const wstring_t newFile = cstring_to_wstring(argv[2]);
+
+      const wstring_t diffFile(L"diff");
+      const wstring_t resultFile(L"result");
+
+      loadFile(newFile, L"", newMap);
+
+      mergeMaps(baseMap, newMap, diffMap, resultMap);
+
+      wtofile(newFile, newMap, wstring_t());
+      wtofile(diffFile, diffMap, wstring_t());
+      wtofile(resultFile, resultMap, baseFile + wstring_t(L"/") + newFile);
+   }
 
    report(baseMap, newMap, diffMap, resultMap);
 
