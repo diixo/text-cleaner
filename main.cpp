@@ -22,14 +22,14 @@ typedef unsigned int UInt32;
 //////////////////////////////////////////////////////////////////////////
 
 const wchar_t eu_upper[48] = {
-	L'\x00c0', L'\x00c1', L'\x00c2', L'\x00c3', L'\x00c4', L'\x00c5', L'\x0102', L'\x00c7', L'\x0106', L'\x010c', L'\x010e', L'\x00d0',
+   L'\x00c0', L'\x00c1', L'\x00c2', L'\x00c3', L'\x00c4', L'\x00c5', L'\x0102', L'\x00c7', L'\x0106', L'\x010c', L'\x010e', L'\x00d0',
    L'\x00c9', L'\x00c8', L'\x00ca', L'\x00cb', L'\x011e', L'\x00cc', L'\x00cd', L'\x00ce', L'\x00cf', L'\x0141', L'\x0147', L'\x00d1',
    L'\x00d2', L'\x00d3', L'\x00d4', L'\x00d5', L'\x0158', L'\x015a', L'\x0218', L'\x0164', L'\x021a', L'\x00da', L'\x00d9', L'\x00db',
    L'\x016e', L'\x00dc', L'\x00dd', L'\x0178', L'\x0179', L'\x017b', L'\x017d', L'\x00de', L'\x00c6', L'\x00d6', L'\x00d8', L'\x1e9e'
 };
 
 const wchar_t eu_lower[48] = {
-	L'\x00e0', L'\x00e1', L'\x00e2', L'\x00e3', L'\x00e4', L'\x00e5', L'\x0103', L'\x00e7', L'\x0107', L'\x010d', L'\x010f', L'\x00f0',
+   L'\x00e0', L'\x00e1', L'\x00e2', L'\x00e3', L'\x00e4', L'\x00e5', L'\x0103', L'\x00e7', L'\x0107', L'\x010d', L'\x010f', L'\x00f0',
    L'\x00e9', L'\x00e8', L'\x00ea', L'\x00eb', L'\x011f', L'\x00ec', L'\x00ed', L'\x00ee', L'\x00ef', L'\x0142', L'\x0148', L'\x00f1',
    L'\x00f2', L'\x00f3', L'\x00f4', L'\x00f5', L'\x0159', L'\x015b', L'\x0219', L'\x0165', L'\x021b', L'\x00fa', L'\x00f9', L'\x00fb',
    L'\x016f', L'\x00fc', L'\x00fd', L'\x00ff', L'\x017a', L'\x017c', L'\x017e', L'\x00fe', L'\x00e6', L'\x00f6', L'\x00f8', L'\x00df'
@@ -154,6 +154,7 @@ wchar_t translateChar(const wchar_t ch)
       0x005e,  // ("^")
       0x005b,  // ("[")
       0x005d   // ("]")
+      // "{", "}", "|", "\", "^", "~", "[", "]", "`"
    };
 
    for (UInt32 i = 0; i < sizeof(replaceTable) / sizeof(replaceTable[0]); i++)
@@ -336,6 +337,21 @@ bool is_number(const wstring_t& inStr, size_t start_id = 0)
    return result;
 }
 
+bool is_anydigit(const wstring_t& inStr, size_t start_id = 0)
+{
+   bool result = false;
+   while (start_id < inStr.size())
+   {
+      if (iswdigit(inStr[start_id]))
+      {
+         result = true;
+         break;
+      }
+      start_id++;
+   }
+   return result;
+}
+
 void appendToMap(const std::list <wstring_t>& inList, std::map <wstring_t, size_t>& ioMap)
 {
    for (std::list <wstring_t>::const_iterator it = inList.begin(); it != inList.end(); ++it)
@@ -403,7 +419,7 @@ void appendToMap(const std::list <wstring_t>& inList, std::map <wstring_t, size_
          }
       }
 
-      if (!str.empty() && !is_number(str) && checked)
+      if (!str.empty() && !is_anydigit(str) && checked)
       {
          std::map <wstring_t, size_t>::iterator it = ioMap.find(str);
          if (it != ioMap.end())
@@ -424,11 +440,14 @@ void report(
    const std::map <wstring_t, size_t>& diffMap,
    const std::map <wstring_t, size_t>& resultMap)
 {
-   wprintf(L"TextCleaner, version 0.51 (UTF-16LE)\n");
-   wprintf(L"words: base (%u) done.\n",     baseMap.size());
-   wprintf(L"words: new (%u) done.\n",      newMap.size());
-   wprintf(L"words: inserted (%u/%u) done.\n", diffMap.size(), newMap.size());
-   wprintf(L"words: total (%u) done.\n",    resultMap.size());
+   wprintf(L"TextCleaner, version 0.53 (UTF-16LE)\n");
+   wprintf(L"words: base.dictionary (%u) done.\n",     baseMap.size());
+   if (!newMap.empty() || !diffMap.empty() || !resultMap.empty())
+   {
+      wprintf(L"words: new.dictionary (%u) done.\n", newMap.size());
+      wprintf(L"words: inserted.dictionary (%u/%u) done.\n", diffMap.size(), newMap.size());
+      wprintf(L"words: final.dictionary (%u) done.\n", resultMap.size());
+   }
    wprintf(L"========== Build: succeeded ==========\n");
 }
 
@@ -491,7 +510,7 @@ void loadFile(const std::wstring& filename_in, const std::wstring& filename_out,
          }
          else
          {
-            printf("!!! NL empty, skipped\n");
+            //printf("!!! NL empty, skipped\n");
          }
          lineNumber++;
       }
