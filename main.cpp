@@ -251,18 +251,40 @@ void test_translateChar()
    for (size_t i = 0; i < 48; i++)
    {
       putwchar(eu_lower[i]);
-      putwchar(L'-');
-      putwchar(eu_upper[i]);
-      wprintf(L" [%u]\n", i);
+      putwchar(L' ');
    }
-   std::wcout << L"########\n";
+   putwchar(L'\n');
+   for (size_t i = 0; i < 48; i++)
+   {
+      putwchar(eu_upper[i]);
+      putwchar(L' ');
+   }
+   putwchar(L'\n');
+   for (size_t i = 0; i < SZ; i++)
+   {
+      putwchar(L'-');
+      putwchar(L'-');
+   }
+   putwchar(L'\n');
+
    for (size_t i = 0; i < SZ; i++)
    {
       putwchar(eu_lower_ext[i]);
-      putwchar(L'-');
-      putwchar(eu_upper_ext[i]);
-      wprintf(L" [%u]\n", i);
+      putwchar(L' ');
    }
+   putwchar(L'\n');
+   for (size_t i = 0; i < SZ; i++)
+   {
+      putwchar(eu_upper_ext[i]);
+      putwchar(L' ');
+   }
+   putwchar(L'\n');
+   for (size_t i = 0; i < SZ; i++)
+   {
+      putwchar(L'-');
+      putwchar(L'-');
+   }
+   putwchar(L'\n');
 }
 
 // Split by scanning inStr for the first occurrence of any of the wide characters that are part of Delim.
@@ -441,15 +463,27 @@ void report(
    const std::map <wstring_t, size_t>& diffMap,
    const std::map <wstring_t, size_t>& resultMap)
 {
-   wprintf(L"TextCleaner, version 0.56 (UTF-16LE)\n");
-   wprintf(L"words: base.dictionary (%u) loaded.\n",     baseMap.size());
+   wprintf(L"TextCleaner, version 0.57 (UTF-16LE)\n");
+   if (!baseMap.empty())
+   {
+      wprintf(L"words: base.dictionary (%u) loaded.\n", baseMap.size());
+   }
+   else
+   {
+      wprintf(L"demo-mode:\n");
+      test_translateChar();
+   }
+
    if (!newMap.empty() || !diffMap.empty() || !resultMap.empty())
    {
       wprintf(L"words: update (%u) loaded.\n", newMap.size());
       wprintf(L"words: diff.dictionary (%u/%u) done.\n", diffMap.size(), newMap.size());
       wprintf(L"words: final.dictionary (%u) done.\n", resultMap.size());
    }
-   wprintf(L"========== Build: succeeded ==========\n");
+   if (!baseMap.empty())
+   {
+      wprintf(L"========== Build: succeeded ==========\n");
+   }
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -611,38 +645,40 @@ wstring_t cstring_to_wstring(const char* c_str)
 
 int main(int argc, char* argv[])
 {
-   if ((argc < 2) || (argc > 3))
-   {
-      printf("No extra command-line arguments passed.\n");
-      printf("%s <basefile.u16>\n", argv[0]);
-      printf("%s <basefile.u16> <newfile.u16>\n", argv[0]);
-      return 1;
-   }
-
    std::map <wstring_t, size_t> baseMap;
    std::map <wstring_t, size_t> newMap;
    std::map <wstring_t, size_t> diffMap;
    std::map <wstring_t, size_t> resultMap;
-   
-   const wstring_t baseFile = cstring_to_wstring(argv[1]);
-   loadFile(baseFile, L"", baseMap);
-   wtofile(baseFile, baseMap, wstring_t());
 
-   if (argc == 3)
+   if (argc < 2)
    {
-      const wstring_t newFile = cstring_to_wstring(argv[2]);
-      const wstring_t resultFile(L"result");
-
-      loadFile(newFile, L"", newMap);
-
-      mergeMaps(baseMap, newMap, diffMap, resultMap);
-
-      wtofile(newFile, newMap, wstring_t());
-      wtofile(wstring_t(L"diff-") + newFile, diffMap, wstring_t());
-      wtofile(resultFile, resultMap, baseFile + wstring_t(L"/") + newFile);
+      report(baseMap, newMap, diffMap, resultMap);
+      wprintf(L"No extra command-line arguments passed:\n");
+      wprintf(L"%s <basefile.u16>\n", cstring_to_wstring(argv[0]).c_str());
+      wprintf(L"%s <basefile.u16> <newfile.u16>\n", cstring_to_wstring(argv[0]).c_str());
    }
+   else
+   {
+      const wstring_t baseFile = cstring_to_wstring(argv[1]);
+      loadFile(baseFile, L"", baseMap);
+      wtofile(baseFile, baseMap, wstring_t());
 
-   report(baseMap, newMap, diffMap, resultMap);
+      if (argc == 3)
+      {
+         const wstring_t newFile = cstring_to_wstring(argv[2]);
+         const wstring_t resultFile(L"result");
+
+         loadFile(newFile, L"", newMap);
+
+         mergeMaps(baseMap, newMap, diffMap, resultMap);
+
+         wtofile(newFile, newMap, wstring_t());
+         wtofile(wstring_t(L"diff-") + newFile, diffMap, wstring_t());
+         wtofile(resultFile, resultMap, baseFile + wstring_t(L"/") + newFile);
+      }
+
+      report(baseMap, newMap, diffMap, resultMap);
+   }
 
    return 0;
 }
