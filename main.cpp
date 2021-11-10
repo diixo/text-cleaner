@@ -138,7 +138,7 @@ wchar_t translateChar(const wchar_t ch)
       return space;
    }
 
-   const wchar_t replaceTable[12] =
+   const wchar_t replaceTable[11] =
    {
       0x0022,  // """
       0x0028,  // ("(")
@@ -149,7 +149,6 @@ wchar_t translateChar(const wchar_t ch)
       0x007b,  // ("{")
       0x007c,  // ("|")
       0x007d,  // ("}")
-      0x005c,  // ("\")
 
       0x005e,  // ("^")
       0x005b,  // ("[")
@@ -358,11 +357,11 @@ void appendToMap(const std::list <wstring_t>& inList, std::map <wstring_t, size_
    {
       wstring_t str = *it;
 
-      rtrim(str, L"\x0023\x0027\x0028\x0029\x002a\x002e\x002f\x003a\x003b\x003c\x003d\x003e\x003f\x005c\x007e");
-      ltrim(str, L"\x0023\x0028\x0029\x002a\x007e");
+      rtrim(str, L"\x0023\x0027\x0028\x0029\x002a\x002d\x002e\x002f\x003a\x003b\x003c\x003d\x003e\x003f\x005c\x007e");
+      ltrim(str, L"\x0023\x0028\x0029\x002a\x002d\x002f\x005c\x007e");
 
-      bool checked = true;
-      if (!str.empty())
+      bool checked = !str.empty();
+      if (checked)
       {
          if (
             wcschr(str.c_str(), L'*') ||
@@ -379,6 +378,8 @@ void appendToMap(const std::list <wstring_t>& inList, std::map <wstring_t, size_
             wcschr(str.c_str(), L'#') ||
             wcschr(str.c_str(), L'(') ||
             wcschr(str.c_str(), L')') ||
+            wcschr(str.c_str(), L'x002f') ||
+            wcschr(str.c_str(), L'x005c') ||
             wcschr(str.c_str(), L'?') )
             checked = false;
       }
@@ -440,12 +441,12 @@ void report(
    const std::map <wstring_t, size_t>& diffMap,
    const std::map <wstring_t, size_t>& resultMap)
 {
-   wprintf(L"TextCleaner, version 0.53 (UTF-16LE)\n");
-   wprintf(L"words: base.dictionary (%u) done.\n",     baseMap.size());
+   wprintf(L"TextCleaner, version 0.55 (UTF-16LE)\n");
+   wprintf(L"words: base.dictionary (%u) loaded.\n",     baseMap.size());
    if (!newMap.empty() || !diffMap.empty() || !resultMap.empty())
    {
-      wprintf(L"words: new.dictionary (%u) done.\n", newMap.size());
-      wprintf(L"words: inserted.dictionary (%u/%u) done.\n", diffMap.size(), newMap.size());
+      wprintf(L"words: update (%u) loaded.\n", newMap.size());
+      wprintf(L"words: diff.dictionary (%u/%u) done.\n", diffMap.size(), newMap.size());
       wprintf(L"words: final.dictionary (%u) done.\n", resultMap.size());
    }
    wprintf(L"========== Build: succeeded ==========\n");
