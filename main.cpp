@@ -441,7 +441,7 @@ void report(
    const std::map <wstring_t, size_t>& diffMap,
    const std::map <wstring_t, size_t>& resultMap)
 {
-   wprintf(L"TextCleaner, version 0.55 (UTF-16LE)\n");
+   wprintf(L"TextCleaner, version 0.56 (UTF-16LE)\n");
    wprintf(L"words: base.dictionary (%u) loaded.\n",     baseMap.size());
    if (!newMap.empty() || !diffMap.empty() || !resultMap.empty())
    {
@@ -631,8 +631,6 @@ int main(int argc, char* argv[])
    if (argc == 3)
    {
       const wstring_t newFile = cstring_to_wstring(argv[2]);
-
-      const wstring_t diffFile(L"diff");
       const wstring_t resultFile(L"result");
 
       loadFile(newFile, L"", newMap);
@@ -640,7 +638,7 @@ int main(int argc, char* argv[])
       mergeMaps(baseMap, newMap, diffMap, resultMap);
 
       wtofile(newFile, newMap, wstring_t());
-      wtofile(diffFile, diffMap, wstring_t());
+      wtofile(wstring_t(L"diff-") + newFile, diffMap, wstring_t());
       wtofile(resultFile, resultMap, baseFile + wstring_t(L"/") + newFile);
    }
 
