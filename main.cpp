@@ -21,6 +21,8 @@ typedef unsigned int UInt32;
 // https://secure.n-able.com/webhelp/NC_9-1-0_SO_en/Content/SA_docs/API_Level_Integration/API_Integration_URLEncoding.html
 //////////////////////////////////////////////////////////////////////////
 
+const wchar_t apostrophe = 0x0027;
+
 const wchar_t eu_upper[48] = {
    L'\x00c0', L'\x00c1', L'\x00c2', L'\x00c3', L'\x00c4', L'\x00c5', L'\x0102', L'\x00c7', L'\x0106', L'\x010c', L'\x010e', L'\x00d0',
    L'\x00c9', L'\x00c8', L'\x00ca', L'\x00cb', L'\x011e', L'\x00cc', L'\x00cd', L'\x00ce', L'\x00cf', L'\x0141', L'\x0147', L'\x00d1',
@@ -110,7 +112,6 @@ bool isApostrophe(const wchar_t ch)
 wchar_t translateChar(const wchar_t ch)
 {
    const wchar_t space = 0x0020;
-   const wchar_t apostrophe = 0x0027;
 
    if (ch < space)
    {
@@ -380,10 +381,10 @@ void appendToMap(const std::list <wstring_t>& inList, std::map <wstring_t, size_
       wstring_t str = *it;
 
       rtrim(str, L"\x0023\x0027\x0028\x0029\x002a\x002d\x002e\x002f\x003a\x003b\x003c\x003d\x003e\x003f\x005c\x007e");
-      ltrim(str, L"\x0023\x0028\x0029\x002a\x002d\x002f\x005c\x007e");
+      ltrim(str, L"\x0023\x0027\x0028\x0029\x002a\x002d\x002f\x005c\x007e");
 
-      bool checked = !str.empty();
-      if (checked)
+      bool valid = !str.empty();
+      if (valid)
       {
          if (
             wcschr(str.c_str(), L'*') ||
@@ -400,13 +401,13 @@ void appendToMap(const std::list <wstring_t>& inList, std::map <wstring_t, size_
             wcschr(str.c_str(), L'#') ||
             wcschr(str.c_str(), L'(') ||
             wcschr(str.c_str(), L')') ||
-            wcschr(str.c_str(), L'x002f') ||
-            wcschr(str.c_str(), L'x005c') ||
+            //wcschr(str.c_str(), L'\x002f') ||
+            //wcschr(str.c_str(), L'\x005c') ||
             wcschr(str.c_str(), L'?') )
-            checked = false;
+            valid = false;
       }
 
-      if (checked)
+      if (valid)
       {
          for (auto ch : str)
          {
@@ -436,13 +437,13 @@ void appendToMap(const std::list <wstring_t>& inList, std::map <wstring_t, size_
                (wcsstr(str.c_str(), L"*.")   != 0) ||
                (wcsstr(str.c_str(), L"...")  != 0) )
             {
-               checked = false;
+               valid = false;
                break;
             }
          }
       }
 
-      if (!str.empty() && !is_anydigit(str) && checked)
+      if (!str.empty() && !is_anydigit(str) && valid)
       {
          std::map <wstring_t, size_t>::iterator it = ioMap.find(str);
          if (it != ioMap.end())
@@ -463,7 +464,7 @@ void report(
    const std::map <wstring_t, size_t>& diffMap,
    const std::map <wstring_t, size_t>& resultMap)
 {
-   wprintf(L"TextCleaner, version 0.57 (UTF-16LE)\n");
+   wprintf(L"TextCleaner, version 0.58 (UTF-16LE)\n");
    if (!baseMap.empty())
    {
       wprintf(L"words: base.dictionary (%u) loaded.\n", baseMap.size());
@@ -609,13 +610,12 @@ void maptofile(const wstring_t filepath, const std::map <wstring_t, size_t>& iMa
 
       fputwc(L'\n', pOutFile);
    }
-
    fclose(pOutFile);
 }
 
 void wtofile(const wstring_t filepath, const std::map <wstring_t, size_t>& iMap, const wstring_t title)
 {
-   FILE* pOutFile = _wfopen(wstring_t(filepath + L".dictionary").c_str(), L"w, ccs=UTF-16LE");
+   FILE* pOutFile = _wfopen(wstring_t(filepath + L"--dictionary.dictionary").c_str(), L"w, ccs=UTF-16LE");
 
    if (!title.empty())
    {
@@ -660,7 +660,7 @@ int main(int argc, char* argv[])
    else
    {
       const wstring_t baseFile = cstring_to_wstring(argv[1]);
-      loadFile(baseFile, L"", baseMap);
+      loadFile(baseFile, baseFile + L"--dump.u16", baseMap);
       wtofile(baseFile, baseMap, wstring_t());
 
       if (argc == 3)
