@@ -24,7 +24,7 @@ abnormally
 aborted
 aborting
 aborts
-aborts/fails
+aborts fails
 abound
 about
 above
@@ -74,12 +74,12 @@ access-control-allow-origin
 access-control-max-age
 access-controlled
 access-vba
-access/alter
-access/integration
-access/invoke
+access alter
+access integration
+access invoke
 accessable
 accessed
-accessed/created/modified
+accessed created modified
 accesses
 accessing
 accessories
@@ -138,20 +138,20 @@ acquires
 acquiring
 acre
 acroforms
-acronym/tag
+acronym tag
 acronyms
 actdiag
 acted
 acting
 actionable
-actions/writing
+actions writing
 actionscript®
 activate
 activated
 activates
 active
 active-hdl's
-active/inactive
+active inactive
 activeattr
 activecommerce
 activedirectory
@@ -161,7 +161,7 @@ actively
 activematrix
 activemq®
 activepdf
-activerecord/mongoid/mongomapper
+activerecord mongoid mongomapper
 activeresource-like
 activescript
 activestorage
@@ -169,13 +169,13 @@ activeviam
 activies
 activists
 activities
-activities/views/fragments
+activities views fragments
 activity's
 activitystreams
 actix
 actor's
 actor-based
-actor/agent-oriented
+actor agent-oriented
 acts
 actsaslist
 actsastaggableon
@@ -205,18 +205,18 @@ adapts
 adas
 adasyn
 adblockers
-adc/dac-based
-add-on/extension
+adc dac-based
+add-on extension
 add-ons
-add/remove
-add/remove/toggle
+add remove
+add remove toggle
 addactionlistener
 addchildviewcontroller
 added
 addin
 adding
-adding/removing/selecting
-adding/subtracting
+adding removing selecting
+adding subtracting
 addins
 additional
 additionally
@@ -253,7 +253,7 @@ adjusted
 adjusting
 adjustments
 admin-level
-admin/dashboard
+admin dashboard
 administer
 administered
 administering
@@ -286,7 +286,7 @@ advances
 advancing
 advantage
 advantages
-advantages/focuses
+advantages focuses
 advent
 adventures
 adverbs
@@ -402,7 +402,7 @@ ahead-of-time
 ai-driven
 aicc
 aid
-aida/web
+aida web
 aided
 aiding
 aids
@@ -430,7 +430,7 @@ ajax-driven
 ajax-enabled
 ajax-loading
 ajax-powered
-ajax/html
+ajax html
 ajaxelementlocatorfactory
 ajaxplorer
 ajaxq
@@ -449,7 +449,7 @@ aldec
 aldeed
 ale
 alea
-alert/notification
+alert notification
 alerting
 alexa-sdk
 alexa-skills
@@ -471,7 +471,7 @@ algoritms
 alibaba
 aligned
 aligning
-alignment/map
+alignment map
 alignments
 aligns
 alike
@@ -502,7 +502,7 @@ allocated
 allocates
 allocating
 allocation-deallocation
-allocation/deallocation
+allocation deallocation
 allocators
 allotted
 allow
@@ -539,8 +539,8 @@ altering
 alternately
 alternates
 alternative
-alternative/extension
-alternative/intermediate
+alternative extension
+alternative intermediate
 alternatively
 alternatives
 alters
@@ -553,7 +553,7 @@ altova's
 always
 am
 am-time-ago
-am/pm
+am pm
 amateur
 amateurs
 amazing
@@ -578,7 +578,7 @@ americans
 ames
 amfromunix
 amg
-amiga/electronic
+amiga electronic
 aml
 amlocal
 ammunition
@@ -615,7 +615,7 @@ analogously
 analogue
 analogy
 analyse
-analyse/synthesize
+analyse synthesize
 analysed
 analyser
 analyses
@@ -627,7 +627,7 @@ analytic
 analytical-functions
 analytically
 analytics's
-analytics/data
+analytics data
 analytix
 analyze
 analyzed
@@ -646,9 +646,9 @@ ancient
 ancillary
 and
 and-sequence
-and/or
-and/or/not
-and\or
+and or
+and or not
+and or
 anders
 andreas
 andrei
@@ -660,7 +660,7 @@ android-based
 android-powered
 android-profiling
 android-specific
-android/ios
+android ios
 androidannotations
 androidicons
 androidmanifest
@@ -676,13 +676,13 @@ angular-annotate-asset-pipeline
 angular-gridster
 angular-materilize
 angular-specific
-angular/angularjs
-angular/react/vue
+angular angularjs
+angular react vue
 angularamd
 angulardart
 angularjs-native
 angularjs-toaster
-angularjs/angular
+angularjs angular
 angularstrap
 angularui
 angus
@@ -721,7 +721,7 @@ another's
 ans
 ansi-compatibility
 ansi-complient
-ansi/iso
+ansi iso
 ansii
 answer
 answer-engine
@@ -777,8 +777,8 @@ apaas
 apace
 apache's
 apache-based
-apache/iis
-apache/mysql
+apache iis
+apache mysql
 apart
 apart's
 apartment
@@ -795,15 +795,15 @@ api-nization
 api-per-api
 api-powered
 api-specific
-api/framework
-api/sdk
-api/toolkit
+api framework
+api sdk
+api toolkit
 apidoc
 apigee's
 apks
 apoc
 apocs
-apollo/graphql
+apollo graphql
 apolloclient
 apostrophecms
 apostrophes
@@ -816,8 +816,8 @@ app-fabric
 app-management
 app-specific
 app-to-app
-app/binary
-app/game
+app binary
+app game
 apparent
 apparently
 appbarlayout
@@ -834,7 +834,7 @@ appear
 appearances
 appeared
 appearing
-appearing/disappearing
+appearing disappearing
 appears
 appel
 append-only
@@ -870,21 +870,21 @@ application-programming-interface
 application-specific
 application-specified
 application-wide
-application/json
-application/json-patch
-application/platform
-application/program
-application/server/service
-application/website
+application json
+application json-patch
+application platform
+application program
+application server service
+application website
 applicationdidbecomeactive
 applicationinfo
 applications
 applications--it
-applications/apps
-applications/eclipse
-applications/frameworks
-applications/scripts
-applications/systems
+applications apps
+applications eclipse
+applications frameworks
+applications scripts
+applications systems
 applicationservices
 applices
 applied
@@ -912,8 +912,8 @@ approximates
 approximating
 approximations
 apps
-apps/features
-apps/pages
+apps features
+apps pages
 appscript
 appscripts
 appsee's
@@ -925,7 +925,7 @@ aprelium
 april
 apsaradb
 apsects
-apt/dpkg
+apt dpkg
 aptean
 aptly
 apu
@@ -935,7 +935,7 @@ aqua-native
 aqualogic
 aquaq's
 aquired
-ar/vr
+ar vr
 arabia
 arabian
 arangement
@@ -956,7 +956,7 @@ architecturally
 architecture-based
 architecture-independent
 architectures
-architectures/platforms
+architectures platforms
 archival
 archived
 archiver
@@ -993,7 +993,7 @@ arithmetics
 arizona
 arkime
 arm-based
-arm/risc
+arm risc
 arma
 armband
 armed
@@ -1017,7 +1017,7 @@ array-data
 array-like
 array-oriented
 array-valued
-array/list/collection
+array list collection
 arrive
 arrived
 arrives
@@ -1043,13 +1043,13 @@ as
 as-a-service
 as-is
 as-yet-unreleased
-as/than
+as than
 asam
 asap
 asc
 ascending
-ascentium/cactuscommerce
-ascentium/smith
+ascentium cactuscommerce
+ascentium smith
 ascii-based
 ascii-characters
 ascribe
@@ -1070,7 +1070,7 @@ asmock's
 asmx-based
 asna's
 asnyc
-asp/com
+asp com
 aspdnsf
 aspentech
 aspire
@@ -1083,15 +1083,15 @@ assemblage
 assemble-to-order
 assembled
 assembler-like
-assembler/analyzer
-assembler/emulator
+assembler analyzer
+assembler emulator
 assembling
 assembly's
 assembly-wrapped
 assemblyutilities
 asserted
 asserting
-assertion/proposition
+assertion proposition
 asserts
 assess
 assessed
@@ -1101,10 +1101,10 @@ assessments
 assetbundles
 assetmanager
 assets-library
-assets/interface
+assets interface
 assigned
 assigning
-assignment/grading
+assignment grading
 assignmentoperators
 assignments
 assigns
@@ -1144,11 +1144,11 @@ asymptotic
 asymptotically
 async-capable
 async-related
-async/await
+async await
 asynchronious
-asynchronous/concurrent
+asynchronous concurrent
 asynchrony
-asyncore/asynchat
+asyncore asynchat
 asyncronous
 asynctasks
 at&t
@@ -1174,8 +1174,8 @@ atoll
 atollic
 atom
 atom-shell
-atom/rss
-atomic/molecular
+atom rss
+atomic molecular
 atomically
 atomiclong
 atoms
@@ -1216,8 +1216,8 @@ attribute's
 attribute-based
 attribute-oriented
 attribute-relation
-attribute/column
-attribute/value
+attribute column
+attribute value
 attributing
 attribution-sharealike
 attuned
@@ -1227,10 +1227,10 @@ audible
 audiences
 audio--from
 audio-visual
-audio/video
-audio/visual
+audio video
+audio visual
 audiobook
-audiocopy/audiopaste
+audiocopy audiopaste
 audiosource
 audiovisual
 auditable
@@ -1256,10 +1256,10 @@ authenticated-encryption
 authenticates
 authenticating
 authentication-server
-authentication/association
-authentication/authorization
-authentication/json
-authentication/registration
+authentication association
+authentication authorization
+authentication json
+authentication registration
 authenticationguard
 authenticators
 authenticitytoken
@@ -1282,7 +1282,7 @@ auto-adaptive
 auto-binding
 auto-bootstrap
 auto-complete
-auto-complete/multi-select
+auto-complete multi-select
 auto-completion
 auto-configuration
 auto-correlation
@@ -1312,7 +1312,7 @@ auto-wiring
 autoassociator
 autobeans
 autocommands
-autocomplete/tokenisation
+autocomplete tokenisation
 autocompleted
 autoconfiguration
 autocorrection
@@ -1378,7 +1378,7 @@ avoidance
 avoided
 avoiding
 avoids
-avr/atmega
+avr atmega
 avr®
 awaiting
 award
@@ -1386,13 +1386,13 @@ award-winning
 awarded
 aware
 awareness
-awareness/fatigue
+awareness fatigue
 away
 aweber's
 awesome
 awkward
 aws's
-awt/swing
+awt swing
 axelos
 axi
 axial
@@ -1440,7 +1440,7 @@ backdoors
 backdraft
 backed
 backend-as-a-service
-backend/server
+backend server
 backends
 backfeeding
 backfilling
@@ -1466,8 +1466,8 @@ backtesting
 backtick
 backtrack
 backup-recovery
-backup/recovery
-backup/restore
+backup recovery
+backup restore
 backus
 backus-naur
 backward
@@ -1481,7 +1481,7 @@ bacpacs
 bad
 baffled
 bag-of-words
-bag/multiset/etc
+bag multiset etc
 bagel
 bags
 bahir
@@ -1550,8 +1550,8 @@ basics
 basket
 batari
 batch-queuing
-batch/online/stream
-batch/powershell
+batch online stream
+batch powershell
 batched
 batches
 batman
@@ -1579,7 +1579,7 @@ bcit
 bd
 bdd-like
 bdd-style
-bdd/tdd
+bdd tdd
 bdds
 be
 beacons
@@ -1635,7 +1635,7 @@ behalf
 behave
 behaves
 behaving
-behaving/working
+behaving working
 behavior's
 behavior-driven
 behavioral
@@ -1662,7 +1662,7 @@ belt
 ben
 benc
 bench
-benchmarking/monitoring
+benchmarking monitoring
 bender
 beneath
 beneficial
@@ -1748,13 +1748,13 @@ billion
 billions
 bills
 billy
-bin/sh
+bin sh
 binary-based
 binary-coded
 binary-compatible
 binary-safe
-bind/unbind
-binding/wrapper
+bind unbind
+binding wrapper
 bindings-compatible
 binds
 bing's
@@ -1787,7 +1787,7 @@ bit-block
 bit-level
 bit-width
 bit-wise
-bit/s
+bit s
 bitbar's
 bitcraze
 bite
@@ -1799,7 +1799,7 @@ bitmaps
 bitorrent
 bitpay's
 bitrates
-bits/entry
+bits entry
 bitsrc
 bitsserver
 bitstamp
@@ -1842,7 +1842,7 @@ blitzbasic
 blizzard
 bloat
 bloated
-blob/text
+blob text
 bloch
 block-based
 block-element-modifier
@@ -1850,23 +1850,23 @@ block-oriented
 blockchain-based
 blockchain-tag
 blockchains
-blocking/longish
+blocking longish
 blockingdeque
 blocks-based
 blockstack's
 blocky
 blog-aware
 blog-publishing
-blog/cms
+blog cms
 bloggers
-blogging/publishing
+blogging publishing
 blood
 bloodshed
 bloomreach
 blown
 blue
 blue-green
-blue/green
+blue green
 bluebream
 bluegiga's
 blueline
@@ -1944,8 +1944,8 @@ boring
 boris
 borland
 borland's
-borland/codegear/embarcadero
-borland/codegear/embarcadero's
+borland codegear embarcadero
+borland codegear embarcadero's
 borland®
 born
 borrowed
@@ -1968,8 +1968,8 @@ bounded-buffer
 bounds-checking
 bourne
 bourne-derived
-bourne/posix
-bourne/posix-style
+bourne posix
+bourne posix-style
 boustrophedon
 bovet
 bowes
@@ -1981,14 +1981,14 @@ boy
 boyce
 bpa
 bpc
-bpm/workflow
+bpm workflow
 bpmn-js
 bprop
 br
 brace
 bracket
 bracketing
-brackets/parenthesis
+brackets parenthesis
 brad
 brahmi
 brahmic
@@ -2072,7 +2072,7 @@ browser-initiated
 browser-integrated
 browser-plugins
 browser-server
-browser/os
+browser os
 browseranimationsmodule
 browserified
 browserplus
@@ -2080,7 +2080,7 @@ browsersync
 browsertime
 browses
 browsing
-browsing/visualization
+browsing visualization
 bruce
 bruce's
 brushing
@@ -2125,28 +2125,28 @@ builder-like
 builder-settable
 builders
 buildfile
-building/designing
+building designing
 buildings
 buildkit
 buildpacks
-builds/tests
+builds tests
 buildtypes
 built
 built-ins
 built-into
-built/compiled
+built compiled
 bulding
 bulgarian
 bulkhead
 bulldozer
-bullet/projectile
+bullet projectile
 bulleted
 bulletin
 bullets
 bully
 bumps
 bundle-level
-bundle/chunks
+bundle chunks
 bundled
 bundled-products
 bundleplus
@@ -2175,7 +2175,7 @@ business-readable
 business-rule
 business-to-business
 business-to-consumer
-business/networking
+business networking
 businessconnect
 businesses
 businessevents®
@@ -2198,7 +2198,7 @@ buzzword-compliant
 buzzword-enabled
 buzzwords
 bw
-bw/bi/bods
+bw bi bods
 bwe
 bwu
 by
@@ -2222,13 +2222,13 @@ byzantine
 c's
 c++'s
 c++-style
-c++/cli
-c++/cx
-c++/java
-c++/python
-c++/qt
-c++/systemc
-c++/winrt
+c++ cli
+c++ cx
+c++ java
+c++ python
+c++ qt
+c++ systemc
+c++ winrt
 c-based
 c-c
 c-coded
@@ -2244,16 +2244,16 @@ c-store
 c-style
 c-v
 c-x
-c/c
-c/c++
-c/c++/d
-c/c++/java/javascript/objective-c/protobuf
-c/c++/obj-c
-c/c++/objc
-c/c++/php
-c/c++test
-c/java-style
-c/objc
+c c
+c c++
+c c++ d
+c c++ java javascript objective-c protobuf
+c c++ obj-c
+c c++ objc
+c c++ php
+c c++test
+c java-style
+c objc
 caaction
 caas
 cabfile
@@ -2268,16 +2268,16 @@ cachedresource
 cachedurlresponse
 cacher
 caches
-cad/cam
-cad/cam/cae
+cad cam
+cad cam cae
 cadetill
 cae
-cae/multiphysics
-caffe/python
+cae multiphysics
+caffe python
 caffeonspark
 caja
 cakefiles
-cakephp/chronos
+cakephp chronos
 calais
 calculate
 calculated
@@ -2287,7 +2287,7 @@ calculations
 calculators
 caleb
 calendar-like
-calendar/agenda
+calendar agenda
 calendaring
 calendars
 calendrical
@@ -2300,7 +2300,7 @@ call-graphs
 call-processing
 call-stack
 call-with-current-continuation
-call/cc
+call cc
 callables
 callablestatement
 callback-based
@@ -2310,13 +2310,13 @@ callee
 caller
 caller's
 caller-provided
-caller/callee
+caller callee
 callers
 calling
-calling/filtering/summarising
+calling filtering summarising
 callmanager
 calls
-calls/loads/imports
+calls loads imports
 calltips
 calmmjs
 cals
@@ -2330,7 +2330,7 @@ camd
 came
 camelot
 camenisch
-camera/s
+camera s
 cameradevice
 cameras
 camerax
@@ -2342,13 +2342,13 @@ campus
 cams
 can't
 can-utils
-can/should
+can should
 canada
 canadian
 canary
 canarymod
 cancel
-cancel/abort
+cancel abort
 cancelable
 canceled
 canceling
@@ -2472,7 +2472,7 @@ category-based
 catenate
 catfs
 cats
-cats/scalaz
+cats scalaz
 catto
 cauchy
 caught
@@ -2492,7 +2492,7 @@ cblock
 cbm
 cbow
 cbpf
-cbpf/ebpf
+cbpf ebpf
 cbz
 ccda
 ccfinder
@@ -2505,7 +2505,7 @@ ccsedit
 cctexturenode
 cctv
 cd-roms
-cd/dvd
+cd dvd
 cdat
 cdaudiomanager
 cddl
@@ -2517,7 +2517,7 @@ cdmaone
 cdns
 cdo
 cdrom
-ce/windows
+ce windows
 cea
 cease
 ceased
@@ -2536,13 +2536,13 @@ cell-wise
 cellular
 cellview
 celp
-cen/ts
-cen/xfs
+cen ts
+cen xfs
 cenc
 censor
 censored
 center's
-center/team
+center team
 centered
 centerpiece
 centers
@@ -2602,7 +2602,7 @@ chains
 chainsaw
 chair
 challenge
-challenge/answer
+challenge answer
 challenged
 challenges
 challenging
@@ -2646,9 +2646,9 @@ charms
 charniak
 chart-building
 chart-drawing
-chart/gauge/map
+chart gauge map
 charter
-charts/dashboards
+charts dashboards
 chatbots
 chatrooms
 chats
@@ -2671,7 +2671,7 @@ checked-out
 checker
 checkers
 checking
-checkpoint/restart
+checkpoint restart
 checkpoints
 checks
 checksums
@@ -2685,9 +2685,9 @@ cheques
 chessboard
 chevron
 chewy
-chibios/hal
-chibios/nil
-chibios/rt
+chibios hal
+chibios nil
+chibios rt
 chicago
 chicago-based
 chiefly
@@ -2729,7 +2729,7 @@ chromatographic
 chrome's
 chrome-only
 chrome-specific
-chrome/chromium
+chrome chromium
 chromeoptions
 chromium-based
 chromosome
@@ -2742,14 +2742,14 @@ chunk
 church's
 church-turing
 ci+
-ci/cd
+ci cd
 ciao
 cicolor
 cicontext
 cics®
 cid
 cifeature
-cifs/smb
+cifs smb
 cih
 cim-xml
 cinchoo
@@ -2795,11 +2795,11 @@ claiming
 claimsidentity
 claimsprincipal
 clang-style
-clang/llvm
+clang llvm
 clara
 clarification
 clarifications
-clarifications/explanation
+clarifications explanation
 clarify
 clarius
 clark
@@ -2809,12 +2809,12 @@ class-based
 class-head-name
 class-per-class
 class-responsibility-collaboration
-class/interface/method
-class/subclass
-class/widget
+class interface method
+class subclass
+class widget
 classdef
-classes/categories
-classes/records
+classes categories
+classes records
 classful
 classic
 classical
@@ -2832,7 +2832,7 @@ clauses
 clean
 clean-room
 clean-slate
-clean/remove
+clean remove
 cleaned
 cleaner
 cleanest
@@ -2864,17 +2864,17 @@ client-facing
 client-service
 client-transparent
 client-valued
-client/ide
-client/library
-client/server
+client ide
+client library
+client server
 clientless
-clients/apps
+clients apps
 clientside
 clifford
 climate
 climbing
 clinical
-clinical/medical
+clinical medical
 clinics
 clio
 clipboards
@@ -2889,8 +2889,8 @@ clock-style
 clojure's
 clojure-based
 clojure-json
-clojure/clojurescript
-clojure/lein
+clojure clojurescript
+clojure lein
 clojurescript's
 cloned
 clones
@@ -2945,17 +2945,17 @@ cluster-aware
 clusterable
 clustered
 clusterers
-clusters/clouds
+clusters clouds
 clustes
 cma
 cmake's
 cmangos
 cmds
 cmf
-cmf/cms
+cmf cms
 cmobilecom
 cmodel
-cmp/bmp
+cmp bmp
 cms-based
 cmss
 cmu
@@ -2972,11 +2972,11 @@ co-ordinate
 co-present
 co-process
 co-processor
-co-processor/accelerator
+co-processor accelerator
 co-routines
 co-simulation
 coach
-coap/dtls
+coap dtls
 coarray
 coarrays
 coarse
@@ -2988,13 +2988,13 @@ cockburn
 cockpits
 cockroach
 cocktail
-coco/r
+coco r
 cocoa's
 cocoa-based
-cocoa-touch/cocoa
-cocoa/appkit
-cocoa/cocoa
-cocoa/objective-c
+cocoa-touch cocoa
+cocoa appkit
+cocoa cocoa
+cocoa objective-c
 cocoalibspotify
 cocoaspdy
 cocoatouch
@@ -3016,13 +3016,13 @@ code-over-configuration
 code-paths
 code-points
 code-related
-code/applications/etc
-code/data
-code/documents
-code/framework
-code/header
-code/message
-code/schema
+code applications etc
+code data
+code documents
+code framework
+code header
+code message
+code schema
 codebases
 codebehind
 codebench
@@ -3057,7 +3057,7 @@ codifies
 codify
 codine
 coding
-coding/testing
+coding testing
 codings
 coefficient
 coerces
@@ -3090,7 +3090,7 @@ colaboratory
 colamd
 cold
 coldfusion's
-coldfusion/cfml
+coldfusion cfml
 coldfusion®
 coleman
 colinearity
@@ -3102,7 +3102,7 @@ collaboratively
 collaborator
 collaborators
 collapse-able
-collapse/hide
+collapse hide
 collapsed
 collapsible
 collapsing
@@ -3112,7 +3112,7 @@ collected
 collecting
 collection+json
 collection-like
-collection/container
+collection container
 collective
 collectively
 collector
@@ -3142,7 +3142,7 @@ colormaps
 colorpicker
 colorscheme
 colorspace
-colorspace/pixelformat
+colorspace pixelformat
 colorsync
 colossal
 coloured
@@ -3154,7 +3154,7 @@ column-store
 columnar
 columns
 com-based
-com/com+
+com com+
 combat
 combinable
 combinator
@@ -3199,7 +3199,7 @@ commented
 commenter
 commercial
 commercial-grade
-commercial/education
+commercial education
 commercially
 commercially-supported
 commercially-viable
@@ -3216,7 +3216,7 @@ committing
 commodities
 common
 commonalities
-commonjs/node
+commonjs node
 commonly
 commonly-defined
 commonly-used
@@ -3264,7 +3264,7 @@ comparing
 comparision
 comparison-based
 comparisons
-comparisons/comparators
+comparisons comparators
 compass-rose
 compasses
 compat
@@ -3282,20 +3282,20 @@ competitive
 competitor
 compiere
 compilations
-compile/transpile
+compile transpile
 compiled-in
 compiledquery
 compiler's
 compiler-provided
 compiler-rt
-compiler/interpreter
-compiler/linker
-compiler/processor
-compilers/languages
+compiler interpreter
+compiler linker
+compiler processor
+compilers languages
 compiles
 compiletime
-compiling/building
-compiling/testing/running/documenting
+compiling building
+compiling testing running documenting
 complaint
 complaints
 complementary
@@ -3314,7 +3314,7 @@ complex
 complex-number
 complex-plane
 complexities
-complexity/overhead
+complexity overhead
 complexly
 compliance
 compliancy
@@ -3329,13 +3329,13 @@ component's
 component-focused
 component-like
 component-service
-component/widget
+component widget
 componentization
 componentized
 componentjs
 componentowl
 componentry
-components/pages
+components pages
 composability
 compose
 composed
@@ -3354,7 +3354,7 @@ comprehensions
 comprehensive
 compresses
 compressing
-compression/quality
+compression quality
 compressions
 compressor
 comprise
@@ -3384,7 +3384,7 @@ computer-generated
 computer-jargon
 computer-to-computer
 computer-wise
-computer/smart
+computer smart
 computerized
 computers
 computers-on-module
@@ -3404,7 +3404,7 @@ concentrate
 concentrated
 concentration
 concepts
-conceptual/storage
+conceptual storage
 conceptualized
 conceptualizing
 conceptually
@@ -3423,7 +3423,7 @@ conclusions
 concreteness
 concretions
 concur
-concurrent/parallel
+concurrent parallel
 concurrentmap
 condensed
 condenser
@@ -3457,8 +3457,8 @@ configurate
 configuration-based
 configuration-centric
 configuration-free
-configuration/orchestration
-configuration/style
+configuration orchestration
+configuration style
 configurations
 configurator
 configured
@@ -3497,20 +3497,20 @@ conjunctive
 conll-u
 conll-x
 connect-based
-connect/express
-connect/publish/subscribe
+connect express
+connect publish subscribe
 connectable
 connected
 connected-component
 connecting
 connection-based
 connection-oriented
-connection/session
+connection session
 connectionist
 connective
-connector/net
-connector/odbc
-connector/python
+connector net
+connector odbc
+connector python
 connectors
 connects
 connote
@@ -3545,7 +3545,7 @@ consists
 console's
 console-based
 console-mode
-console/irb
+console irb
 consoles
 consolidate
 consolidated
@@ -3585,7 +3585,7 @@ consulting
 consumable
 consumables
 consume
-consume/produce
+consume produce
 consumed
 consumers
 consumes
@@ -3629,7 +3629,7 @@ context
 context-dependent
 context-free
 context-sensitive
-context/specification
+context specification
 contexts
 contextual
 contextualized
@@ -3666,7 +3666,7 @@ contributors
 contrigger
 control's
 control-of-flow
-control/widget
+control widget
 controlbar
 controler
 controllability
@@ -3674,12 +3674,12 @@ controllable
 controlled
 controller's
 controller-style
-controller/actions
-controller/agent
+controller actions
+controller agent
 conveluted
 convenience
 convenient
-convenient/efficient
+convenient efficient
 conveniently
 conveniently-sized
 convention-based
@@ -3692,7 +3692,7 @@ conversation-applications
 conversational
 conversely
 conversion
-conversion/validation
+conversion validation
 convert
 convertback
 converted
@@ -3745,11 +3745,11 @@ coproducts
 copy-and-paste
 copy-assignable
 copy-pasting
-copy/move
-copy/paste
+copy move
+copy paste
 copyable
-copying/cutting/pasting
-copying/moving
+copying cutting pasting
+copying moving
 copyleaks
 copyleft
 copyright
@@ -3761,7 +3761,7 @@ corba-compliant
 cordapps
 cordova-based
 cordova-plugin-googlemaps
-cordova/phonegap
+cordova phonegap
 cordovaactivity
 cordy
 cordys
@@ -3828,7 +3828,7 @@ cost-based
 cost-effective
 cost-effectively
 cost-effectiveness
-cost/long
+cost long
 costates
 costly
 costs
@@ -3855,14 +3855,14 @@ countersense
 countersoft
 counting-out
 countless
-country-state/province-city
+country-state province-city
 counts
 countunique
 couple
 coupled
 couples
 coupons
-coupons/offers
+coupons offers
 course
 coursera
 courses
@@ -3879,7 +3879,7 @@ coverflows
 covering
 covers
 cp-sat
-cp/m
+cp m
 cpaas
 cpanel's
 cpcl
@@ -3894,11 +3894,11 @@ cpu's
 cpu-based
 cpu-bound
 cpu-powers
-cpu/disk/web
+cpu disk web
 cpus
 cpython's
 cq
-cqrs/ddd
+cqrs ddd
 cqs
 cquery
 cr
@@ -3918,24 +3918,24 @@ crates
 craueformflowbundle
 craving
 crawlers
-crawling/spidering
+crawling spidering
 crazy
 creaky
 cream
 creatable
 create
-create/configure/manage
-create/read/update
-create/read/update/delete
-create/update/delete
-create/write
+create configure manage
+create read update
+create read update delete
+create update delete
+create write
 created
 createpipe
 creates
 creating
-creating/modifying/optimizing/etc
-creation/modification
-creation/purchasing
+creating modifying optimizing etc
+creation modification
+creation purchasing
 creational
 creations
 creative
@@ -3947,7 +3947,7 @@ creators
 credibility
 credible
 credit
-credit/debit
+credit debit
 creek
 creek's
 crest
@@ -3976,7 +3976,7 @@ cropping
 crops
 cross
 cross-browser-compatible
-cross-browser/cross-device
+cross-browser cross-device
 cross-browsers
 cross-channel
 cross-check
@@ -3992,7 +3992,7 @@ cross-functional
 cross-industry
 cross-joins
 cross-package
-cross-platform/cross-technology
+cross-platform cross-technology
 cross-platfrom
 cross-promotion
 cross-referencing
@@ -4054,14 +4054,14 @@ css-animation
 css-based
 css-centric
 css-like
-css/javascript
-css/js
+css javascript
+css js
 cssresources
 cssstyledeclaration
 cstdiofile
-csv/json
-csv/tsv/text
-csv/xml
+csv json
+csv tsv text
+csv xml
 ct
 ctags-compatible
 ctags-generated
@@ -4073,7 +4073,7 @@ ctr
 ctrl+e
 ctrl+q
 ctypes-based
-ctypes/python
+ctypes python
 ctypto
 cube's
 cubesat
@@ -4129,11 +4129,11 @@ custom-functions
 custom-made
 custom-named
 custom-styled
-custom/alternative
+custom alternative
 customary
 customcontrols
 customer's
-customer/product
+customer product
 customerid
 customername
 customerrors
@@ -4158,7 +4158,7 @@ cw
 cwac
 cwi
 cwmp
-cwop/aprs
+cwop aprs
 cx
 cxsparse
 cyan
@@ -4181,7 +4181,7 @@ d's
 d-bus
 d-stream
 d-sub
-d/g
+d g
 daas
 dabblet
 dacfx
@@ -4198,7 +4198,7 @@ daily
 dailymotion
 daisy
 dallas
-dalvik/art
+dalvik art
 damaged
 damaging
 daml-time
@@ -4209,7 +4209,7 @@ dangerous
 dangling
 daniel
 dante's
-dao/repository
+dao repository
 dapperlite
 dapps
 daq
@@ -4254,15 +4254,15 @@ data-tier-application
 data-type
 data-types
 data-visualizations
-data/contents
-data/document
-data/event
-data/file
-data/information
-data/logs
-data/object
-data/results
-data/schema
+data contents
+data document
+data event
+data file
+data information
+data logs
+data object
+data results
+data schema
 dataaccess
 database's
 database-as-a-service
@@ -4276,11 +4276,11 @@ database-like
 database-related
 database-specific
 database-to-object
-database/form
-database/seeds
-database/spreadsheet
-database/sql
-databases/datastores
+database form
+database seeds
+database spreadsheet
+database sql
+databases datastores
 databaseseeder
 databasespy
 databasing
@@ -4299,7 +4299,7 @@ datagrids
 datagridviewcell
 datalayer
 datalife
-datalines/cards
+datalines cards
 datalink
 datalogics
 datamarts
@@ -4325,11 +4325,11 @@ dataviz
 date-diff
 date-only
 date-time
-date/number
-date/string
-date/time
-date/time-based
-date/uuid/set/symbol
+date number
+date string
+date time
+date time-based
+date uuid set symbol
 dateentry
 dateformat
 datestamps
@@ -4354,21 +4354,21 @@ dbase's
 dbc
 dbcharmer
 dbi-compliant
-dbi/dbd
+dbi dbd
 dbl
 dbms's
 dbmss
 dbs
 dbschema
 dbvis
-dc/os
+dc os
 dcas
-dce/rpc
+dce rpc
 dcfror
 dcgans
 dcgs
 dcm
-dcm/dfa
+dcm dfa
 dconf
 dcr
 ddm
@@ -4384,7 +4384,7 @@ de-identifies
 de-mosaicing
 de-referencing
 de-serializing
-de/serialization
+de serialization
 dea
 deactivated
 dead
@@ -4412,7 +4412,7 @@ debian's
 debian-lenny
 debian-specific
 debian-wheezy-based
-debian/ubuntu
+debian ubuntu
 debit
 debt
 debugbar
@@ -4431,7 +4431,7 @@ decide
 decided
 decides
 deciding
-decimal/thousands
+decimal thousands
 decipher
 decipherable
 decision
@@ -4441,7 +4441,7 @@ decisions
 decks
 declaratively
 declared
-declared/required
+declared required
 declares
 declaring
 decline
@@ -4450,7 +4450,7 @@ decoded
 decoders
 decodes
 decodify
-decoding/encoding
+decoding encoding
 decompilation
 decompile
 decompilers
@@ -4466,7 +4466,7 @@ decorates
 decorations
 decoratively
 decorator-based
-decorators/view-models
+decorators view-models
 decoupled
 decouples
 decrease
@@ -4567,11 +4567,11 @@ delivers
 delivery
 dell
 delphi-based
-delphi/c++
-delphi/c++builder
-delphi/freepascal
-delphi/kylix/free
-delphi/windows
+delphi c++
+delphi c++builder
+delphi freepascal
+delphi kylix free
+delphi windows
 deltas
 deluxe
 delving
@@ -4647,10 +4647,10 @@ depicts
 deployable
 deployed
 deployer
-deploying/managing
+deploying managing
 deployment's
-deployment/maintenance
-deployment/orchestration
+deployment maintenance
+deployment orchestration
 deployments
 deploys
 deprecate
@@ -4659,7 +4659,7 @@ depreciated
 depressed
 depressing
 depth-first
-depth/rgb/ir/scene
+depth rgb ir scene
 dereferencing
 derivates
 derivation
@@ -4689,8 +4689,8 @@ design-agnostic
 design-and-print
 design-documentation
 design-driven
-design/engineering
-design/testbench
+design engineering
+design testbench
 designate
 designated
 designates
@@ -4715,10 +4715,10 @@ desktop-like
 desktop-odbc
 desktop-resident
 desktop-style
-desktop/laptop
-desktop/server
-desktop/standalone
-desktop/uwp
+desktop laptop
+desktop server
+desktop standalone
+desktop uwp
 desktops
 despeckle
 despite
@@ -4736,10 +4736,10 @@ detaching
 detailed
 detailing
 details
-details/lists
+details lists
 detected
 detecting
-detection/prevention
+detection prevention
 detections
 detector
 detectors
@@ -4756,8 +4756,8 @@ deutschland
 dev
 dev's
 dev-certs
-dev/null
-dev/test
+dev null
+dev test
 devapi
 devdept
 develop
@@ -4770,16 +4770,16 @@ developer-friendly
 developer-related
 developer-specific
 developer-written
-developer/owner
-developer/sysadmin-friendly
+developer owner
+developer sysadmin-friendly
 developers
 developing
 development
 development-oriented
-development/editing
-development/extension
-development/forge
-development/prototyping
+development editing
+development extension
+development forge
+development prototyping
 developments
 developped
 developpement
@@ -4795,7 +4795,7 @@ device-independent
 device-specific
 device-to-device
 device-to-enterprise
-device/orientation
+device orientation
 devicepolicymanager
 devices
 devise's
@@ -4805,7 +4805,7 @@ devoid
 devopsservices
 devoted
 devtest
-dex/odex
+dex odex
 dexing
 dey
 dfas
@@ -4830,7 +4830,7 @@ diagonals
 diagramic
 diagrammatic
 dial
-dialects/implementations
+dialects implementations
 dialed
 dialer
 dialogfragments
@@ -4850,13 +4850,13 @@ didn't
 died
 diesel
 dietrich
-diff/merge
+diff merge
 differ
 differences
 different
 differentiable
 differential
-differential/algebraic
+differential algebraic
 differentiate
 differentiated
 differentiates
@@ -5046,7 +5046,7 @@ distances
 distant
 distibution
 distil
-distinct/unique
+distinct unique
 distinction
 distinctly
 distinguish
@@ -5096,7 +5096,7 @@ django-powered
 django-rest-framework-mongoengine
 django-sentry
 django-social-auth
-django/python
+django python
 dji
 dji's
 dkpro
@@ -5104,7 +5104,7 @@ dl
 dlc
 dle
 dll's
-dlna/upnp
+dlna upnp
 dlr
 dlr's
 dmcc
@@ -5116,8 +5116,8 @@ dmvs
 dmx
 dmx-with-hadoop
 dna
-dna/rna
-dnn/dotnetnuke
+dna rna
+dnn dotnetnuke
 dns-based
 dnt
 do
@@ -5140,11 +5140,11 @@ document-driven
 document-node
 document-object
 document-term
-document/image
-document/web-page
+document image
+document web-page
 documentary
 documentation-comment
-documentation/profiling
+documentation profiling
 documentations
 documentator
 documentclass
@@ -5160,8 +5160,8 @@ dogecoin
 doing
 dojo's
 dojo-based
-dojo/dnd
-dojo/request/xhr
+dojo dnd
+dojo request xhr
 dolby-supported
 dolby®
 doll
@@ -5217,7 +5217,7 @@ double-clicks
 double-ended
 double-quote
 double-tap
-double/triple-clicks
+double triple-clicks
 doubleclick
 doubles
 doubly
@@ -5229,7 +5229,7 @@ douglas
 dovetailers
 down
 down-sampling
-down/up
+down up
 downgraded
 downloadable
 downloaded
@@ -5287,8 +5287,8 @@ driveapp
 driven
 driver's
 driver-based
-driver/interface
-driver/library
+driver interface
+driver library
 driverless
 driving
 droid
@@ -5296,7 +5296,7 @@ droidtext
 drombler
 dromereschi
 drones
-drop-down/pop-up
+drop-down pop-up
 drop-downs
 drop-in
 dropdowns
@@ -5336,7 +5336,7 @@ duedil's
 duff
 dumbest
 dummy
-dump/reload
+dump reload
 dumper
 dumping
 dumps
@@ -5344,9 +5344,9 @@ dungeon
 dunn's
 duo
 duplicated
-duplicated/cloned
+duplicated cloned
 duplicating
-duplication/redundancy
+duplication redundancy
 durable
 durably
 durandal's
@@ -5376,7 +5376,7 @@ dxp
 dxtn
 dynamic-link
 dynamic-range
-dynamic/static
+dynamic static
 dynamical
 dynamically
 dynamically-allocated
@@ -5403,14 +5403,14 @@ e-component
 e-learning
 e-mail
 e-mails
-e-money/e-wallet
+e-money e-wallet
 e-paper
 e-portfolio
-e-reader/tablet
+e-reader tablet
 e-security
 e-service
 eae
-eager/nested-eager
+eager nested-eager
 eak
 eam
 ean
@@ -5438,7 +5438,7 @@ easiest
 easily
 easily-managed
 east
-east/west
+east west
 easter
 eastern
 easy
@@ -5460,7 +5460,7 @@ eaves
 eavesdropping
 eax
 eb
-eb-suite/ebs
+eb-suite ebs
 ebay
 ebay's
 ebnf-alike
@@ -5522,8 +5522,8 @@ editions
 editor's
 editor-integrated
 editor-specific
-editor/console
-editor/debugger
+editor console
+editor debugger
 editorial
 editors
 edits
@@ -5634,8 +5634,8 @@ element's
 element-by-element
 element-wise
 elemental
-elements/interfaces
-elements/tags
+elements interfaces
+elements tags
 eleminate
 elephant-bird
 elevate
@@ -5680,7 +5680,7 @@ embarcadero's
 embarcadero®
 embarrassing
 embarrassingly
-embeddable/extendable
+embeddable extendable
 embedded-processor
 embeddings
 embeds
@@ -5705,7 +5705,7 @@ emergency
 emergent
 emerging
 emission
-emission/broadcast
+emission broadcast
 emits
 emitted
 emitters
@@ -5739,15 +5739,15 @@ emt
 emulated
 emulates
 emulating
-emulator/device
+emulator device
 emulators
 emwframework
 en
 en-uk
 en-us
 enable
-enable/configure
-enable/disable
+enable configure
+enable disable
 enabled
 enablement
 enabler
@@ -5765,16 +5765,16 @@ encloses
 enclosing
 enclosure
 encoded
-encoder/decoder
+encoder decoder
 encoders
 encodes
-encoding/decoding
-encoding/escaping
-encoding/json
+encoding decoding
+encoding escaping
+encoding json
 encompass
 encompasses
 encompassing
-encore/laravel-admin
+encore laravel-admin
 encounter
 encountered
 encountering
@@ -5783,15 +5783,15 @@ encourage
 encouraged
 encourages
 encouraging
-encrypt/decrypt
+encrypt decrypt
 encrypting
-encryption/decryption
+encryption decryption
 encrypts
 encyclopedia
 end
 end-point
 end-points
-end-to-end/gui
+end-to-end gui
 end-user-friendly
 end-users
 endeavour
@@ -5825,8 +5825,8 @@ engaging
 engine
 engine's
 engine-specific
-engine/database
-engine/framework
+engine database
+engine framework
 engineer
 engineer-to-order
 engineered
@@ -5876,7 +5876,7 @@ ensuring
 entailment
 entails
 entanglement
-enter/return
+enter return
 entered
 enterframe
 entering
@@ -5921,8 +5921,8 @@ enummap
 envers
 envirnoment
 enviroment
-environment/language/scenario
-environment/language/use
+environment language scenario
+environment language use
 environmental
 envision
 envoyer
@@ -5981,8 +5981,8 @@ erik
 erin
 erlang's
 erlang-like
-erlang/elixir
-erlang/otp
+erlang elixir
+erlang otp
 erm
 eroded
 err
@@ -5992,15 +5992,15 @@ error-correcting
 error-detecting
 error-free
 error-prone
-error/crash
-error/loss
+error crash
+error loss
 es
 es-aware
 esa
 esales
 esame
-esb/servicemix
-esc/p
+esb servicemix
+esc p
 escalated
 escapes
 eschewing
@@ -6042,11 +6042,11 @@ estimator
 estimators
 et
 etc
-etc/fstab
-etc/issue
-etc/profile
-etc/shadow
-etc/sudoers
+etc fstab
+etc issue
+etc profile
+etc shadow
+etc sudoers
 etcetera
 ete
 eternicode
@@ -6054,7 +6054,7 @@ etfs
 eth
 ethernet-based
 etherpeek
-etl/elt
+etl elt
 etls
 etm
 etoken
@@ -6073,7 +6073,7 @@ eulerian
 europa
 europay
 europe
-europe/paris
+europe paris
 european
 europeana
 eurozone
@@ -6093,8 +6093,8 @@ event-enabling
 event-processing
 event-related
 event-streaming
-event/data
-event/notification
+event data
+event notification
 eventbridge
 eventbus
 eventdispatcher
@@ -6103,7 +6103,7 @@ eventhubs
 eventing
 eventloop
 eventmachine-based
-events/factors
+events factors
 eventstore
 eventsub
 eventual
@@ -6187,10 +6187,10 @@ exclusive
 exclusive-or
 exclusively
 exdoc
-exec/eval/etc
+exec eval etc
 execlineb
 executables
-execute/run
+execute run
 executed
 executes
 executing
@@ -6219,8 +6219,8 @@ exm
 exogenous
 exoskeleton
 exotic
-expand/collapse
-expand/reveal
+expand collapse
+expand reveal
 expandability
 expanded
 expanding
@@ -6273,14 +6273,14 @@ exploits
 exploration
 explorative
 explore
-explore/test
+explore test
 explored
 explorer's
-explorer/database
+explorer database
 explorers
 explores
 exploring
-export/printing
+export printing
 exportation
 exported
 exporters
@@ -6311,15 +6311,15 @@ extendable
 extended
 extendeds
 extendible
-extending/customizing
-extensibility/pluggability
+extending customizing
+extensibility pluggability
 extension
 extension's
-extension/add-on
-extensions/features
-extensions/plugins
-extensions/reusable
-extensions/updates
+extension add-on
+extensions features
+extensions plugins
+extensions reusable
+extensions updates
 extensive
 extensively
 extenstion
@@ -6334,7 +6334,7 @@ extlib
 extract-min
 extract-transform-load
 extracted
-extracted/unpacked
+extracted unpacked
 extracting
 extracts
 extremal
@@ -6417,7 +6417,7 @@ falling
 falls
 false
 false-color
-false/forbidden
+false forbidden
 falsify
 famd
 fame
@@ -6426,7 +6426,7 @@ familiarity
 families
 family
 famous
-famous/popular
+famous popular
 famously
 fan
 fancy
@@ -6482,7 +6482,7 @@ feature-complete
 feature-rich
 featureful
 features
-features/plugins
+features plugins
 featuring
 feb
 february
@@ -6513,7 +6513,7 @@ feo
 fes
 fetch-ponyfill
 fetched
-fetcher/resolver
+fetcher resolver
 fetches
 fetching
 fetures
@@ -6538,7 +6538,7 @@ field-sets
 field-tagged
 fieldbus
 fieldbus-independent
-fields/properties
+fields properties
 fieldsets
 fifteen
 fifteenth
@@ -6563,10 +6563,10 @@ file-selection
 file-size
 file-synchronization
 file-system
-file/directory
-file/folder
-file/memory
-file/widow
+file directory
+file folder
+file memory
+file widow
 filedescriptor
 filedrop
 fileexists
@@ -6576,8 +6576,8 @@ fileman
 filemanager
 fileno
 filer
-files/directories
-files/folders
+files directories
+files folders
 filesaver
 filesharing
 filesite
@@ -6599,7 +6599,7 @@ films
 filter-based
 filter-map-reduce
 filter-mapping
-filter/modify
+filter modify
 filterable
 filtration
 fim
@@ -6640,7 +6640,7 @@ fire
 fireball
 firebase-collection
 firebase-document
-firebird/interbase/yaffil
+firebird interbase yaffil
 firebug's
 firebug-like
 fired
@@ -6648,7 +6648,7 @@ fireflies
 firefly
 firefox's
 firefox-based
-firefox/chrome
+firefox chrome
 firefoxdriver
 firefoxoptions
 firefoxos
@@ -6656,7 +6656,7 @@ firequery
 fires
 firestone
 firetv
-firewall/router
+firewall router
 firewalled
 firewalls
 firing
@@ -6707,8 +6707,8 @@ flagging
 flagship
 flappy
 flash-based
-flash/actionscript
-flash/flex
+flash actionscript
+flash flex
 flashblock
 flashbuilder
 flashcard
@@ -6734,15 +6734,15 @@ fledged
 fledgling
 fleets
 flesch
-flesch/flesch
+flesch flesch
 fleshed-out
 flesler
 flex-layout
 flex-like
-flex/actionscript
-flex/flash
-flex/html
-flex/javafx/java
+flex actionscript
+flex flash
+flex html
+flex javafx java
 flexability
 flexbox-based
 flexera
@@ -6764,7 +6764,7 @@ flipping
 flips
 flipster
 float
-float/double
+float double
 floated
 floating-point-based
 flocks
@@ -6776,7 +6776,7 @@ flotype
 flourish
 flow's
 flow-based
-flow/e-commerce
+flow e-commerce
 flowchart-based
 flowcharts
 flowgraphs
@@ -6840,7 +6840,7 @@ footers
 footprints
 for-like
 for-profit
-for/on
+for on
 forbid
 forbidden
 force
@@ -6882,7 +6882,7 @@ formalizing
 formally
 formally-backed
 format-independent
-formats/rules
+formats rules
 formatters
 formbuilders
 formcontrol
@@ -6913,9 +6913,9 @@ forward-only
 forwarded
 forwarder
 forwards
-forwards/backwards
+forwards backwards
 fos
-fos/userbundle
+fos userbundle
 foss
 fossa
 foster
@@ -6963,8 +6963,8 @@ framework's
 framework-agnostic
 framework-based
 framework-framework
-framework/toolkit
-frameworks/service/api
+framework toolkit
+frameworks service api
 framwework
 framwork
 france
@@ -6980,10 +6980,10 @@ free-text
 free-to-play
 free-to-use
 free-use
-free/libre
-free/open
-free/open-source
-free/oss
+free libre
+free open
+free open-source
+free oss
 freebase's
 freebsd-based
 freebusy
@@ -7015,7 +7015,7 @@ friedman
 friedrich
 friend's
 friend-of-a-friend
-friend/contact
+friend contact
 friendlier
 friendly
 friendlyid
@@ -7028,7 +7028,7 @@ fritz
 frogatto
 from
 from-scratch
-from/to
+from to
 fromits
 front
 front-end
@@ -7056,9 +7056,9 @@ fson
 fsts
 fte
 ftp-specific
-ftp/sftp
-ftp/sftp/ftps
-ftp/tls
+ftp sftp
+ftp sftp ftps
+ftp tls
 ftxxxx
 fubra
 fuelphp's
@@ -7099,10 +7099,10 @@ function's
 function-as-a-service
 function-based
 function-prototype
-function/extension
-function/method
-function/statistic
-function/trigger
+function extension
+function method
+function statistic
+function trigger
 functional-reactive
 functional-style
 functionalities
@@ -7110,10 +7110,10 @@ functionality
 functionally
 functioning
 functions-based
-functions/formulas
-functions/mappings/commands
-functions/methods
-functions/procedures/methods
+functions formulas
+functions mappings commands
+functions methods
+functions procedures methods
 functor-applicative-monad
 functorial
 fund
@@ -7166,7 +7166,7 @@ galera-based
 galleries
 galloway
 galois
-galois/counter
+galois counter
 galore
 gambit-c
 game
@@ -7176,7 +7176,7 @@ game-making
 game-playing
 game-related
 game-server
-game/application
+game application
 gamecenter
 gamecircle
 gamecube
@@ -7209,11 +7209,11 @@ gated
 gated-check-in
 gatekeeper
 gates
-gateway/firewall
+gateway firewall
 gathered
 gatherer
 gathering
-gathering/collecting/grouping
+gathering collecting grouping
 gathers
 gating
 gauges
@@ -7225,12 +7225,12 @@ gazebo
 gazman
 gazman's
 gb
-gb/t
+gb t
 gc-tools
 gcc's
 gcc-based
 gcc-specific
-gcc/g++
+gcc g++
 gcide
 gcov-style
 gcp's
@@ -7239,7 +7239,7 @@ gcw
 gdb's
 gdb-like
 gdi-based
-gdi/gdi+
+gdi gdi+
 gdpr
 ge
 ge's
@@ -7247,10 +7247,10 @@ gear
 geared
 gearvr
 gecko's
-gem/plugin
+gem plugin
 gemfirexd
 gemspec
-gemstone/s
+gemstone s
 gen
 gender
 gene
@@ -7263,7 +7263,7 @@ generalisation
 generalise
 generalises
 generality
-generalization/specialization
+generalization specialization
 generalizations
 generalized
 generalizednewtypederiving
@@ -7272,20 +7272,20 @@ generalizing
 generally
 generaly
 generate-sources
-generate/send
+generate send
 generated-anything
 generateds
 generates
 generating
 generation
-generation/presentation
+generation presentation
 generational
 generations
-generator/parser
+generator parser
 generically
 genes
 genesys's
-genetic/evolutionary
+genetic evolutionary
 geneva
 genius
 genome-scale
@@ -7340,12 +7340,12 @@ german
 germany
 gesture-based
 gesture-recognizer
-get'/'post
+get' 'post
 get-descendant
 get-packageprovider
 get-togethers
 get-windowposition
-get/post/cookie
+get post cookie
 getcontents
 getcontet
 getelement
@@ -7365,7 +7365,7 @@ gibbs
 gid
 gidhub
 gif-style
-gif/webp
+gif webp
 gifs
 gifti
 gigabit
@@ -7389,14 +7389,14 @@ git-submodule
 gitflow
 github's
 github-hosted
-github/git
+github git
 githubflow
 gitk-like
 gitmedia
 gitslave
 gitter
 give
-given/when/then
+given when then
 gives
 giving
 gizmox
@@ -7415,7 +7415,7 @@ gli
 glib-based
 glib-compatible
 glib-free
-glib/gobject/gio/gtk+
+glib gobject gio gtk+
 glide
 glimmer
 glitch
@@ -7457,10 +7457,10 @@ gnomevfs
 gnostice
 gnss
 gnu's
-gnu/linux
-gnu/linux-based
-gnu/linux/unix-based
-gnu/octave
+gnu linux
+gnu linux-based
+gnu linux unix-based
+gnu octave
 gnumake
 gnuwin
 go's
@@ -7511,13 +7511,13 @@ googlers
 googles
 googlesheets-package
 googlestorage
-googletest/googlemock
+googletest googlemock
 googletv
 gopath-based
 gorbatchev
 gore
 gorgeous
-gorilla/mux
+gorilla mux
 gosh
 gost
 gourvest
@@ -7530,19 +7530,19 @@ governments
 governs
 govstat
 gpe
-gpgpu/apu/multi-core
+gpgpu apu multi-core
 gphoto
 gpl'd
 gpl-licensed
-gpl/mit
+gpl mit
 gplex
 gprsbee
 gps-based
 gps-enabled
 gpu-accelerated
 gpu-based
-gpu/parallel-computing
-gpu/tpu
+gpu parallel-computing
+gpu tpu
 gpus
 gputils
 graal
@@ -7593,15 +7593,15 @@ graphemes
 graphene
 graphical
 graphical-user-interface
-graphical/textual
-graphical/visual
+graphical textual
+graphical visual
 graphicall
 graphically
 graphics-based
 graphics-processing
 graphics-related
-graphics/video
-graphing/infographics
+graphics video
+graphing infographics
 graphite's
 graphlib
 graphql-based
@@ -7626,7 +7626,7 @@ great
 great-sounding
 greater
 greatest
-greatest/least
+greatest least
 greatly
 greek
 green
@@ -7650,13 +7650,13 @@ greyc's
 grid-based
 grid-style
 grid-view
-grid/spreadsheet
+grid spreadsheet
 gridded
 gridlayout
 grids
 gridsql
 gridster-like
-gridview/datagrid
+gridview datagrid
 gridworks
 grips
 grizzly's
@@ -7666,7 +7666,7 @@ groovy's
 groovy-android
 groovy-based
 groovy-grails
-groovy/grails
+groovy grails
 groovysql
 ground
 ground-up
@@ -7678,7 +7678,7 @@ grouped
 groupid
 groupings
 groups
-groups/possessive
+groups possessive
 groupware
 grow
 growing
@@ -7690,7 +7690,7 @@ gru
 gruber's
 grumbling
 gsfc
-gsm/gprs
+gsm gprs
 gss-api
 gta
 gtids
@@ -7750,7 +7750,7 @@ gyazo
 gym
 gyro
 gyroscopes
-gzip/gzip
+gzip gzip
 gzipped
 gzipping
 h
@@ -7772,7 +7772,7 @@ had
 hadley
 hadoop's
 hadoop-based
-hadoop/azure
+hadoop azure
 hadoopfilesystem
 hadoop®
 hailstone
@@ -7811,7 +7811,7 @@ handheld-sized
 handhelds
 handing
 handled
-handlers/listeners
+handlers listeners
 handling
 handmade
 handpicking
@@ -7853,7 +7853,7 @@ hardware-independent
 hardware-oriented
 hardware-related
 hardware-supported
-hardware/software
+hardware software
 harel
 harel's
 harm
@@ -7911,19 +7911,19 @@ hc
 hcm
 hcp
 hd
-hdd/ssd
+hdd ssd
 hdk
 hdls
 he
 he-aac
-he/it
-he/she
+he it
+he she
 head-mounted
 head-room
 headaches
 headed
 headends
-headers/footers
+headers footers
 heading's
 heading-related
 headings
@@ -7935,7 +7935,7 @@ headquartered
 heads-up
 headset's
 headsets
-headsets/controllers
+headsets controllers
 headstart
 healing
 healpix
@@ -7947,7 +7947,7 @@ heap's
 heap-allocated
 heap-like
 heap-ordered
-heap/cpu
+heap cpu
 heaps
 hear
 heard
@@ -8030,7 +8030,7 @@ hide-able
 hides
 hideswhenstopped
 hiding
-hiding/protecting
+hiding protecting
 hie
 hierarchical-model-view-controller
 hierarchically
@@ -8062,7 +8062,7 @@ high-risk
 high-scale
 high-speed
 high-throughput
-high/full
+high full
 higher-dimensional
 higher-level
 higher-order
@@ -8094,7 +8094,7 @@ hiragana
 hiring
 hiroshi
 his
-his/her
+his her
 histfactory
 histogram-based
 histograms
@@ -8105,7 +8105,7 @@ historizes
 history-based
 hits
 hitting
-hive/cell
+hive cell
 hiveql-specific
 hix
 hixie
@@ -8121,11 +8121,11 @@ hmfa
 hmi
 hmis
 hmm
-hmm/dnn-based
+hmm dnn-based
 hoare
 hoare's
 hobby
-hobbyist/makers
+hobbyist makers
 hobbyists
 hoberman
 hoc
@@ -8151,7 +8151,7 @@ holographic
 holt
 holt-winters
 home
-home/bin
+home bin
 homebrew-style
 homepage
 homepages
@@ -8193,7 +8193,7 @@ host-based
 host-side
 host-to-device
 hostable
-hosting/cloud
+hosting cloud
 hostnames
 hot
 hot-code
@@ -8226,14 +8226,14 @@ howell
 however
 hp
 hp's
-hp/autonmy
-hp/palm
+hp autonmy
+hp palm
 hpc-grade
 hpc-supercomputing
 hpe
 hpff
 hpl
-hpl/sql
+hpl sql
 hq's
 hr
 hse
@@ -8251,22 +8251,22 @@ html-files
 html-style
 html-tags
 html-templating
-html/css
-html/css/javascript
-html/css/js
-html/javascript
-html/js
-html/rdfa
-html/sgml
-html/svg/mathml
-html/template
-html/xhtml
-html/xhtml/css
-html/xml
+html css
+html css javascript
+html css js
+html javascript
+html js
+html rdfa
+html sgml
+html svg mathml
+html template
+html xhtml
+html xhtml css
+html xml
 htmlagilitypack
 htmlcanvaselement
 htmlhelper
-htmlhelper/actionresult
+htmlhelper actionresult
 htmlloader
 htmlmediaelement
 htmltable
@@ -8333,7 +8333,7 @@ hyperdex's
 hyperdimensional
 hypergraphs
 hyperic's
-hyperledger/fabric-sdk-go
+hyperledger fabric-sdk-go
 hyperlink-style
 hyperlinked
 hyperloglogs
@@ -8349,7 +8349,7 @@ hypertext
 hypertextual
 hyperthreaded
 hypervisor-like
-hypervisor/kernel
+hypervisor kernel
 hypervisors
 hyphenate
 hyphens
@@ -8363,14 +8363,14 @@ i'm
 i-cache
 i-series
 i-test
-i/o
-i/os
-i/p
+i o
+i os
+i p
 ia
 iac
 iactionfilter
 ian
-iana/olson
+iana olson
 iapx
 ibe
 ibeacons
@@ -8378,8 +8378,8 @@ ibm's
 ibm-ilog's
 ibm-pc
 ibm-proprietary
-ibm/bull
-ibm/rational
+ibm bull
+ibm rational
 ibms
 ibm®
 ibook
@@ -8410,8 +8410,8 @@ ide-compatible
 ide-friendly
 ide-like
 ide-related
-ide/environment
-ide/idp
+ide environment
+ide idp
 idea
 ideal
 idealized
@@ -8428,11 +8428,11 @@ identifed
 identified
 identifier's
 identifies
-identify/inspect
+identify inspect
 identifying
 identities
 identity-addressed
-identity/single
+identity single
 identitymap
 identityserver
 ideographic
@@ -8452,14 +8452,14 @@ idses
 idtech
 ie's
 ie-specific
-ie/win-specific
+ie win-specific
 iec
 ieg
 ietf's
 iexternizable
 if-match
 if-statements
-if/else
+if else
 ifa
 iffy
 ifort
@@ -8482,7 +8482,7 @@ ill-posed
 illegal
 illinois
 illum
-illuminate\support\collection
+illuminate support collection
 illumination
 illumos
 illusion
@@ -8501,22 +8501,22 @@ image-guided
 image-matching
 image-plots
 image-set
-image/text
-image/video
+image text
+image video
 imagej-specific
 imagemagick's
 imagemagick®
 imagen
 imagereader
 imagery
-images/audio/video
-images/documents
-images/pixel-data
+images audio video
+images documents
+images pixel-data
 imageviews
 imageworks
 imaginary
 imagine
-imaging/cloning
+imaging cloning
 imakefile
 imbalanced
 imc
@@ -8553,7 +8553,7 @@ implement
 implementating
 implementation-defined
 implementation-specific
-implementation/study
+implementation study
 implemented
 implementend
 implementer
@@ -8569,15 +8569,15 @@ implies
 impls
 imply
 implying
-import/export
+import export
 importance
 important
 importantly
 imported
 importer
 importers
-imports/exports
-imports/includes
+imports exports
+imports includes
 impose
 imposed
 imposes
@@ -8597,8 +8597,8 @@ improves
 improving
 imps
 impulses
-ims/dc
-ims/tm
+ims dc
+ims tm
 in
 in-application
 in-band
@@ -8615,7 +8615,7 @@ in-flight
 in-game
 in-house
 in-line
-in-memory/persistence-storage
+in-memory persistence-storage
 in-model
 in-motion
 in-order
@@ -8632,8 +8632,8 @@ in-text
 in-the-box
 in-vehicle
 in-vitro
-in/by
-in/for
+in by
+in for
 inability
 inaccessible
 inaccurate
@@ -8652,17 +8652,17 @@ incarnation
 incarnations
 inception
 inch
-inch/centimeter
+inch centimeter
 incidence
 incident
 incidentally
 incidents
 incl
-include/exclude
+include exclude
 included
-included/excluded
+included excluded
 including
-including/excluding
+including excluding
 inclusions
 inclusive
 incognito
@@ -8686,15 +8686,15 @@ incorrect
 incorrectly
 incr
 increase
-increase/decrease
-increase/reduce
+increase decrease
+increase reduce
 increased
 increases
 increasing
 increasingly
 incredible
 incredibly
-increment/decrement
+increment decrement
 incremental
 incrementally
 incremented
@@ -8737,7 +8737,7 @@ indicates
 indicating
 indication
 indicators
-indices/properties
+indices properties
 indicies
 indie
 indifferent
@@ -8828,7 +8828,7 @@ infotainment
 infra
 infra-red
 infrastructural
-infrastructure/servers
+infrastructure servers
 infrastructures
 infrequent
 infringing
@@ -8845,9 +8845,9 @@ inhabitants
 inhabited
 inherent
 inherently
-inherit/embed
+inherit embed
 inheritance-based
-inheritance/mix-in
+inheritance mix-in
 inheriting
 inheritor
 inherits
@@ -8877,7 +8877,7 @@ initio
 injected
 injecting
 injection-attack
-injection/ioc
+injection ioc
 injections
 injective
 injector
@@ -8903,8 +8903,8 @@ inplace-editor
 input's
 input-chips
 input-event
-input/output
-input/output/error
+input output
+input output error
 inputfilter
 inputmanager
 inputmask
@@ -8920,7 +8920,7 @@ insect
 insecure
 insensitive
 inseparable
-insert/update/delete
+insert update delete
 inserted
 inserting
 insertions
@@ -8939,15 +8939,15 @@ inspire
 inspired
 instagram's
 install-package
-install/uninstall
+install uninstall
 installable
 installations
 installed
 installer-based
-installer/provider
+installer provider
 installers
-installing/removing
-installing/uninstalling
+installing removing
+installing uninstalling
 installjammer
 installoptions
 installs
@@ -8962,7 +8962,7 @@ instantaneous
 instantiated
 instantiates
 instantiating
-instantiation/injection
+instantiation injection
 instantiations
 instantly
 instead
@@ -8997,8 +8997,8 @@ integral-type
 integrals
 integrates
 integrating
-integration/continuous
-integration/delivery
+integration continuous
+integration delivery
 integrations
 integrators
 intel's
@@ -9006,12 +9006,12 @@ intel-based
 intel-manufactured
 intel-optimizations
 intel-optimized
-intel/microsoft
+intel microsoft
 intelix
 intellectual
 intellectual-property
 intelligence
-intelligence/game
+intelligence game
 intelligent
 intelligently
 intelligible
@@ -9052,7 +9052,7 @@ inter-relationships
 inter-service
 inter-thread
 interact
-interact/communicate
+interact communicate
 interacting
 interactional
 interactiong
@@ -9062,9 +9062,9 @@ interactively
 interactivity
 interactor
 interacts
-interacts/modifies
+interacts modifies
 interbank
-interbase/firebird
+interbase firebird
 interbase®
 intercepted
 intercepting
@@ -9110,7 +9110,7 @@ internally
 international
 internationalisation
 internationalizable
-internationalization/localization
+internationalization localization
 internationalized
 internationally
 internet
@@ -9125,7 +9125,7 @@ internet-related
 internet-scale
 internet-standard
 internet-style
-internet/intranet
+internet intranet
 internetexplorerdriver
 internetexploreroptions
 internetwork
@@ -9145,7 +9145,7 @@ interpolating
 interpolations
 interposes
 interpret
-interpret/execute
+interpret execute
 interpretable
 interpretations
 interpreted
@@ -9167,7 +9167,7 @@ intersects
 interspersed
 interspire
 intertwined
-interwoven/imanage
+interwoven imanage
 intimate
 into
 intra
@@ -9208,7 +9208,7 @@ invention
 inventions
 inventor
 inventors
-inventory/configuration
+inventory configuration
 inverses
 inverted
 invertible
@@ -9241,7 +9241,7 @@ involves
 involving
 io-based
 io-operations
-ioc/di
+ioc di
 ionic's
 iorefs
 ios-based
@@ -9250,14 +9250,14 @@ ios-like
 ios-specific
 ios-style
 ios-styled
-ios/android
-ios/android/ionic/cordova
-ios/android/windows
-ios/android/xamarin
-ios/macos
-ios/mobile
-ios/os
-ios/osx
+ios android
+ios android ionic cordova
+ios android windows
+ios android xamarin
+ios macos
+ios mobile
+ios os
+ios osx
 iot-driver-insights
 iot-map-insights
 ioutilities
@@ -9269,9 +9269,9 @@ ipad's
 ipads
 ipageableitemcontainer
 ipam
-ipc/rpc
-iphone/ipad
-iphone/ipad/ipod
+ipc rpc
+iphone ipad
+iphone ipad ipod
 iphones
 ipkg
 ipods
@@ -9308,8 +9308,8 @@ irritated
 irt
 irtual
 is
-is/are
-isabelle/hol
+is are
+isabelle hol
 isamplegrabber
 ise
 isempty
@@ -9322,9 +9322,9 @@ isn't
 isns
 iso-standard
 iso-standardized
-iso/ansi
-iso/iec
-iso/iec/ieee
+iso ansi
+iso iec
+iso iec ieee
 isochronous
 isolated
 isolates
@@ -9339,7 +9339,7 @@ issue
 issue-tracker
 issued
 issues
-issues/capabilities
+issues capabilities
 issuing
 isv
 isvs
@@ -9350,7 +9350,7 @@ itanium-based
 item
 item-based
 item-response
-item/node
+item node
 itemgroups
 itemsets
 iterables
@@ -9386,7 +9386,7 @@ ix
 j-thing
 ja
 ja-sig's
-jabber/xmpp
+jabber xmpp
 jabberd
 jackknifing
 jackson's
@@ -9410,7 +9410,7 @@ janet's
 jank-free
 jankiness
 january
-january/march
+january march
 japan
 jargon
 jasmid
@@ -9434,18 +9434,18 @@ java-specific
 java-style
 java-technology-based
 java-to-json
-java/android
-java/applet
-java/c/c++/objective-c
-java/dalvik
-java/flex/ajax
-java/java
-java/jdk
-java/obj-c
-java/php
-java/r
-java/scala
-java/swing
+java android
+java applet
+java c c++ objective-c
+java dalvik
+java flex ajax
+java java
+java jdk
+java obj-c
+java php
+java r
+java scala
+java swing
 javabean
 javac's
 javacl
@@ -9466,21 +9466,21 @@ javascript-of-today
 javascript-powered
 javascript-style
 javascript-tag
-javascript/actionscript
-javascript/ajax
-javascript/ajax-based
-javascript/coffeescript
-javascript/css
-javascript/ecmascript
-javascript/flash
-javascript/glsl
-javascript/jquery
-javascript/js
-javascript/json
-javascript/svg/canvas
-javascript/typescript
-javascript/typescript/coffeescript
-javascript/webassembly
+javascript actionscript
+javascript ajax
+javascript ajax-based
+javascript coffeescript
+javascript css
+javascript ecmascript
+javascript flash
+javascript glsl
+javascript jquery
+javascript js
+javascript json
+javascript svg canvas
+javascript typescript
+javascript typescript coffeescript
+javascript webassembly
 javascripting
 javascriptinterface
 javascripts
@@ -9498,8 +9498,8 @@ jay-gap
 jazz®
 jbdc
 jbdc-postgres
-jboss/wildfly
-jca/jdbc
+jboss wildfly
+jca jdbc
 jce-compliant
 jci
 jclouds®
@@ -9531,12 +9531,12 @@ jellyunit
 jelsoft
 jen-too
 jenkins's
-jenkins/hudson
+jenkins hudson
 jenkinsci
 jeps
 jericho
 jessicafx
-jet/ace
+jet ace
 jetbrains-based
 jetentitiyframeworkprovider
 jetform
@@ -9546,7 +9546,7 @@ jetpack's
 jetson
 jetstack
 jewelry
-jfc/swing
+jfc swing
 jffs
 jfree
 ji
@@ -9560,7 +9560,7 @@ jis
 jit-compiled
 jit-compiler
 jitterpaks
-jkwiecien/easyimage
+jkwiecien easyimage
 jmm
 jmp
 jna-based
@@ -9570,10 +9570,10 @@ joachim
 job-a-matic
 job-dsl
 job-firing
-job/program/application
+job program application
 jobdispatcher
 jobobject
-jobs/tasks
+jobs tasks
 jobschedule
 joda-time
 joe
@@ -9584,7 +9584,7 @@ johnsmith-brotherof-janesmith
 johnson
 johnson's
 johnzon
-join/merge
+join merge
 joinable
 joined
 joining
@@ -9617,7 +9617,7 @@ joy
 joyplot
 joyride
 joysticks
-jpa/jdo
+jpa jdo
 jpadal
 jpanels
 jpeg-ls
@@ -9641,16 +9641,16 @@ jquery-style
 jquery-ujs
 jquery-visible
 jquery-weekly-calendar
-jquery/css
-jquery/globalize
-jquery/jquery
-jquery/keditor
-jquery/wordpress
+jquery css
+jquery globalize
+jquery jquery
+jquery keditor
+jquery wordpress
 jqueryui
 jqwidgets
 jr
-jre/jdk
-jrockit/java/jdk
+jre jdk
+jrockit java jdk
 js's
 js-based
 js-ctypes
@@ -9658,15 +9658,15 @@ js-data
 js-framework
 js-interop
 js-library
-js/cc
-js/css
-js/javascript
-js/ns
+js cc
+js css
+js javascript
+js ns
 jsb
 jscroll
 jserv
-jsf/cdi/spring/etc
-jsf/facelets
+jsf cdi spring etc
+jsf facelets
 jsip
 jsom
 json-apis
@@ -9678,18 +9678,18 @@ json-formatted
 json-like
 json-object
 json-xml
-json/xml
+json xml
 jsonapi
 jsons
 jsonutilities
 jsonwebtoken
 jsonwireprotocol
-jsp/facelets
+jsp facelets
 jsps
 jsspec
 jsts
 jsw
-jtag/swd
+jtag swd
 jtoker
 jtsage-datebox
 judges
@@ -9730,13 +9730,13 @@ jvm-level
 jvms
 jw
 jwa
-jwilder/nginx-proxy
+jwilder nginx-proxy
 jwtmodule
 jwtmoduleoptions
 jwts
 jwtservice
 jxmapviewers
-jython/python
+jython python
 jythonmusic
 k&r
 k-d-tree
@@ -9745,8 +9745,8 @@ k-nearest
 k-nearest-neighbors
 k-nn
 k-way
-k/n
-k/qcachegrind
+k n
+k qcachegrind
 kabel
 kadane's
 kafka's
@@ -9767,9 +9767,9 @@ karger
 karlsruhe
 karnaugh
 kartik
-kartik\datetimepicker
+kartik datetimepicker
 karypis
-kata/exercise
+kata exercise
 katakana
 katholieke
 kattawar
@@ -9778,7 +9778,7 @@ kb
 kbps
 kcl
 kdb+
-kdb+/q
+kdb+ q
 kdcs
 kdf's
 kdk
@@ -9788,7 +9788,7 @@ keen's
 keep
 keeper
 keeping
-keeping/changing/erasing
+keeping changing erasing
 keeps
 kefir
 kegg
@@ -9811,7 +9811,7 @@ kernel-based
 kernel-owned
 kernel-resident
 kernel-specific
-kernel/user
+kernel user
 kernels
 kerner
 kernighan
@@ -9819,15 +9819,15 @@ ketama
 kevin
 key-field
 key-values
-key/data
-key/initial
-key/value
+key data
+key initial
+key value
 keybindings
 keyboard-accessible
 keyboard-based
 keyboard-driven
 keyboard-related
-keyboard/mouse
+keyboard mouse
 keychains
 keycloak's
 keyed
@@ -9848,7 +9848,7 @@ keyvalue
 keyvault
 keyword-driven
 keyword-only
-keyword/command/function
+keyword command function
 khan
 khmer
 khronos
@@ -9879,7 +9879,7 @@ kingdom's
 kings
 kinship
 kiselyov
-kislyuk/yq
+kislyuk yq
 kiss
 kissmvc
 kit
@@ -9923,10 +9923,10 @@ kor
 korea
 kornshell
 kotlin's
-kotlin/android
-kotlin/java
-kotlin/multiplatform
-kotlin/native
+kotlin android
+kotlin java
+kotlin multiplatform
+kotlin native
 koushik
 kpis
 kpl
@@ -9952,7 +9952,7 @@ kuka
 kurt
 kusuma
 kutta
-kvc/o
+kvc o
 kwallet
 kx
 kyma-project
@@ -9969,7 +9969,7 @@ labmda
 laboratories
 laboratory
 labs
-labwindows/cvi
+labwindows cvi
 lac
 lack
 lacking
@@ -9987,7 +9987,7 @@ lambda-based
 lambda-tree
 lambdas
 lamda
-lamp/wamp
+lamp wamp
 lamps
 land
 landing
@@ -10006,20 +10006,20 @@ language-integrated
 language-neutral
 language-specific
 language-translated
-language/backend
-language/environment
-language/framework
-language/platform
-language/structured
-language/technology
-language/tool
+language backend
+language environment
+language framework
+language platform
+language structured
+language technology
+language tool
 languageclient
 languages
-languages/environments
-languages/frameworks
-languages/plateforms
-languages/platforms
-languages/systems
+languages environments
+languages frameworks
+languages plateforms
+languages platforms
+languages systems
 lanman
 lans
 lantern
@@ -10057,7 +10057,7 @@ latent
 later
 latest
 latitude
-latitude/longitude
+latitude longitude
 latitudes
 latter
 lattices
@@ -10076,7 +10076,7 @@ lawyers
 lay
 layer's
 layer-stacking-based
-layer/transport
+layer transport
 layerdrawables
 layering
 laying
@@ -10091,7 +10091,7 @@ lca
 lcd-like
 lcid's
 ldap-compliant
-ldap/ad
+ldap ad
 ldavis
 le
 leaderboards
@@ -10107,7 +10107,7 @@ leak
 leakages
 leaking
 leaks
-leaks/consumption
+leaks consumption
 leaksanitizer
 leaky
 leaner
@@ -10130,14 +10130,14 @@ leaving
 lecture
 lecun
 ledger
-ledger/utility
+ledger utility
 leds
 left
 left-hand
 left-recursive
 left-shift
 left-symbol
-left/right
+left right
 leftmost
 leftover
 leftward
@@ -10195,9 +10195,9 @@ leveraged
 leverages
 leveraging
 levy
-lex/yacc
-lexer/parser
-lexer/tokenizer
+lex yacc
+lexer parser
+lexer tokenizer
 lexers
 lexical-only
 lexically
@@ -10206,15 +10206,15 @@ lexicographically
 lexikjwtauthenticationbundle
 lexisnexis
 lfi
-lg/hp/palm
+lg hp palm
 lgpl'ed
 lgpl-licensed
-lgpl/bsd
+lgpl bsd
 lgs
 lhc
 lhs
 lia
-liacc/universidade
+liacc universidade
 libarary
 libary
 libavfilter
@@ -10242,21 +10242,21 @@ libosmium
 libparted
 libquic
 libraray
-libraries/frameworks
-libraries/implementations
-libraries/packages
+libraries frameworks
+libraries implementations
+libraries packages
 library
 library's
 library-based
-library/api
-library/environment
-library/framework
-library/gem
-library/in-memory
-library/plugin
-library/syntax
+library api
+library environment
+library framework
+library gem
+library in-memory
+library plugin
+library syntax
 libre
-libreoffice/openoffice
+libreoffice openoffice
 libsdl
 libspotify's
 libstage
@@ -10268,7 +10268,7 @@ libzmq
 libzookeeper
 libzypp
 licenced
-licences/pro
+licences pro
 licencing
 licensed
 licenses-licx
@@ -10337,8 +10337,8 @@ line-ending
 line-of-business
 line-oriented
 line-wrapping
-line/area/bar
-line/screen
+line area bar
+line screen
 lineage
 lineages
 linear
@@ -10372,11 +10372,11 @@ linux's
 linux-based
 linux-specific
 linux-sunxi
-linux/android
-linux/bsd
-linux/osx/windows
-linux/powerpc
-linux/unix
+linux android
+linux bsd
+linux osx windows
+linux powerpc
+linux unix
 linz
 lion-styled
 liquidhaskell
@@ -10389,22 +10389,22 @@ liskov
 lisp-based
 lisp-like
 lisp-style
-lisp/hiccup
-lisp/scheme
+lisp hiccup
+lisp scheme
 lispbox
 lispstat
 lispy
 list-group
 list-like
 list-map
-list/collection/array
+list collection array
 listed
 listening
 listens
 listfragment
 listing
 listiterable
-lists/sequences
+lists sequences
 listview's
 listview-related
 listviews
@@ -10439,7 +10439,7 @@ livestatus
 livewire
 living
 lk
-ll/sc
+ll sc
 llnl
 llod
 llvm's
@@ -10447,28 +10447,28 @@ llvm-accelerated
 llvm-based
 llvm-compiled
 llvm-to-javascript
-llvm/clang
+llvm clang
 llvmpy
 llvmruby
 lmc
 lo-dash
-load-link/store-conditional
+load-link store-conditional
 load-test
 load-time-efficient
-load/attach
-load/store
-load/unload
+load attach
+load store
+load unload
 loadable
-loader/dumper
+loader dumper
 loaders
-loading/decoding
+loading decoding
 loads
 loaduiweb
 loan
 lobbies
 local-area
 local-scope
-local/remote
+local remote
 locale-sensitive
 locale-specific
 locales
@@ -10492,9 +10492,9 @@ locators
 lock-based
 lockbox
 locker
-locking/synchronization
-locking/threading/race
-locks/syncronization
+locking synchronization
+locking threading race
+locks syncronization
 locomotive
 locus
 lod
@@ -10513,12 +10513,12 @@ loggers
 logic-based
 logic-less
 logical
-logical/functional
+logical functional
 logically
 logicless
 logics
 login-based
-login/logout
+login logout
 logins
 logistic
 logn
@@ -10544,7 +10544,7 @@ longer
 longer-running
 longest
 longitude
-longitude/latitude
+longitude latitude
 longitudes
 longwave
 look
@@ -10559,8 +10559,8 @@ lookml
 looks
 lookuperror
 lookups
-loop/function
-looping/branching
+loop function
+looping branching
 loosely
 loosely-coupled
 loosely-knit
@@ -10575,7 +10575,7 @@ lose
 loses
 losing
 lossy
-lossy/lossless
+lossy lossless
 lost
 lot
 lots
@@ -10601,7 +10601,7 @@ low-power
 low-precision
 low-priority
 low-speed
-low/no-allocation
+low no-allocation
 lower
 lower-case
 lower-level
@@ -10678,24 +10678,24 @@ machine-to-human
 machine-to-machine
 machine-translated
 machine-wide
-machine/deep
+machine deep
 machinery
 machines
-machines/devices
-machines/instances
-machines/servers
+machines devices
+machines instances
+machines servers
 macie
 macines
 macintosh
 macos's
 macos-specific
-macos/darwin
-macos/ios
-macos/x
+macos darwin
+macos ios
+macos x
 macrabbit
 macro-based
 macro-creation
-macros/includes
+macros includes
 macs
 macsyma
 made
@@ -10724,7 +10724,7 @@ mail-client
 mail-merge
 mail-servers
 mail-transfer
-mail/messaging
+mail messaging
 mailbox
 mailboxes
 mailchimp's
@@ -10734,7 +10734,7 @@ mails
 mailserver
 mailsystem
 main-copy
-main/primary
+main primary
 mainchain
 mainframes
 mainland
@@ -10747,7 +10747,7 @@ maintainable
 maintained
 maintaining
 maintains
-maintenance/update
+maintenance update
 maintened
 mainterance
 mainview
@@ -10761,7 +10761,7 @@ make-to-order
 makeing
 makepersistent
 maker
-maker/accessor
+maker accessor
 makers
 makes
 making
@@ -10770,10 +10770,10 @@ male
 malebolge
 malicious
 maliciously
-malloc/free
+malloc free
 man-machine
 manage
-manage/automate
+manage automate
 manageability
 manageable
 managed-adb
@@ -10790,7 +10790,7 @@ mandate
 mandated
 mandates
 mandatory
-mangler/compressor
+mangler compressor
 mango
 manifestation
 manifests
@@ -10825,11 +10825,11 @@ map-publishing
 map-reduce
 map-su-wii
 map-viewing
-map/reduce
+map reduce
 mapbasic
 mapboxgl
 mapforce
-mapkit/google
+mapkit google
 mapmyindia
 mapped
 mapper's
@@ -10846,7 +10846,7 @@ marin
 marine
 mark
 mark-up
-mark/sweep
+mark sweep
 markdown-based
 markdown-to-html
 marked
@@ -10855,12 +10855,12 @@ markedly
 markerclustererplus
 market-access
 market-leading
-market/wallet/checkout
+market wallet checkout
 marketed
 marketer
 marketers
 marketing
-marketing/communication
+marketing communication
 markets
 marking
 marks
@@ -10885,7 +10885,7 @@ mashups
 masked
 maskededit
 masks
-masm/tasm-style
+masm tasm-style
 masonry-style
 masos
 massachusetts
@@ -10895,14 +10895,14 @@ massive-scale
 massively
 massively-multiplayer
 master-master
-master-slave/client-server
+master-slave client-server
 mastering
 mastermind
 masters
 mat-files
 matched
 matches
-matching/extraction
+matching extraction
 matematical
 material
 material's
@@ -10916,9 +10916,9 @@ math-related
 mathcore
 mathematic
 mathematica's
-mathematical/boolean
-mathematical/geometrical
-mathematical/technical
+mathematical boolean
+mathematical geometrical
+mathematical technical
 mathematically
 mathematically-based
 mathematician
@@ -10930,13 +10930,13 @@ matlab's
 matlab-based
 matlab-compatible
 matlab-to-python
-matlab/octave
+matlab octave
 matlab®
 matplotlib-like
 matrix-like
 matrix-scalar
 matrix-vector
-matrix/array
+matrix array
 matrixes
 matsumoto
 mattable
@@ -10953,7 +10953,7 @@ maven-deployer
 mavenized
 mavent
 max-stable
-max/msp/jitter
+max msp jitter
 maxim
 maximal
 maximalises
@@ -10969,7 +10969,7 @@ maximum-likelihood
 maxon
 max®
 may
-may/june
+may june
 mayan
 mayer
 maypole
@@ -11041,7 +11041,7 @@ mediates
 mediating
 mediation
 mediawiki's
-medical/wearable
+medical wearable
 medicine
 medicine's
 medieval
@@ -11051,7 +11051,7 @@ medium-size
 medium-sized
 mediums
 medline
-medline/pubmed
+medline pubmed
 meekrodb
 meet
 meetings
@@ -11065,7 +11065,7 @@ melancholy
 mem
 member's
 member-based
-member/machine
+member machine
 memberships
 memes
 memoizing
@@ -11080,9 +11080,9 @@ memory-related
 memory-resident
 memory-safe
 memory-speed
-memory/cache
-memory/on
-memory/persistence
+memory cache
+memory on
+memory persistence
 memorydb
 memoryless
 memorystore
@@ -11095,7 +11095,7 @@ mentionsinput
 mentor
 menu's
 menu-button
-menu/drawer/sidebar
+menu drawer sidebar
 meraki
 merbadmin
 merchandising
@@ -11122,15 +11122,15 @@ message-based
 message-driven
 message-oriented
 message-s
-message/exception
-message/mail
+message exception
+message mail
 messageboxa
 messagechannel
 messageport
 messagequeue
 messaging-enabled
 messenger's
-messenger/slack
+messenger slack
 messengers
 messenging
 messy
@@ -11146,7 +11146,7 @@ meta-data
 meta-data-driven
 meta-framework
 meta-goal
-meta-inf/services
+meta-inf services
 meta-information
 meta-interpreter
 meta-language
@@ -11160,7 +11160,7 @@ meta-values
 metabolic
 metaclasses
 metadata-rich
-metadata/error
+metadata error
 metadatatypedcolumnsetserde
 metaframework
 metafunction
@@ -11179,16 +11179,16 @@ metatrader
 metaweb
 meteor's
 meteor-mocha-web
-meteor/atmosphere
+meteor atmosphere
 meteorkitchen
 meteorological
 meteorology
 meters
 method's
 method-by-method
-method/constructor
-method/function
-methodhandle/methodhandles
+method constructor
+method function
+methodhandle methodhandles
 methodical
 methodological
 methodologies
@@ -11206,14 +11206,14 @@ meyer
 meyers
 mfc-based
 mfc-next
-mfc/visual
+mfc visual
 mfccs
 mfmessagecomposeviewcontroller
 mft
 mgh
 mhammond
 mhz
-mib/s
+mib s
 mibianlib
 mic
 mice
@@ -11246,12 +11246,12 @@ microbenchmarks
 microbial
 microbiome
 microblogs
-microc/os-ii
+microc os-ii
 microchip's
 microchip®
 microcomputer
 microcomputers
-microcontroller/dsp
+microcontroller dsp
 microcontrollers
 microelectronics
 microformat
@@ -11271,7 +11271,7 @@ microsoft's
 microsoft-managed
 microsoft-proprietary
 microsoft-sql-server
-microsoft/ibm
+microsoft ibm
 microsofts
 microsoftwebdriver
 microsoft®
@@ -11287,7 +11287,7 @@ mid-level
 mid-market
 mid-priority
 mid-tier
-mid/mif
+mid mif
 midas
 middle
 middle-ware
@@ -11358,7 +11358,7 @@ minifi
 minified
 minifiers
 minifies
-minify/compress
+minify compress
 minifying
 minigames
 minimac
@@ -11430,7 +11430,7 @@ misused
 mit
 mit-licence
 mit-licensed
-mit/gnu
+mit gnu
 mitchell
 mitigate
 mitigating
@@ -11459,7 +11459,7 @@ mmd
 mmdb
 mmog
 mmorpg
-mms/eam
+mms eam
 mobi
 mobile's
 mobile-backend-as-a-service
@@ -11469,8 +11469,8 @@ mobile-focused
 mobile-friendliness
 mobile-friendly
 mobile-ready
-mobile/web
-mobile/windows
+mobile web
+mobile windows
 mobileapptracking
 mobilecal
 mobiledoc
@@ -11485,7 +11485,7 @@ modalities
 modally
 modalpresentationstyle
 modals
-modbus/tcp
+modbus tcp
 modding
 mode-oriented
 model-based
@@ -11494,16 +11494,16 @@ model-free
 model-part
 model-specific
 model-view-view
-model/data
-model/entity
-model/pattern
-model/view
+model data
+model entity
+model pattern
+model view
 modeled
 modeler
 modelica-based
 modeliosoft
 modelled
-modelling/programming
+modelling programming
 modeltranslation
 modelview
 modems
@@ -11533,11 +11533,11 @@ modified
 modifies
 modifing
 modify
-modify/extend
+modify extend
 modifying
 modis
 mods
-mods/plugins
+mods plugins
 modsecurity
 modula
 modular-based
@@ -11548,12 +11548,12 @@ modularizing
 modulate
 module-level
 module-oriented
-module/library
-module/object
-module/package
+module library
+module object
+module package
 modulefiles
-modules/libraries
-modules/packages
+modules libraries
+modules packages
 modx's
 moe
 moea
@@ -11587,7 +11587,7 @@ monitored
 monitoring-related
 monkey-patched
 mono's
-mono/for
+mono for
 monochromatic
 monograph
 monoid
@@ -11650,7 +11650,7 @@ motor
 motorola's
 motto
 motzkin
-mount/unmount
+mount unmount
 mountable
 mountain
 mountains
@@ -11659,7 +11659,7 @@ mounts
 mouse-down
 mouseclick
 mouth
-move/copy
+move copy
 moved
 movement
 movements
@@ -11676,7 +11676,7 @@ mp
 mpa
 mpb
 mpeg-h
-mpi/io
+mpi io
 mpirun
 mpj
 mpl
@@ -11691,7 +11691,7 @@ mrp
 mrt
 mrxvt
 ms-capi
-ms-dos/windows
+ms-dos windows
 ms-pl
 ms-sql
 ms-windows
@@ -11839,8 +11839,8 @@ multimedia-rich
 multinational
 multiobjective
 multiparadigm
-multipart/form-data
-multipart/x-mixed-replace
+multipart form-data
+multipart x-mixed-replace
 multipeer
 multipeerconnectivity
 multiphysics
@@ -11869,7 +11869,7 @@ multiplier
 multiply
 multiply-accumulate
 multiply-like
-multiplying/dividing
+multiplying dividing
 multiprotocol
 multipurpose
 multiregion
@@ -11895,17 +11895,17 @@ murano
 murphy
 muscles
 music
-music/audio
-music/games
+music audio
+music games
 musical
 musicians
 musickit
 musicology
 muslim
 must
-must/can
+must can
 mustache-based
-mustache/stache
+mustache stache
 mutate
 mutates
 mutating
@@ -11924,13 +11924,13 @@ mvc-inspired
 mvc-like
 mvc-oriented
 mvc-style
-mvc/interface
-mvc/mvvm
+mvc interface
+mvc mvvm
 mve
 mvich
 mvish
-mvs-z/os
-mvs/esa
+mvs-z os
+mvs esa
 mvtec
 mvu
 mvvm-framework
@@ -11945,8 +11945,8 @@ mysql's
 mysql-based
 mysql-compatible
 mysql-related
-mysql/mariadb
-mysql/php
+mysql mariadb
+mysql php
 mysqlhelper
 mysqlparameter
 mysql®
@@ -11963,7 +11963,7 @@ n-grams
 n-k
 n-th
 n-tuples
-n/a
+n a
 nab
 nacl
 naemon
@@ -11978,17 +11978,17 @@ namco
 name
 name-based
 name-indexed
-name/number
-name/value
+name number
+name value
 named-entity
 named-pipe
 namelists
 namely
-names/types
+names types
 namespaceuri
 nancy-esque
 nand
-nano/micro/macro
+nano micro macro
 nanoseconds
 nanosql
 nao
@@ -12011,14 +12011,14 @@ nathaniel
 nation's
 national
 nations
-nations/electronic
+nations electronic
 native-experience
 native-feeling
 native-image
 native-like
 native-looking
 native-quality
-native/hybrid
+native hybrid
 nativeactivity
 nativebase
 nativefs
@@ -12104,18 +12104,18 @@ nervous
 nes-see
 nest's
 nestable
-net/ftp
-net/mono
-net/scp
-net/sftp
-net/ssh
+net ftp
+net mono
+net scp
+net sftp
+net ssh
 netbanking
 netbook
 netbpm
 netcast
 netcdf-accessible
 netdna
-netezza/pda
+netezza pda
 netezza®
 netforum
 netherlands
@@ -12125,7 +12125,7 @@ netshow
 netstandard
 netsuite's
 netsute
-nette/tester
+nette tester
 netts
 nettv
 netware
@@ -12140,11 +12140,11 @@ network-layer
 network-protocol
 network-streaming
 network-transmitted
-network/net
+network net
 networked
-networks/graphs
-networks/machine
-networks/network-nodes
+networks graphs
+networks machine
+networks network-nodes
 neumann
 neural
 neurasdk
@@ -12163,7 +12163,7 @@ neutron
 never
 new-generation
 new-style
-new/not
+new not
 newbies
 newer
 newest
@@ -12180,13 +12180,13 @@ newsstand
 newton
 newton's
 nexage
-next'/'previous
+next' 'previous
 next's
 next-generation
 next-to-javascript-of-today
 next-to-last
-next/image
-next/router
+next image
+next router
 nextstep
 nexus-branded
 nfss
@@ -12249,14 +12249,14 @@ nickname
 nicola
 nicolas
 nicole
-nids/nips
+nids nips
 nifty
 nigel
 night
 nightly
 nike+
 niklaus
-nil/null
+nil null
 nine
 ninepatch
 ninja-build
@@ -12307,10 +12307,10 @@ node-date-recur
 node-friendly
 node-gamedig
 node-huxley
-node/electron
-node/javascript
-node/npm
-node/vertex
+node electron
+node javascript
+node npm
+node vertex
 nodea
 nodeb
 nodefluent
@@ -12318,8 +12318,8 @@ nodejitsu's
 nodejs's
 nodejs-based
 nodepattern
-nodes/places/computers
-nodes/vertices
+nodes places computers
+nodes vertices
 noisy
 nokia's
 nokia-branded
@@ -12364,7 +12364,7 @@ non-dependent
 non-destructive
 non-determenistic
 non-developer
-non-developer/programming
+non-developer programming
 non-development
 non-direct
 non-distinct
@@ -12517,7 +12517,7 @@ nonprofit
 nonrecursively
 nonrigid
 nonstop
-nonstop/tandem
+nonstop tandem
 nonterminal
 nontrivial
 nonvisual
@@ -12531,7 +12531,7 @@ normalized
 normalizes
 normally
 north
-north/south
+north south
 northern
 norway
 nosegae
@@ -12550,9 +12550,9 @@ notations
 notch
 note
 note-taking
-note/presence/location
+note presence location
 notebook
-notebook/web
+notebook web
 notebooks
 noted
 notes
@@ -12589,8 +12589,8 @@ nowait
 nozzle
 npci
 npf
-npm/google/microsoft
-npm/yarn
+npm google microsoft
+npm yarn
 nprogress
 nquire
 nrts
@@ -12645,7 +12645,7 @@ number-plate
 number-theoretic
 numbering
 numbers-and-dots
-numbers/currencies
+numbers currencies
 numenta
 numeral
 numerals
@@ -12661,7 +12661,7 @@ numpy's
 numpy-aware
 numpy-compatible
 numpy-like
-numpy/pandas
+numpy pandas
 nunemaker
 nunitlite
 nurbs-based
@@ -12680,12 +12680,12 @@ nyse
 nystad
 o
 o-auth
-o/d
-o/r
-o/rm
-o/s
-o/s-cached
-o/x
+o d
+o r
+o rm
+o s
+o s-cached
+o x
 oa
 oai-mph
 oaid
@@ -12703,7 +12703,7 @@ obey
 obfuscate
 obfuscated
 obfuscating
-obfuscation/hardening
+obfuscation hardening
 obfuscator
 obj
 obj-c
@@ -12722,21 +12722,21 @@ object-to-json
 object-to-object
 object-to-xml
 object-urls
-object/grid
-object/relational
-object/xml
+object grid
+object relational
+object xml
 objected-oriented
 objective
-objective-c/c
-objective-c/c++
-objective-c/cocoa
-objective-c/java
-objective-c/swift
+objective-c c
+objective-c c++
+objective-c cocoa
+objective-c java
+objective-c swift
 objectivec
 objectives
-objects/classes
-objects/entities/etc
-objects/variables/entities
+objects classes
+objects entities etc
+objects variables entities
 obligation
 obligations
 obscure
@@ -12799,7 +12799,7 @@ octets
 october
 octrees
 odata-compliant
-odbc/jdbc
+odbc jdbc
 odbms
 odciexttableopen
 odciindexcreate
@@ -12858,12 +12858,12 @@ often-used
 oftware
 og
 ogd
-ogg/vorbis
+ogg vorbis
 ogievetsky
 ogm
 oh
 ohai
-ohai/facter
+ohai facter
 ohio
 oid's
 oil
@@ -12873,7 +12873,7 @@ oj
 ok
 okra
 olap-style
-olap/mdx
+olap mdx
 old
 older
 oldest
@@ -12882,7 +12882,7 @@ ole-db
 oleg
 olmstead
 olson
-oltp/olap
+oltp olap
 olympus
 omdb
 omegahat
@@ -12916,7 +12916,7 @@ on-the-spot
 on-the-wire
 on-top
 on-topic
-on/off
+on off
 onboard
 onbuild
 once
@@ -12961,7 +12961,7 @@ onion-hexagonal-dci-architecture
 online
 online-compiled
 online-trading
-online/offline
+online offline
 onlineshop
 only
 onpopstate
@@ -12985,7 +12985,7 @@ ootb
 ooui
 op
 opaque
-opc/ua
+opc ua
 opcs
 open
 open-access
@@ -12996,20 +12996,20 @@ open-id
 open-sourced
 open-standard
 open-wrt
-open/libre
+open libre
 openal®
 openarchitectureware
 openbci
 openbsd's
-openbsd/mirbsd
+openbsd mirbsd
 openbts
-opencl/cuda
+opencl cuda
 opencsvserde
 opencv-wrapper
 opendwg
 opened
 opener
-openerp/odoo
+openerp odoo
 openesb
 openexpedio
 openfabrics
@@ -13018,12 +13018,12 @@ opengl's
 opengl®
 opengrm
 opening
-opening/closing
+opening closing
 openjson
 openmama
 openntf
 openoffice
-openoffice/libreoffice
+openoffice libreoffice
 openonload®
 openovate
 openplatform
@@ -13057,12 +13057,12 @@ operated
 operates
 operating
 operational
-operational/infrastructure
+operational infrastructure
 operationally
 operative
-operator/function
-operator/method
-operators/functions
+operator function
+operator method
+operators functions
 opinion
 opinion-based
 opinionated
@@ -13078,7 +13078,7 @@ opposite
 opposition
 ops
 ops-friendly
-ops/security
+ops security
 opt
 opted-in
 optic
@@ -13099,13 +13099,13 @@ optimizes
 optimum
 opting
 optionally
-options/arguments
+options arguments
 or
-or/and
+or and
 oracle's
 oracle-compatible
-oracle/plsql
-oracle/sun
+oracle plsql
+oracle sun
 oracleaq
 oracleas
 oracledataadapter
@@ -13150,7 +13150,7 @@ organizational
 organizationalunit
 organizations
 organize
-organized/structured
+organized structured
 organizers
 organizes
 organizing
@@ -13178,8 +13178,8 @@ orion's
 orm-ish
 orm-like
 orm-neutral
-orm/micro-orm
-orm/odm/framework-agnostic
+orm micro-orm
+orm odm framework-agnostic
 orms
 orphaned
 orphans
@@ -13194,8 +13194,8 @@ os-independent
 os-level
 os-specific
 os-x
-os/vs
-os/x
+os vs
+os x
 osa
 osbi
 oscar
@@ -13209,7 +13209,7 @@ oslc-compliant
 osmocom
 ostermann
 ostype
-osx/macos
+osx macos
 osxkeychain
 ot
 otfe
@@ -13317,16 +13317,16 @@ oysters
 ozark
 p&p
 p-values
-p/invoke
-p/pc
+p invoke
+p pc
 package's
 package-aware
 package-sets
-package/infrastructure
+package infrastructure
 packageable
 packaged
 packageinfo
-packages/modules
+packages modules
 packard
 packet-based
 packetization
@@ -13340,16 +13340,16 @@ page's
 page-based
 page-centric
 page-specific
-page/form
+page form
 paged
 pagefactory
 pageindexchanged
 pageradapter
 pagers
 pages
-pages/content
-pages/documents
-pages/resources
+pages content
+pages documents
+pages resources
 pagetemplate
 pageview
 paginated
@@ -13377,7 +13377,7 @@ palindromes
 pallets
 palm-sized
 palmin
-palmsource/access
+palmsource access
 palo
 panache
 panama
@@ -13432,7 +13432,7 @@ paren
 parent's
 parental
 parfor-loops
-pari/gp
+pari gp
 paribus
 paris
 park
@@ -13446,22 +13446,22 @@ parrow
 parse's
 parse-js
 parse-zoneinfo
-parse/format
-parse/generate
+parse format
+parse generate
 parsed
-parsed/consumed
+parsed consumed
 parseobject
 parsequeryadapter
 parser-combinator
 parser-specific
-parser/composer
-parser/compressor/beautifier
-parser/generator
-parser/lexer
-parser/psi
+parser composer
+parser compressor beautifier
+parser generator
+parser lexer
+parser psi
 parses
 parsey
-parsing/binding
+parsing binding
 part
 partially
 partialrenderer
@@ -13473,7 +13473,7 @@ participating
 participation
 participatory
 particle-based
-particle/object
+particle object
 particualr
 particular
 particularity
@@ -13499,7 +13499,7 @@ passed
 passed-in
 passes
 passing
-passing/failing
+passing failing
 passivated
 passivation
 passive
@@ -13521,8 +13521,8 @@ patents
 path-based
 path-dependent-types
 path-like
-path/file
-path/page
+path file
+path page
 pathfinding
 pathgather
 pathjs
@@ -13556,7 +13556,7 @@ pc-linked
 pc-style
 pc-to-pc
 pc-type
-pc/sc
+pc sc
 pcall
 pcapng
 pcca
@@ -13575,9 +13575,9 @@ pcs
 pd
 pdag
 pdas
-pdf/a
-pdf/jpg/png/etc
-pdf/xhtml
+pdf a
+pdf jpg png etc
+pdf xhtml
 pdfactionresult
 pdfhummus
 pdflib-extension
@@ -13666,12 +13666,12 @@ performance-critical
 performance-enhancing
 performance-focused
 performance-optimized
-performance/functional
+performance functional
 performances
 performanceservertiming
 performant
 performed
-performed/created
+performed created
 performer
 performing
 performs
@@ -13690,8 +13690,8 @@ perl-ish
 perl-mode
 perl-related
 perl-style
-perl/ruby
-perl/tk-based
+perl ruby
+perl tk-based
 perldata
 perlin
 permanence
@@ -13750,7 +13750,7 @@ pettichord
 pfc
 pfobjects
 pgas
-pgf/tikz
+pgf tikz
 pgi's
 pgjdbc
 pgpool-ii
@@ -13779,15 +13779,15 @@ phing's
 phone
 phone's
 phone-based
-phone/rt
-phone/tablet
+phone rt
+phone tablet
 phonemes
 phones
 phonetic
 phony
 photo-publishing
 photo-sharing
-photo/video
+photo video
 photoeditor
 photograph
 photographers
@@ -13795,7 +13795,7 @@ photographic
 photographs
 photometry
 photorealistic
-photos\videos
+photos videos
 photosensitive
 photosynth
 photovoltaic
@@ -13807,10 +13807,10 @@ php-framework
 php-powered
 php-sdk
 php-zend
-php/java
-php/mysql
-php/mysql-based
-php/perl/python
+php java
+php mysql
+php mysql-based
+php perl python
 phpbytecode
 phpcr
 phpoffice's
@@ -13820,7 +13820,7 @@ phylogram
 phyoca
 physic
 physical
-physical/virtual
+physical virtual
 physically
 physically-based
 physics-based
@@ -13829,7 +13829,7 @@ physicsfs
 physicsworld
 physiological
 pi's
-pi/po
+pi po
 pianoforte
 picked
 pickers
@@ -13839,7 +13839,7 @@ picks
 picos
 pictogram
 picture-drawing
-picture/screenshot
+picture screenshot
 pic®
 pie
 piece
@@ -13854,9 +13854,9 @@ pile
 pin
 pinboard
 pinboards
-pinch/zoom
+pinch zoom
 pinching
-pinching/rotating/panning
+pinching rotating panning
 pine
 pine-related
 pinhole
@@ -13899,12 +13899,12 @@ pjsua
 pk
 pkg
 pl
-pl/i
-pl/java
-pl/json
-pl/pgsql
-pl/python
-pl/sql
+pl i
+pl java
+pl json
+pl pgsql
+pl python
+pl sql
 pla
 place
 place-holder
@@ -13941,15 +13941,15 @@ platform-independant
 platform-level
 platform-native
 platform-neutral
-platform/language-specific
-platform/os
+platform language-specific
+platform os
 platforms
 platinum
 platooning
 plattform
 play-mini
-play/app
-play/pause
+play app
+play pause
 playbacks
 playbooks
 played
@@ -13972,12 +13972,12 @@ plone's
 plots
 plotted
 plp
-plperl/plperlu
+plperl plperlu
 plug'n'play
 plug-in
 plug-in's
 plug-ins
-plug-ins/osgi
+plug-ins osgi
 plug-n-play
 pluggability
 plugged
@@ -13986,7 +13986,7 @@ plugging
 plugin-based
 plugin-driven
 plugin-free
-plugin/processor
+plugin processor
 plugs
 plumb
 plumbing
@@ -14000,7 +14000,7 @@ pmel
 pmi
 pmml'-compliant
 pmmp
-pmorissette/bt
+pmorissette bt
 pmr-enabled
 pms
 pneumatic
@@ -14008,7 +14008,7 @@ png's
 pnm
 pnp
 pnpjs
-po/pi
+po pi
 pocket-dialing
 pocketsoap's
 pocketwizard
@@ -14045,11 +14045,11 @@ policy-based
 polished
 political
 poll
-polling/streaming
+polling streaming
 polls
 polluting
 pollution
-poly/ml
+poly ml
 polyfil
 polyfill
 polygonal
@@ -14057,13 +14057,13 @@ polyhedral
 polylines
 polymer-based
 polymorphically
-polymorphism/reflection
+polymorphism reflection
 polynomial
 polynomial-time
 polyphonic
 polysemy
 polytomous
-polytypic/polymorphic
+polytypic polymorphic
 poms
 ponce
 poo
@@ -14099,10 +14099,10 @@ popvision
 port-forwarding
 port-hits
 port-knock
-port/extension
-port/inspiration
-port/protocol
-port/wrapper
+port extension
+port inspiration
+port protocol
+port wrapper
 portably
 portage
 portait
@@ -14127,7 +14127,7 @@ positional
 positional-only
 positioned
 positions
-positions/jobs
+positions jobs
 positive
 positives
 posix-based
@@ -14154,8 +14154,8 @@ post-production
 post-rebase
 post-receive-commit
 post-release
-post/get
-post/redirect/get
+post get
+post redirect get
 postcodes
 postcompiler
 postconditions
@@ -14166,7 +14166,7 @@ postgis-ish
 postgre
 postgres-based
 postgresql's
-postgresql/postgis
+postgresql postgis
 postgressql
 postgrsql
 postings
@@ -14175,7 +14175,7 @@ postmortem
 postponement
 postprocess
 postprocessing
-posts/links
+posts links
 postures
 postvalue
 potassco
@@ -14183,7 +14183,7 @@ potato
 potential
 potentially
 potsdam
-pouchdb/couchdb
+pouchdb couchdb
 pov-ray
 power
 power-efficient
@@ -14256,7 +14256,7 @@ pre-packed
 pre-populated
 pre-prepared
 pre-pressed
-pre-print/press
+pre-print press
 pre-process
 pre-processing
 pre-processor
@@ -14312,7 +14312,7 @@ predictable
 predictably
 predicted
 predicting
-predicting/detecting
+predicting detecting
 predictions
 predictor
 predictors
@@ -14378,7 +14378,7 @@ presets
 press
 presses
 pressing
-pressing/releasing
+pressing releasing
 prestosoft
 presumptive
 pretrained
@@ -14391,14 +14391,14 @@ prevalent
 prevent
 preventing
 prevention
-prevention/filtering
+prevention filtering
 prevents
 previewer
 previewing
 previews
 previous
-previous/future
-previous/next
+previous future
+previous next
 previously
 previously-attached
 previously-boxed
@@ -14453,7 +14453,7 @@ privileged
 pro
 pro-active
 pro-grammatically
-pro/premier/enterprise
+pro premier enterprise
 proactively
 probabilistic
 probabilities
@@ -14465,12 +14465,12 @@ problem-space
 problematic
 problems
 proc-macro
-proc/bus/usb
-proc/sys
+proc bus usb
+proc sys
 proccesses
 procedurally
 procedure-oriented
-procedure/function/script
+procedure function script
 proceed
 proceeding
 proceedings
@@ -14479,22 +14479,22 @@ process-able
 process-driven
 process-in-a-buffer
 process-oriented
-process/class
-process/protocol
-process/thread
+process class
+process protocol
+process thread
 processador
 processbook
 processed
-processes/variables
+processes variables
 processing--sentiment
-processing/converting/creating/analyzing
-processing/temporal
+processing converting creating analyzing
+processing temporal
 processingimages
 processor-based
 processor-level
 processor-specific
-processor/editor
-processors/cores
+processor editor
+processors cores
 process®
 procfile-based
 procure
@@ -14507,13 +14507,13 @@ product's
 product-based
 product-movement
 product-specific
-product/technology
+product technology
 production-grade
 production-quality
 production-ready
 production-stable
 production-strength
-production/supply
+production supply
 productions
 productive
 productivity
@@ -14537,14 +14537,14 @@ progessively
 prognostication
 program
 program's
-program/system
+program system
 programing
 programm
 programmability
 programmable
 programmableflow
 programmatic
-programmatic/scripted
+programmatic scripted
 programmatical
 programme
 programmed
@@ -14564,13 +14564,13 @@ programming-like
 programming-related
 programming-relevant
 programming-specific
-programming/api
-programming/scripting
-programming/software
+programming api
+programming scripting
+programming software
 programmming
 programms
 programs
-programs/applications
+programs applications
 progressbar
 progressed
 progressively
@@ -14580,12 +14580,12 @@ prohibits
 project's
 project-based
 project-specific
-project/application
-project/module
-project/package
+project application
+project module
+project package
 projected
 projecting
-projection/transformation
+projection transformation
 projectionplane
 projections
 projective
@@ -14602,13 +14602,13 @@ promise's
 promise-based
 promised
 promises
-promises/a+
+promises a+
 promising
 promote
 promoted
 promotes
 promotion
-promotion/demotion
+promotion demotion
 promotional
 prompted
 prompting
@@ -14630,8 +14630,8 @@ propensity
 properly
 property's
 property-based
-property/method/class
-property/variable
+property method class
+property variable
 propertygroup
 propertytree
 propietary
@@ -14672,7 +14672,7 @@ protobuf-js
 protocol-based
 protocol-independent
 protocol-specific
-protocol/procedure
+protocol procedure
 protocolbuffer
 proton
 proton-cep
@@ -14709,7 +14709,7 @@ proxied
 proximity-based
 proxy-servers
 proxy-view
-proxy/bridge
+proxy bridge
 proxying
 proxypassreverse
 proxys
@@ -14736,7 +14736,7 @@ psjobs
 psks
 psp
 pss
-pss/e
+pss e
 pstl
 pstn
 psychological
@@ -14747,27 +14747,27 @@ psychophysically-accurate
 ptc
 pub
 pub-sub
-pub/sub
+pub sub
 public+private
 public-private
-public/assets
-public/private
+public assets
+public private
 publically
 publication
 publication-quality
 publication-ready
 publications
 publicly
-publish/subscribe
+publish subscribe
 publishable
 published
-publisher/subscriber
+publisher subscriber
 publishers
 publishes
 pull-down
 pull-parsing
 pull-right
-pull/get
+pull get
 pulled
 pulling
 pulls
@@ -14810,12 +14810,12 @@ purposely
 purposes
 purrr's
 purse
-push/pop
-push/pull
+push pop
+push pull
 pushdown
 pushed
 pushes
-pushes/pulls
+pushes pulls
 pushgateway
 pushing
 pushpins
@@ -14872,11 +14872,11 @@ python-style
 python-subset-to-c++-transcompiler
 python-tag
 python-to-c++
-python/jquery
-python/jython
-python/mongodb
-python/sqlalchemy
-python/sqlite
+python jquery
+python jython
+python mongodb
+python sqlalchemy
+python sqlite
 pythoneers
 pythonistas
 pythontidy
@@ -14887,8 +14887,8 @@ q&as
 q-io
 q-sharp
 q-w-e-r-t-y
-q/a
-q/kdb+
+q a
+q kdb+
 qabstractitemmodels
 qabstractitemviews
 qac
@@ -14899,7 +14899,7 @@ qcp
 qdoublevalidator
 qds
 qdsl
-qemu/kvm
+qemu kvm
 qgrams
 qido
 qintvalidator
@@ -14909,8 +14909,8 @@ qldb
 qlik
 qm
 qmetry
-qml/c++
-qml/js
+qml c++
+qml js
 qna
 qnap's
 qnx's
@@ -14927,7 +14927,7 @@ qt-based
 qt-related
 qt-specific
 qt-style
-qt/qml
+qt qml
 qtextdocuments
 qtile
 qtquick
@@ -14972,13 +14972,13 @@ quartzcore
 qubes
 queens
 queried
-queries/statements
+queries statements
 querstions
 query
 query-like
 query-of-queries
 query-result
-query/view/transformation
+query view transformation
 queryable
 querybuilder
 queryexpression
@@ -14989,13 +14989,13 @@ question's
 question-and-answer
 question-answer
 question-related
-question/problem
+question problem
 questioning
 questionnaires
 questions
-questions/answers
-questions/doubts/problems
-questions/problems
+questions answers
+questions doubts problems
+questions problems
 quetzal
 queue-related
 queueclassic
@@ -15009,7 +15009,7 @@ quick-start
 quickaccesstoolbar
 quickapps
 quicker
-quickfix/j
+quickfix j
 quickhull
 quickly
 quickreport
@@ -15056,7 +15056,7 @@ race
 racer
 rack-based
 rack-compatible
-rack/rails
+rack rails
 rackspace's
 radar
 radcalendar
@@ -15174,9 +15174,9 @@ rdds
 rdf-based
 rdf-compliant
 rdf-triple
-rdf/graph
-rdf/owl
-rdf/xml
+rdf graph
+rdf owl
+rdf xml
 rdn
 re-architected
 re-branded
@@ -15228,13 +15228,13 @@ reaches
 reaching
 react's
 react-based
-react-dom/server
+react-dom server
 react-inspired
 react-jsonschema-form
 react-like
 react-native's
 react-with-style
-react/js-environment
+react js-environment
 reactdom
 reacting
 reaction
@@ -15253,20 +15253,20 @@ read-eval
 read-eval-print
 read-only
 read-side
-read/eval/print
-read/write
-read/writer
+read eval print
+read write
+read writer
 reader's
-reader/writer
+reader writer
 readers
 readily
 readiness
 reading
-reading/writing
-reading/writing/modifying
+reading writing
+reading writing modifying
 readings
 readium
-readline/editline
+readline editline
 readmes
 reads
 ready-made
@@ -15327,7 +15327,7 @@ receipts
 receive
 received
 receiver's
-receiver/transmitter
+receiver transmitter
 receivers
 receives
 receiving
@@ -15416,14 +15416,14 @@ red-black-tree-based
 red-gate
 red-green-blue
 red-green-blue-alpha
-red/system
+red system
 redbeanphp
 redesign
 redesigned
 redirected
 redirections
 redirector
-redirects/rewrites
+redirects rewrites
 redis-backed
 redistribute
 redistributes
@@ -15441,7 +15441,7 @@ reduces
 reductions
 redundant
 redux-simple-router
-redux/flux
+redux flux
 redwood
 ree
 ree-bar
@@ -15454,9 +15454,9 @@ refactored
 refactorings
 refactors
 reference-counted
-reference/modify
+reference modify
 referenced
-references/definition
+references definition
 referencing
 referentially
 referes
@@ -15485,7 +15485,7 @@ refrain
 refreshed
 refreshes
 refreshing
-refs/notes/commits
+refs notes commits
 refunds
 refused
 refuses
@@ -15513,7 +15513,7 @@ regrading
 regressors
 regridding
 regular
-regular/context-free
+regular context-free
 regularexpressionvalidator
 regularization
 regularly
@@ -15547,7 +15547,7 @@ reinventing
 reinvention
 reject
 rejected
-rejected/fulfilled
+rejected fulfilled
 rejection
 rejections
 rejects
@@ -15555,7 +15555,7 @@ rekognition
 rekognition's
 related
 relatedmanager
-relatedness/similarity
+relatedness similarity
 relates
 relating
 relational-data
@@ -15589,7 +15589,7 @@ relies
 relieves
 religiousness
 reloaded
-reloading/refreshing
+reloading refreshing
 reloads
 relocatable
 relocates
@@ -15615,12 +15615,12 @@ remembers
 reminiscent
 reml
 remote
-remote/controller
+remote controller
 remoteconfiguration
 remotely
 remoteservice
 removal
-removal/extraction/replacement
+removal extraction replacement
 removals
 remove
 remove-window
@@ -15664,7 +15664,7 @@ repairing
 reparse
 repast
 repeatable
-repeatable/shareable
+repeatable shareable
 repeated
 repeatedly
 repeaters
@@ -15676,7 +15676,7 @@ repetitious
 repetitive
 replaceable
 replaced
-replacement/enhancement
+replacement enhancement
 replacements
 replaces
 replacing
@@ -15692,11 +15692,11 @@ replies
 reply-to
 repo-cleaner
 repopulated
-report/docgen
-report/log
+report docgen
+report log
 reported
 reporter
-reporting/bi
+reporting bi
 repos
 repositions
 repository's
@@ -15735,8 +15735,8 @@ request's
 request-forms
 request-handling
 request-header
-request/reply
-request/response
+request reply
+request response
 requestcode
 requested
 requester's
@@ -15744,14 +15744,14 @@ requesters
 requesting
 requests-html
 requests-like
-requests/responses
+requests responses
 requirement
 requiring
 requisitions
 reranking
 rerunning
 res
-res/drawable
+res drawable
 rescaled
 rescaling
 rescheduling
@@ -15801,7 +15801,7 @@ resort
 resorting
 resource-oriented
 resource-reservation
-resource/class
+resource class
 respect
 respecting
 respective
@@ -15827,10 +15827,10 @@ rest-ish
 rest-like
 rest-services
 rest-style
-rest/graphql
-rest/spread
-rest/wadl
-rest/ws
+rest graphql
+rest spread
+rest wadl
+rest ws
 restart&wait
 restarted
 restartless
@@ -15850,12 +15850,12 @@ restricts
 restructuring
 restygwt
 result
-result/code
+result code
 resultcode
 resulted
 resulting
 results
-resumable/restartable
+resumable restartable
 resumeable
 resuming
 resumption
@@ -15882,7 +15882,7 @@ retries
 retrieval
 retrievals
 retrieve
-retrieve/modify
+retrieve modify
 retrieved
 retrieves
 retrieving
@@ -15944,7 +15944,7 @@ revolve
 revolves
 revolving
 rewards
-rewind/delete
+rewind delete
 reworked
 reworking
 rewriter
@@ -16075,7 +16075,7 @@ rolled
 rollout-based
 rollouts
 rolls
-rom/eeprom
+rom eeprom
 romable
 roman
 romania-based
@@ -16094,7 +16094,7 @@ rossum
 rosyln
 rotated
 rotates
-rotation/animation
+rotation animation
 rotational
 rotationally
 rotations
@@ -16108,7 +16108,7 @@ rounded
 roundoff
 rounds
 roundtrips
-route/dispatch
+route dispatch
 router-deprecated
 routeros
 routers
@@ -16123,9 +16123,9 @@ row-column
 row-level
 row-polymorphic
 row-specific
-row/column
+row column
 rowheight
-rows/columns
+rows columns
 roy
 royal
 royale
@@ -16133,16 +16133,16 @@ royalslider
 royalty
 royalty-free
 rp
-rpc/rest
+rpc rest
 rpcs
 rpgs
 rpi
 rpm-based
-rpm/yum
+rpm yum
 rpms
 rpy
 rremicrophone
-rss/atom/cdf
+rss atom cdf
 rstudio-specific
 rsvps
 rsx
@@ -16150,8 +16150,8 @@ rt-preempt
 rtas
 rtfreader
 rti
-rtl/gate-level
-rtp/rtcp/rtsp/sip
+rtl gate-level
+rtp rtcp rtsp sip
 rts
 rtt
 rubaxa
@@ -16171,9 +16171,9 @@ ruby-language
 ruby-like
 ruby-on-ralis
 ruby-relevant
-ruby/jruby
-ruby/rack
-ruby/rails
+ruby jruby
+ruby rack
+ruby rails
 rubybox
 rubycocoa
 rubygem
@@ -16196,7 +16196,7 @@ run-length
 run-once
 run-time
 run-times
-run/evaluate
+run evaluate
 runbase
 runbooks
 runge
@@ -16208,7 +16208,7 @@ runserver
 runtime's
 runtime-managed
 runtime-system
-runtime/container
+runtime container
 runtimes
 rupees
 rup®
@@ -16220,7 +16220,7 @@ russinovich
 rust's
 rust-based
 rust-related
-rust/wasm
+rust wasm
 rvalues
 rwd
 rwth
@@ -16240,7 +16240,7 @@ s-expressions
 s-functions
 s-q-shell
 s-record
-s/mime
+s mime
 sacred
 sacrifice
 sacrificing
@@ -16260,7 +16260,7 @@ sahni's
 said
 sail
 sailfish
-sails/waterline
+sails waterline
 sake
 sale
 sales
@@ -16311,16 +16311,16 @@ santos
 sap's
 sap-gwm
 sap-proprietary
-sap/abap
+sap abap
 sapcp
 sarah
-sas/iml
+sas iml
 sasada
 sashelp
 sass-based
 sass-powered
-sass/compass
-sass/scss
+sass compass
+sass scss
 sassenrath
 satellite-based
 satellites
@@ -16335,7 +16335,7 @@ saucer
 saudi
 sauron
 savant
-save/update
+save update
 saveas
 saved
 savegame
@@ -16347,9 +16347,9 @@ sax-based
 sax-compliant
 sax-js
 sax-machine
-sax/dom
+sax dom
 saxon-ee
-saxon/c
+saxon c
 saxonica's
 say
 saying
@@ -16373,16 +16373,16 @@ scaled
 scaled-down
 scaleform®
 scales
-scaling/rotating/moving
+scaling rotating moving
 scan
 scannable
 scanned
 scanner
-scanner/hex
+scanner hex
 scanners
-scanning/blocking
-scanning/capture
-scanning/decoding
+scanning blocking
+scanning capture
+scanning decoding
 scannotations
 scans
 scant
@@ -16394,10 +16394,10 @@ scatterplot
 scatterplots
 scatterv
 scenario
-scenarios/issues
+scenarios issues
 scene's
 scene-oriented
-scene/window
+scene window
 scenegraphs
 scenekit's
 scenes
@@ -16471,7 +16471,7 @@ screen-painting
 screen-reader
 screen-sharing
 screen-space
-screen/font
+screen font
 screencap
 screencasts
 screenfuls
@@ -16488,7 +16488,7 @@ script-like
 script-loaded
 scripted
 scriptler
-scripts/processes
+scripts processes
 scriptui
 scroll-view
 scrollable-view
@@ -16498,8 +16498,8 @@ scrolls
 scrub
 scrutinee
 scss-to-css
-scss/compass
-scss/sass
+scss compass
+scss sass
 scst
 sct
 sculpting
@@ -16510,16 +16510,16 @@ sdb
 sdc
 sde
 sdk's
-sdk/api
-sdk/api/programmatic
-sdk/xml-based
+sdk api
+sdk api programmatic
+sdk xml-based
 sdks
 sdm
 sdr
 sdts
 se
 se's
-se/ee
+se ee
 sea
 seafile
 seamless
@@ -16530,12 +16530,12 @@ search&support
 search-key
 search-term
 search-volume
-search/review
+search review
 searched
 searcher
 searchers
 searches
-searching/locating
+searching locating
 searchterms
 seasonal
 seasoned
@@ -16555,12 +16555,12 @@ secrecy
 secret
 secretmanager
 secrets
-secs/gem
+secs gem
 section
 sectioned
 secton
 sectors
-secure/multipurpose
+secure multipurpose
 securecrt
 secured
 securely
@@ -16593,7 +16593,7 @@ segger
 segmentation
 segmented
 segmenting
-segmenting/labeling
+segmenting labeling
 segregate
 segregation
 segue's
@@ -16608,7 +16608,7 @@ seldomly
 select-control
 select-option
 select-window
-select/update/create
+select update create
 selectformat
 selecting
 selection-first
@@ -16671,7 +16671,7 @@ semi-compatible
 semi-formatted
 semi-interactive
 semi-structured
-semi-structured/nested
+semi-structured nested
 semi-supervised
 semicircles
 semicolon
@@ -16690,20 +16690,20 @@ semweb's
 sencha's
 send-click
 send-keys
-send/receive
+send receive
 senders
 sendgrid's
 sending
 sendmail's
 sends
 senior
-sense/net
+sense net
 sensible
 sensing
 sensio
 sensiolabs
 sensitive
-sensitive/protected
+sensitive protected
 sensitivity
 sensory
 sent
@@ -16731,13 +16731,13 @@ sequentially
 serbian
 sercure
 serenity
-serenity/js
+serenity js
 serial
 serialised
 serialiser
-serialization/deserialization
-serialize/deserialize
-serializer/deserializer
+serialization deserialization
+serialize deserialize
+serializer deserializer
 serializers
 serializes
 serialports
@@ -16761,7 +16761,7 @@ server-sided
 server-specific
 server-stack
 server-to-client
-server/client
+server client
 serverfaces
 serverfault
 servers
@@ -16775,7 +16775,7 @@ service-offering
 service-orientation
 service-oriented
 service-wide
-service/store
+service store
 serviced
 servicefull
 servicemix
@@ -16784,9 +16784,9 @@ serviceprocess
 services-based
 services-management
 services-oriented
-services/factories
-services/soap/wsdl
-services/wcf
+services factories
+services soap wsdl
+services wcf
 servicestack's
 servicetm
 servicev
@@ -16828,7 +16828,7 @@ sfmult
 sfn
 sftpclient
 sge
-sgml/xml
+sgml xml
 shack
 shaded
 shades
@@ -16840,7 +16840,7 @@ shall
 shallow
 shallowly
 shapable
-shape/resolution
+shape resolution
 shaped
 shapefiles
 shaper
@@ -16880,7 +16880,7 @@ shelvesets
 shephertz
 shield
 shields
-shift/reduce
+shift reduce
 shifting
 shifts
 shilds
@@ -16931,7 +16931,7 @@ shoulders
 shouldn't
 shoup
 shout
-show/hide
+show hide
 showcases
 showed
 showfont
@@ -16951,7 +16951,7 @@ shuttered
 shutterstock's
 shutting
 shy
-sic/xe
+sic xe
 sice
 sickle
 sics
@@ -16983,7 +16983,7 @@ sign-up
 signage
 signal-rate
 signal-to-noise
-signal/image
+signal image
 signaled
 signalize
 signalled
@@ -17060,7 +17060,7 @@ sina
 sinatra-like
 since
 single
-single-/multi-select
+single- multi-select
 single-assignment
 single-board
 single-byte
@@ -17101,7 +17101,7 @@ singularity
 sinks
 sir
 sistemas
-sistemas/ufrj
+sistemas ufrj
 sister
 sit
 sita's
@@ -17110,11 +17110,11 @@ site's
 site-specific
 site-to-site
 site-wide
-site/blog
+site blog
 sitecore's
 siteprism
-sites/applications
-sites/services
+sites applications
+sites services
 sits
 sitting
 situ
@@ -17155,7 +17155,7 @@ skipping
 skips
 skitter
 sklearn-like
-sklearn/numpy/pandas/etc
+sklearn numpy pandas etc
 skobbler
 skproductsresponse
 skuld
@@ -17170,12 +17170,12 @@ sl
 sla
 slack's
 slapper-dot-automapper
-slashed/paths
+slashed paths
 slashes
 slashtags
 slated
 slaves
-slaves/nodes
+slaves nodes
 slee
 sleepy
 sleuth
@@ -17208,7 +17208,7 @@ slower
 slowing
 slowly
 slr
-slug/permalink
+slug permalink
 slugging
 sm
 smacks
@@ -17221,8 +17221,8 @@ smaller-scale
 smallest
 smalltalk-tag
 smalltalk-to-bytecode
-smalltalk/x
-smalltalk/x-jv
+smalltalk x
+smalltalk x-jv
 smallworld
 smalot
 smart
@@ -17237,7 +17237,7 @@ smarteyeglass
 smartformat
 smartforms
 smartfuzzer
-smartgit/hg
+smartgit hg
 smartlisting
 smartly
 smartness
@@ -17259,7 +17259,7 @@ smileys
 smirnov
 smith
 smithsonian
-sml/nj
+sml nj
 smoothed
 smoother
 smoothly
@@ -17268,24 +17268,24 @@ smooths
 smoothstreaming
 smpeg
 smpl
-sms/email
-sms/mms
+sms email
+sms mms
 smsc
 smw
 snack
 snackbars
-snackbars/toasts
+snackbars toasts
 snap-based
 snap-ins
 snapchat's
-snapcode/snaptag
+snapcode snaptag
 snapdragon
 snapin
 snaps
 snapshots
 snes
 sniff
-sniffing/transmitting
+sniffing transmitting
 sniper
 sniping
 snipmate-compatible
@@ -17296,8 +17296,8 @@ sns
 so-called
 so-on
 soap-based
-soap/wsdl
-soap/xml
+soap wsdl
+soap xml
 soapy
 soar
 sobers
@@ -17329,9 +17329,9 @@ software-based
 software-defined
 software-development
 software-locking
-software/firmware
-software/open
-software/open-source
+software firmware
+software open
+software open-source
 softwares
 softwin
 sofware
@@ -17389,7 +17389,7 @@ sophoslabs
 sops
 sorbian
 sore
-sorting/filtering
+sorting filtering
 sorts
 soundcards
 soundmanager
@@ -17403,7 +17403,7 @@ source-file
 source-level
 source-replica
 source-set
-source/nonprofit
+source nonprofit
 sourcecode
 sourcegear
 sourcegraph's
@@ -17412,12 +17412,12 @@ sourcepro
 sources
 sourcesafe
 sourcing
-sourcing/cqrs
+sourcing cqrs
 southeast
 southpaw
 soviet
 soy
-sp/k
+sp k
 space-constrained
 space-efficient
 space-filling
@@ -17425,7 +17425,7 @@ space-mapping
 space-optimized
 space-saving
 space-separated
-space/transfer
+space transfer
 spaceborne
 spaceship
 spam-bots
@@ -17435,7 +17435,7 @@ spanner
 spanning
 spans
 spark-kafka
-spark/flink
+spark flink
 sparkline
 sparkling
 sparks
@@ -17446,7 +17446,7 @@ sparsely
 spartacus
 sparx
 spas
-spatial/temporal
+spatial temporal
 spatially
 spatially-enable
 spatie
@@ -17488,7 +17488,7 @@ specifiers
 specifies
 specify
 specifying
-specs/tests
+specs tests
 spectrograms
 spectrometric
 spectrometry
@@ -17529,7 +17529,7 @@ spin-off
 spin-wait
 spineplots
 spinnaker's
-spinner/dial
+spinner dial
 spinneradapter
 spinners
 spinning-wheel
@@ -17553,7 +17553,7 @@ spongeforge
 spongepowered
 sponsored
 sponsoring
-spoofing/forgery
+spoofing forgery
 spooky
 spoolers
 spooling
@@ -17561,7 +17561,7 @@ spools
 spoons
 sports
 spot
-spot/highlight
+spot highlight
 spotfire®
 spotify's
 spotted
@@ -17578,7 +17578,7 @@ spring-managed
 spring-powered
 spring-security-based
 spring-specific
-spring/aspectj
+spring aspectj
 springdoc-openapi
 sprinkled
 sprinkling
@@ -17592,7 +17592,7 @@ sprop
 spss'-style
 spun
 spurious
-spy/browse
+spy browse
 sql's
 sql-based
 sql-dmo
@@ -17601,12 +17601,12 @@ sql-standard
 sql-statements
 sql-style
 sql-transaction
-sql/driver
-sql/med
-sql/mp
-sql/mx
-sql/nosql/graphql
-sql/psm
+sql driver
+sql med
+sql mp
+sql mx
+sql nosql graphql
+sql psm
 sqlazure
 sqlca
 sqlcommands
@@ -17637,12 +17637,12 @@ sscollectionview
 sscreens
 ssgradientview
 ssh-encrypted
-ssh/sftp
-ssh/telnet/serial
+ssh sftp
+ssh telnet serial
 sshlibrary
 ssl-enabled
 ssl-encrypted
-ssl/tls
+ssl tls
 sslm
 ssmult
 ssrs-expressions
@@ -17710,9 +17710,9 @@ staroffice
 stars
 start
 start-up
-start/end
-start/stop
-start/stop/restart
+start end
+start stop
+start stop restart
 startactivity
 startanimating
 started
@@ -17720,7 +17720,7 @@ starter
 starter-kit
 starters
 starting
-starting/restarting
+starting restarting
 startlingframework
 startpoint
 starts
@@ -17735,12 +17735,12 @@ state-action-reward-state-action
 state-based
 state-of-the-art
 state-transformer
-state/view
+state view
 statecharts
 stated
 statemachine
 statement
-statement/command
+statement command
 statically
 statically-linked
 statically-typed
@@ -17753,7 +17753,7 @@ stations
 statistic
 statistical
 statistically
-status/tabline
+status tabline
 statuses
 statuslines
 statuspage
@@ -17803,7 +17803,7 @@ stimulusreflex
 stitching
 stl-like
 stl-style
-stl/clr
+stl clr
 stmicroelectronics
 stockholm
 stofdoctrineextensionsbundle
@@ -17818,26 +17818,26 @@ stop-the-world
 stopanimating
 stopped
 stopping
-stopping/pausing
+stopping pausing
 stops
 storage-agnostic
 storage-independent
-storage/messaging
+storage messaging
 storages
 store's
 store-and-forward
 store-specific
-store/archive
-store/edit
-store/winrt
+store archive
+store edit
+store winrt
 stored
 stored-program
-storefront/shopping
+storefront shopping
 storefronts
 storeio
 stores
 stories
-storing/transferring
+storing transferring
 stormrunner
 story
 story-like
@@ -17872,7 +17872,7 @@ streamlines
 streamlining
 streams--webcam
 streams-oriented
-streams/blocks
+streams blocks
 strecker
 street
 streets
@@ -17894,7 +17894,7 @@ striking
 string's
 string-based
 string-handling
-string/text
+string text
 stringent
 stringextensions
 stringified
@@ -17916,18 +17916,18 @@ stronger
 strongest
 strongly
 strongly-connected
-strongly/statically-typed
+strongly statically-typed
 strongnode
 strongops
 stroustrup
 strtoll
 struct's
-struct/union/array
-structs/records
+struct union array
+structs records
 structural
 structurally
 structured
-structured/designed
+structured designed
 structuring
 stt
 stubbed
@@ -17941,9 +17941,9 @@ studio
 studio's
 studio-based
 studio-like
-studio/visual
-studio/windows
-studio/zend
+studio visual
+studio windows
+studio zend
 studios
 studio®
 study
@@ -17959,15 +17959,15 @@ style-based
 style-loader
 style-preserving
 style-sheets
-style/theme
+style theme
 stylecop+
 styled
 styleguide
 stylerules
-styles/scripts
+styles scripts
 stylesheet-wide
-styling/skinning
-styling/theming
+styling skinning
+styling theming
 stylingeditor
 stylistic
 stylized
@@ -18110,7 +18110,7 @@ subtransactions
 subtrees
 subtypes
 subversion's
-subversion/svn
+subversion svn
 subverting
 subwindows
 succeed
@@ -18166,8 +18166,8 @@ summing
 sums
 sumup
 sun's
-sun/oracle
-sun/oracle's
+sun oracle
+sun oracle's
 sunbird
 sunburst
 sunbursts
@@ -18207,7 +18207,7 @@ supervises
 supervising
 supervision
 supervisor
-supervisor/monitoring
+supervisor monitoring
 supervisors
 supervisory
 supplanted
@@ -18224,7 +18224,7 @@ supply
 supply-chain
 supplying
 support
-support/configuration
+support configuration
 supported
 supporting
 supports
@@ -18235,7 +18235,7 @@ suppressing
 sur
 sure
 surface's
-surface/buffer
+surface buffer
 surfaces
 surfacing
 surfing
@@ -18277,7 +18277,7 @@ svl
 svms
 svn+ssh
 swagger-compliant
-swagger/openapi
+swagger openapi
 swallowed
 swapcontext
 swapped
@@ -18296,15 +18296,15 @@ swi-prolog-based
 swift's
 swift-compatible
 swift-related
-swift/objective-c
+swift objective-c
 swiftydraw
 swiftyjson
 swing's
 swing-based
-swing/awt
-swing/fx
-swing/javafx/swt
-swing/swt
+swing awt
+swing fx
+swing javafx swt
+swing swt
 swinglibrary
 swiperefreslayout
 swipes
@@ -18320,8 +18320,8 @@ switzerland
 swrl-based
 swsoft
 swt-based
-sybase/sap
-sybase/sql
+sybase sap
+sybase sql
 sydney
 sylk
 syllabic
@@ -18333,7 +18333,7 @@ symbolication
 symbolics
 symbologies
 symbology
-symbols/types
+symbols types
 symer
 symfony's
 symlink's
@@ -18350,7 +18350,7 @@ synchronising
 synchronizations
 synchronizer
 synchronizes
-synchronous/asynchronous
+synchronous asynchronous
 synchronously
 syncing
 syncope
@@ -18374,7 +18374,7 @@ syntactic-exception
 syntactic-factor
 syntactical
 syntactically
-syntax/language
+syntax language
 syntaxes
 synthesiser
 synthesizable
@@ -18384,7 +18384,7 @@ synthesizes
 synthesizing
 synthetically
 synths
-sys/bios
+sys bios
 sysexit
 syslogd
 sysoperation
@@ -18401,9 +18401,9 @@ system-supplied
 system-under-test
 system-versioned
 system-wide
-system/database
-system/enterprise
-system/framework
+system database
+system enterprise
+system framework
 systematic
 systematically
 systematized
@@ -18419,7 +18419,7 @@ t-mobile
 t-sne
 t-sql
 tab-key
-tab/window
+tab window
 tabbable
 tabix
 tablature
@@ -18434,14 +18434,14 @@ table-editing
 table-like
 table-valued
 table-view
-table/alias
-table/grid
+table alias
+table grid
 tabled
 tablemodels
 tableplus
 tabletop
 tablets
-tablets/phones
+tablets phones
 tabling
 tablix
 tabstrips
@@ -18547,14 +18547,14 @@ tcg
 tck
 tcl's
 tcl-based
-tcl/jacl
-tcl/tk
+tcl jacl
+tcl tk
 tcms
 tcp-based
-tcp/ip
-tcp/ip-enabled
-tcp/smtp
-tcp/udp/ip
+tcp ip
+tcp ip-enabled
+tcp smtp
+tcp udp ip
 tcs
 tdatamodule
 tdea
@@ -18667,7 +18667,7 @@ test-plans
 test-related
 test-specific
 test-unit
-test/acceptance
+test acceptance
 testable
 testbeds
 testbench
@@ -18678,10 +18678,10 @@ tested
 tester
 testers
 testia
-testing/debugging
+testing debugging
 testnet
 testrpc
-tests/requirements
+tests requirements
 testscheduler
 testsuite
 testsuites
@@ -18690,7 +18690,7 @@ tetrahedron
 tetrahedrons
 tex-based
 tex-related
-tex/latex
+tex latex
 texas
 texniccenter
 text-adventure
@@ -18700,16 +18700,16 @@ text-blobbed
 text-cursors
 text-display
 text-editing
-text-editor/wysiwyg
+text-editor wysiwyg
 text-labels
 text-mode
 text-only
 text-oriented
 text-output
 text-overflow
-text/content
-text/string
-text/template
+text content
+text string
+text template
 textareas
 textbook
 textcontrol
@@ -18759,7 +18759,7 @@ theora
 theorems
 theoretic
 theoretical
-theoretical/methodological
+theoretical methodological
 theoretically
 theories
 theorists
@@ -18826,8 +18826,8 @@ thread-using
 threadabort
 threaded
 threadlocal
-threads/processes
-threads/processes/clients
+threads processes
+threads processes clients
 threadsanitizer
 threat
 three
@@ -18869,7 +18869,7 @@ tied
 tier
 tier-free
 ties
-tiger/line
+tiger line
 tight
 tightening
 tightly
@@ -18878,7 +18878,7 @@ tigra
 tiki
 tikiwiki
 tile-based
-tile/cell
+tile cell
 till
 tim
 time-based
@@ -18902,7 +18902,7 @@ time-to-value
 time-triggered
 time-varying
 time-zone
-time/frequency
+time frequency
 timebase
 timecode
 timeformat
@@ -18922,8 +18922,8 @@ timidity
 timothy
 tiniest
 tinkerers
-tinkerpop/blueprints
-tinkerpop/gremlin
+tinkerpop blueprints
+tinkerpop gremlin
 tinybox
 tinytds
 tip
@@ -18934,7 +18934,7 @@ titles
 titnaium
 tkinter's
 tla
-tls/ssl
+tls ssl
 tmaxsoft
 tmql
 tnt
@@ -18942,8 +18942,8 @@ to
 to-address
 to-do
 to-many
-to/from
-to/reading
+to from
+to reading
 toad's
 toastui
 tobias
@@ -18997,26 +18997,26 @@ tool-independent
 tool-kit
 tool-palette
 tool-set
-tool/framework
-tool/library
-tool/runtime
+tool framework
+tool library
+tool runtime
 toolchains
 toolkit--like
 toolkit-independent
-toolkit/scripts
+toolkit scripts
 toolkits
 tools
 toolset
 toolsets
 toolsuit
-tooltip/popover
+tooltip popover
 toolwindows
 toothpick
 top
 top-level
 top-most
 top-notch
-top/high
+top high
 topage
 topaz
 topbraid
@@ -19047,7 +19047,7 @@ touch-enabled
 touch-friendly
 touch-interface
 touch-optimized
-touch/apple
+touch apple
 touched
 touching
 touchkit
@@ -19101,7 +19101,7 @@ trades
 trading-desk
 tradition
 traditional
-traditional/hybrid
+traditional hybrid
 traditionally
 tradus
 traffic-routing
@@ -19121,7 +19121,7 @@ transact
 transaction-monitor-component
 transaction-oriented
 transaction-time
-transactional/analytical
+transactional analytical
 transactiontestcase
 transaparent
 transceiver
@@ -19145,7 +19145,7 @@ transferred
 transferring
 transfers
 transform-based
-transform/map/manipulate
+transform map manipulate
 transformed
 transformers
 transforming
@@ -19159,7 +19159,7 @@ translatable
 translated
 translates
 translating
-translation/query
+translation query
 translations
 translationz
 translator
@@ -19238,10 +19238,10 @@ tridium's
 tried
 tries
 trigger-based
-trigger/function
+trigger function
 triggered
 triggering
-triggers/custom
+triggers custom
 trigonometric
 trigrams
 trilinear-diagram
@@ -19259,7 +19259,7 @@ tristan
 trivial
 trivialize
 trivially
-troff/groff
+troff groff
 trolltech
 tron-box
 troubing
@@ -19273,7 +19273,7 @@ trubshaw
 truck
 trucks
 true
-true/false
+true false
 truecaller
 truevision
 truly
@@ -19285,7 +19285,7 @@ trustworthy
 trustzone
 truth
 truths
-try/catch
+try catch
 trygve
 trying
 ts
@@ -19339,7 +19339,7 @@ twenty-six
 twentyten
 twice
 twido
-twig/django/jinja
+twig django jinja
 twilio's
 twin
 twins
@@ -19389,9 +19389,9 @@ typedbytes
 typedescriptionproviderattribute
 typefaces
 typeinitialization
-types/applied
-types/instances
-types/tasks/macros
+types applied
+types instances
+types tasks macros
 typesafety
 typesets
 typewriters
@@ -19420,10 +19420,10 @@ uber's
 uber-jar
 uber-tolerant
 ubiquitous
-ubre/aic
+ubre aic
 ubuntu's
 uc
-uc/os-ii
+uc os-ii
 ucm
 ucommerce
 ucweb
@@ -19432,7 +19432,7 @@ udf's
 udfs
 udl
 udp-traffic
-udp/ip
+udp ip
 udt
 uem
 ufget
@@ -19443,8 +19443,8 @@ ug
 uglify
 ui's
 ui-related
-ui/functional
-ui/ux
+ui functional
+ui ux
 uialertcontrollerstyleactionsheet
 uiapplicationmain
 uiatarget
@@ -19472,14 +19472,14 @@ uitableview's
 uitableviewcellaccessorynone
 uitableviewdelegates
 uitableviews
-uiview/nsview
+uiview nsview
 uiviews
 uk
 uk's
 uk-based
 ukash
 ukraine
-ul/li
+ul li
 ulitization
 ultimate
 ultimatedatagrid
@@ -19499,7 +19499,7 @@ ultralytics
 ultrapico
 ultrastudio
 umap
-umbraco/ucommerce
+umbraco ucommerce
 umg
 umm
 umx
@@ -19511,9 +19511,9 @@ un-mixing
 un-mockable
 un-quoting
 un-trusted
-un/cefact
-un/edifact
-un/gtdi
+un cefact
+un edifact
+un gtdi
 unable
 unaccented
 unaffected
@@ -19576,7 +19576,7 @@ undersampling
 underscored
 understandable
 understanding
-understanding/implementing
+understanding implementing
 understands
 understood
 understudy
@@ -19635,13 +19635,13 @@ unintended
 unintentional
 unintentionally
 uninterrupted
-union/find
+union find
 unipaas
 uniprot
 unique-identity
 uniquely
 unit
-unit/component
+unit component
 unitary
 unite
 united
@@ -19673,13 +19673,13 @@ unix-related
 unix-style
 unix-to-unix
 unix-type
-unix/linux
-unix/linux/openvms
-unix/linux/posix
-unix/mac
-unix/posix
-unix/posix/linux
-unix/windows
+unix linux
+unix linux openvms
+unix linux posix
+unix mac
+unix posix
+unix posix linux
+unix windows
 unixes
 unix®-like
 unknown
@@ -19787,7 +19787,7 @@ upc-e
 upcoming
 updatability
 update
-update/query
+update query
 updated
 updatedb
 updatepanelanimationextender
@@ -19809,7 +19809,7 @@ upon
 upos
 upper
 upper-case
-upper/lower
+upper lower
 uppsala
 upscaling
 upsight
@@ -19821,7 +19821,7 @@ urban
 urbi
 urgent
 uri-based
-uri/url
+uri url
 uris
 url's
 url-addresses
@@ -19835,20 +19835,20 @@ usa
 usable
 usage
 usage-related
-usage/encoding/etc
-usage/integration
-usage/setup
+usage encoding etc
+usage integration
+usage setup
 usages
 usb-based
 usb-if
 usb-to-serial
-usb/hid
+usb hid
 uscript
 use
 use-able
 use-at-will
-use/abuse
-use\write
+use abuse
+use write
 useable
 usecases
 usecontext
@@ -19889,7 +19889,7 @@ user-specified
 user-submitted
 user-supplied
 user-written
-user/machine
+user machine
 useragent
 usercontrol
 usercontrols
@@ -19900,8 +19900,8 @@ userinterface
 usermodel
 username
 username-password
-username/email
-username/password
+username email
+username password
 usernames
 userouter
 userprofile
@@ -19910,10 +19910,10 @@ usertypes
 useselector
 usestate
 usgs
-using/configuring/installing
+using configuring installing
 usings
-usr/bin
-usr/local/etc/sudoers
+usr bin
+usr local etc sudoers
 ustation
 usual
 usually
@@ -19936,7 +19936,7 @@ utopia
 uui
 uuids
 uv
-uwp/winui
+uwp winui
 uws
 uxsdk
 uxsolutions
@@ -19948,16 +19948,16 @@ vagaries
 vagrantfiles
 vagrants
 vague
-vague/ambiguous
+vague ambiguous
 vaguely
-val/validate
+val validate
 valentina
 valid
 valid-time
 validar
 validated
 validates
-validating/storing
+validating storing
 validator-instances
 validity
 valley
@@ -19987,7 +19987,7 @@ vararg
 variability
 variable's
 variable-size
-variable/object
+variable object
 variances
 variational
 varied
@@ -19995,7 +19995,7 @@ varies
 varieties
 variety
 varints
-variogram/plot
+variogram plot
 various
 variously
 varname
@@ -20006,7 +20006,7 @@ vastly
 vat
 vaticle
 vaults
-vax/vms
+vax vms
 vbes
 vbi
 vbos
@@ -20019,7 +20019,7 @@ vdatas
 vdm
 ve
 vector-based
-vector/raster
+vector raster
 vectorized
 veered
 veevalidate
@@ -20088,11 +20088,11 @@ vfx
 vggnet
 vgroups
 vh
-vhdl/systemverilog
-vhdl/verilog
+vhdl systemverilog
+vhdl verilog
 vhds
 vhsic
-vi/vim
+vi vim
 via
 viability
 viable
@@ -20107,10 +20107,10 @@ video's
 video-game
 video-gaming
 video-sharing
-video/audio
+video audio
 videocalls
 videoconference
-videoconference/chat
+videoconference chat
 videoconferencing
 videogames
 videography
@@ -20123,10 +20123,10 @@ view-based
 view-finder
 view-first
 view-specific
-view/element
-view/hide
-view/presenter
-view/screen
+view element
+view hide
+view presenter
+view screen
 viewable
 viewbinder
 viewcount
@@ -20137,11 +20137,11 @@ viewgroups
 viewhelpers
 viewholder
 viewing
-viewing/streaming
+viewing streaming
 viewitems
 viewkeys
 viewpoints
-views/screens
+views screens
 viewvalues
 vig
 vim's
@@ -20163,7 +20163,7 @@ viperhtml
 virgo
 viroreact
 virtualisation
-virtualisation/api
+virtualisation api
 virtualising
 virtuality
 virtualize
@@ -20184,7 +20184,7 @@ visiting
 visitor's
 visits
 visl
-vista/server
+vista server
 visual
 visualbasic
 visualeditor
@@ -20213,7 +20213,7 @@ vkb
 vlad
 vm's
 vm-level
-vm/container
+vm container
 vmax
 vmids
 vmin
@@ -20256,7 +20256,7 @@ vowpal
 vpaas
 vpl
 vpns
-vps/vds
+vps vds
 vrany
 vs
 vscodium
@@ -20277,8 +20277,8 @@ vw
 vxd
 vzaar
 w
-w/o
-w\w
+w o
+w w
 wa
 wabbit
 wado
@@ -20330,7 +20330,7 @@ washington
 wasn't
 wasserstein
 waste
-watch/listen
+watch listen
 watched
 watcher
 watchers
@@ -20344,7 +20344,7 @@ watermarks
 watersheds
 watij's
 wave-like
-wave/stingray
+wave stingray
 waveforms
 wavelength
 wavelets
@@ -20396,7 +20396,7 @@ web-driver
 web-framework
 web-friendly
 web-harvest
-web-inf/lib
+web-inf lib
 web-like
 web-mapping
 web-notebooks
@@ -20411,16 +20411,16 @@ web-site
 web-sites
 web-standard
 web-style
-web/device
-web/mobile
-web/rdf
-web/tablet
-web/worker
+web device
+web mobile
+web rdf
+web tablet
+web worker
 webapicontrib
 webapp-based
 webapplication
 webapplicationserver
-webassembly/javascript
+webassembly javascript
 webaudio
 webbrowser
 webbrowser-environment
@@ -20455,7 +20455,7 @@ webinterface
 webjobs
 webkit's
 webkit-based
-webkit/gtk+
+webkit gtk+
 weblinks
 weblogs
 webmaster
@@ -20464,23 +20464,23 @@ webmediaportal
 webmentions
 webpack's
 webpack-bundle-tracker
-webpack/rollup
+webpack rollup
 webpages
 webparts
 webpush
 webrtc-based
-websanova/vue-auth
+websanova vue-auth
 webservers
 webservice
 webservices
 webshims
 webshops
 website's
-website/app
+website app
 websocket-like
 websocket-style
-websocket/comet
-websocket/wamp
+websocket comet
+websocket wamp
 websockets-powered
 websphere®
 websql
@@ -20545,7 +20545,7 @@ whatwg
 wheel
 wheels
 when
-when/unless/while/for/choose/switch
+when unless while for choose switch
 whereas
 whereby
 wherein
@@ -20575,7 +20575,7 @@ whole-document
 whole-method
 whole-program
 whole-slide
-whole/part
+whole part
 wholly
 whom
 whos
@@ -20583,7 +20583,7 @@ whose
 why
 whyml
 wi-fi
-wi-fi/hotspot
+wi-fi hotspot
 wicg
 wich
 wicked
@@ -20603,10 +20603,10 @@ widespread
 widest
 widget-based
 widget-modifier
-widget/ui
-widget/wrapper
+widget ui
+widget wrapper
 widows
-width/height
+width height
 widths
 wien
 wifi-internet
@@ -20627,13 +20627,13 @@ wim
 win
 win+q
 wind
-windbg/cdb
+windbg cdb
 windi
 window's
 window-function
 window-handling
-window/frame
-window/tab
+window frame
+window tab
 windowproc
 windows's
 windows-based
@@ -20641,9 +20641,9 @@ windows-compatible
 windows-native
 windows-only
 windows-specific
-windows/controls
-windows/dos
-windows/linux
+windows controls
+windows dos
+windows linux
 windowserver
 windowsidentity
 windowsphone
@@ -20656,7 +20656,7 @@ windump
 windup
 winery
 winevents
-winforms/for
+winforms for
 winfx
 wing
 wings
@@ -20665,7 +20665,7 @@ winscp's
 winshell
 winsparkle
 winterface
-winui/uwp
+winui uwp
 wipe
 wire
 wire-level
@@ -20715,7 +20715,7 @@ wordcount
 wordform
 wordplay
 wordpress-powered
-words/tokens
+words tokens
 work
 work's
 work-alike
@@ -20726,10 +20726,10 @@ work-items
 work-load
 work-related
 work-station
-work/deployable
+work deployable
 workaround
 workarounds
-workbench/j
+workbench j
 workbenches
 workboards
 workbooks
@@ -20738,7 +20738,7 @@ workdocs
 worked
 worker-side
 workers
-workflow/coordination
+workflow coordination
 workflows
 workforce
 workfront
@@ -20749,7 +20749,7 @@ workings
 workitems
 worklets
 worklight's
-worklight/mobilefirst
+worklight mobilefirst
 workloads
 worklows
 workmail
@@ -20791,9 +20791,9 @@ woven
 wp
 wpf-based
 wpf-implemented
-wpf/for
-wpf/winform
-wpf/xaml
+wpf for
+wpf winform
+wpf xaml
 wpp
 wrangler
 wrangling
@@ -20839,8 +20839,8 @@ x-sender-id
 x-sync
 x-windows
 x-y
-x/darwin
-x/y
+x darwin
+x y
 xacml's
 xaml-related
 xapi's
@@ -20859,7 +20859,7 @@ xdb
 xde
 xdg-utils
 xdk
-xdp/bpf
+xdp bpf
 xds
 xe
 xebialabs
@@ -20871,7 +20871,7 @@ xeon®
 xerus
 xeus
 xhdpi
-xhr/fetch/ajax
+xhr fetch ajax
 xhyve
 xi
 xiaowei
@@ -20881,7 +20881,7 @@ xkcd
 xl
 xlisp
 xlsforms
-xlsx/xlsm/xltx/xltm
+xlsx xlsm xltx xltm
 xm
 xml'-based
 xml+css
@@ -20893,12 +20893,12 @@ xml-friendly
 xml-less
 xml-like
 xml-structured
-xml/html
-xml/html/json
-xml/sgml
-xml/soap
-xml/swf
-xml/webservice
+xml html
+xml html json
+xml sgml
+xml soap
+xml swf
+xml webservice
 xmlapi
 xmlbean
 xmlbuilder-js
@@ -20906,7 +20906,7 @@ xmldsig
 xmlhttrequest
 xmlss
 xmlutilities
-xmpp/jabber
+xmpp jabber
 xna's
 xnu's
 xobjects
@@ -20930,7 +20930,7 @@ xtp
 xtrabackup
 xtrareports
 xu
-xul/xbl
+xul xbl
 xunit-style
 xv
 xvid
@@ -20940,7 +20940,7 @@ xyczt
 y
 y-axis
 yacc-like
-yacc/bison
+yacc bison
 yahoo-related
 yajra
 yale
@@ -20960,7 +20960,7 @@ years
 yee
 yelp's
 yes
-yes/no
+yes no
 yesterday
 yet
 yet-to-be-released
@@ -20969,9 +20969,9 @@ yi
 yieldable
 yielding
 yields
-yii\base\application
-yii\db\activerecord
-yii\widgets\activeform
+yii base application
+yii db activerecord
+yii widgets activeform
 yiibooster
 yiiframework
 yim
@@ -21004,12 +21004,12 @@ z-ordering
 z-plane
 z-polyhedra
 z-values
-z/architecture
-z/os
-z/os®
-z/tpf
-z/vm
-z/vse
+z architecture
+z os
+z os®
+z tpf
+z vm
+z vse
 zadok's
 zaefferer
 zbikowski
@@ -21024,12 +21024,12 @@ zed
 zeiss
 zelig
 zencache
-zend/log
-zend\cache
-zend\config
-zend\dom\query
-zend\form
-zend\permissions\acl
+zend log
+zend cache
+zend config
+zend dom query
+zend form
+zend permissions acl
 zendesk's
 zendframework
 zephyr
@@ -21064,30 +21064,30 @@ zing
 zing®
 zip-compressed
 zip-like
-zip/unzip
+zip unzip
 zipentrys
 zipf's
 zipfian
 ziplib
 zipped
 zipping
-zipping/unzipping
+zipping unzipping
 zircon
 ziv
 zle
 zlib-compresssed
-zlib/gzip
-zlib/libpng
+zlib gzip
+zlib libpng
 zolera
 zomato
 zoom's
 zoom-and-pan
 zoom-enabled
-zoom/resize
+zoom resize
 zoomable
 zoomed
 zoomit
-zope/cmf-based
+zope cmf-based
 zserverssl
 zulu
 zuml
