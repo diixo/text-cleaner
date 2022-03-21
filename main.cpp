@@ -571,14 +571,14 @@ void loadFile(const std::wstring& filename_in, const std::wstring& filename_out,
 }
 
 void mergeMaps(
-   const std::map <wstring_t, size_t>& baseMap, 
-   const std::map <wstring_t, size_t>& newMap, 
+   const std::map <wstring_t, size_t>& mainMap, 
+   const std::map <wstring_t, size_t>& compareMap, 
    std::map <wstring_t, size_t>& diffMap, 
    std::map <wstring_t, size_t>& resultMap)
 {
-   resultMap = baseMap;
+   resultMap = mainMap;
 
-   for (std::map <wstring_t, size_t>::const_iterator it = newMap.begin(); it != newMap.end(); ++it)
+   for (std::map <wstring_t, size_t>::const_iterator it = compareMap.begin(); it != compareMap.end(); ++it)
    {
       auto its = resultMap.find(it->first);
       if (its != resultMap.end())
@@ -645,39 +645,39 @@ wstring_t cstring_to_wstring(const char* c_str)
 
 int main(int argc, char* argv[])
 {
-   std::map <wstring_t, size_t> baseMap;
-   std::map <wstring_t, size_t> newMap;
+   std::map <wstring_t, size_t> mainMap;
+   std::map <wstring_t, size_t> cmpMap;
    std::map <wstring_t, size_t> diffMap;
    std::map <wstring_t, size_t> resultMap;
 
    if (argc < 2)
    {
-      report(baseMap, newMap, diffMap, resultMap);
+      report(mainMap, cmpMap, diffMap, resultMap);
       wprintf(L"No extra command-line arguments passed:\n");
       wprintf(L"%s <basefile.u16>\n", cstring_to_wstring(argv[0]).c_str());
       wprintf(L"%s <basefile.u16> <newfile.u16>\n", cstring_to_wstring(argv[0]).c_str());
    }
    else
    {
-      const wstring_t baseFile = cstring_to_wstring(argv[1]);
-      loadFile(baseFile, baseFile + L"--dump.u16", baseMap);
-      wtofile(baseFile, baseMap, wstring_t());
+      const wstring_t mainFile = cstring_to_wstring(argv[1]);
+      loadFile(mainFile, mainFile + L"--dump.u16", mainMap);
+      wtofile(mainFile, mainMap, wstring_t());
 
       if (argc == 3)
       {
-         const wstring_t newFile = cstring_to_wstring(argv[2]);
+         const wstring_t cmpFile = cstring_to_wstring(argv[2]);
          const wstring_t resultFile(L"result");
 
-         loadFile(newFile, L"", newMap);
+         loadFile(cmpFile, L"", cmpMap);
 
-         mergeMaps(baseMap, newMap, diffMap, resultMap);
+         mergeMaps(mainMap, cmpMap, diffMap, resultMap);
 
-         wtofile(newFile, newMap, wstring_t());
-         wtofile(wstring_t(L"diff-") + newFile, diffMap, wstring_t());
-         wtofile(resultFile, resultMap, baseFile + wstring_t(L"/") + newFile);
+         wtofile(cmpFile, cmpMap, wstring_t());
+         wtofile(wstring_t(L"diff"), diffMap, wstring_t());
+         wtofile(resultFile, resultMap, mainFile + wstring_t(L"/") + cmpFile);
       }
 
-      report(baseMap, newMap, diffMap, resultMap);
+      report(mainMap, cmpMap, diffMap, resultMap);
    }
 
    return 0;
