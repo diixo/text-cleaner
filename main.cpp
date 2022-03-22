@@ -380,8 +380,8 @@ void appendToMap(const std::list <wstring_t>& inList, std::map <wstring_t, size_
    {
       wstring_t str = *it;
 
-      rtrim(str, L"\x0023\x0027\x0028\x0029\x002a\x002d\x002e\x002f\x003a\x003b\x003c\x003d\x003e\x003f\x005c\x007e");
-      ltrim(str, L"\x0023\x0027\x0028\x0029\x002a\x002d\x002f\x005c\x007e");
+      rtrim(str, L"\x0023\x0026\x0027\x0028\x0029\x002a\x002d\x002e\x002f\x003a\x003b\x003c\x003d\x003e\x003f\x005c\x007e");
+      ltrim(str, L"\x0023\x0026\x0027\x0028\x0029\x002a\x002d\x002f\x005c\x007e");
 
       bool valid = !str.empty();
       if (valid)
@@ -390,6 +390,7 @@ void appendToMap(const std::list <wstring_t>& inList, std::map <wstring_t, size_
             wcschr(str.c_str(), L'*') ||
             wcschr(str.c_str(), L':') ||
             wcschr(str.c_str(), L'$') ||
+            wcschr(str.c_str(), L'&') ||
             wcschr(str.c_str(), L'%') ||
             wcschr(str.c_str(), L'_') ||
             wcschr(str.c_str(), L'.') ||
@@ -422,6 +423,7 @@ void appendToMap(const std::list <wstring_t>& inList, std::map <wstring_t, size_
                (wcsstr(str.c_str(), L"http") != 0) ||
                (wcsstr(str.c_str(), L"::")   != 0) ||
                (wcsstr(str.c_str(), L"==")   != 0) ||
+               (wcsstr(str.c_str(), L"--")   != 0) ||
                (wcsstr(str.c_str(), L"//")   != 0) ||
                (wcsstr(str.c_str(), L"&&")   != 0) ||
                (wcsstr(str.c_str(), L"><")   != 0) ||
@@ -464,7 +466,7 @@ void report(
    const std::map <wstring_t, size_t>& diffMap,
    const std::map <wstring_t, size_t>& resultMap)
 {
-   wprintf(L"TextCleaner, version 0.58 (UTF-16LE)\n");
+   wprintf(L"TextCleaner, version 0.61 (UTF-16LE)\n");
    if (!baseMap.empty())
    {
       wprintf(L"words: base.dictionary (%u) loaded.\n", baseMap.size());
