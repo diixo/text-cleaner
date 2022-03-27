@@ -879,7 +879,6 @@ application website
 applicationdidbecomeactive
 applicationinfo
 applications
-applications--it
 applications apps
 applications eclipse
 applications frameworks
@@ -1151,7 +1150,6 @@ asynchrony
 asyncore asynchat
 asyncronous
 asynctasks
-at&t
 at-rule
 atalasoft
 atari
@@ -1225,7 +1223,6 @@ au
 auction
 audible
 audiences
-audio--from
 audio-visual
 audio video
 audio visual
@@ -1421,13 +1418,11 @@ azure-related
 azureml-sdk
 azurerm
 aˈlɛɡrɔ
-b&r
 b+
 b-encoding
 b-rep
 b-spline
 b-trees
-ba&d
 baas
 babaganoush
 babylon
@@ -1810,7 +1805,6 @@ bixolon
 biz
 bjarne
 black
-black&white
 black's
 black-and-white
 black-listed
@@ -5251,7 +5245,6 @@ dr
 draft
 drafting
 drafts
-drag&drop
 drag'n'drop
 drag-based
 dragdealer
@@ -9738,7 +9731,6 @@ jwtservice
 jxmapviewers
 jython python
 jythonmusic
-k&r
 k-d-tree
 k-dimensional
 k-nearest
@@ -11265,7 +11257,6 @@ microscopic
 microseconds
 microservice
 microservice-based
-microservices--small
 microsoft
 microsoft's
 microsoft-managed
@@ -13315,7 +13306,6 @@ oxford
 oxygen
 oysters
 ozark
-p&p
 p-values
 p invoke
 p pc
@@ -14486,7 +14476,6 @@ processador
 processbook
 processed
 processes variables
-processing--sentiment
 processing converting creating analyzing
 processing temporal
 processingimages
@@ -14882,8 +14871,6 @@ pythonistas
 pythontidy
 pytorch's
 pywebsocket
-q&a
-q&as
 q-io
 q-sharp
 q-w-e-r-t-y
@@ -15040,7 +15027,6 @@ qvariantmap
 qwebframe
 qwertyuiop
 qxl
-r&d
 r's
 r-focused
 r-friendly
@@ -15831,7 +15817,6 @@ rest graphql
 rest spread
 rest wadl
 rest ws
-restart&wait
 restarted
 restartless
 restarts
@@ -16525,8 +16510,6 @@ seafile
 seamless
 seamlessly
 sean
-search&promote
-search&support
 search-key
 search-term
 search-volume
@@ -17324,7 +17307,6 @@ softphone
 softvelocity
 software
 software's
-software--also
 software-based
 software-defined
 software-development
@@ -17870,7 +17852,6 @@ streamingmarkupwriter
 streamlined
 streamlines
 streamlining
-streams--webcam
 streams-oriented
 streams blocks
 strecker
@@ -18584,7 +18565,6 @@ techniques
 technolog
 technological
 technologies
-technologies--java
 technology
 technology-based
 technology-related
@@ -18657,7 +18637,6 @@ terry
 terse
 tessellating
 tessellations
-test&target
 test's
 test-automation
 test-context
@@ -19001,7 +18980,6 @@ tool framework
 tool library
 tool runtime
 toolchains
-toolkit--like
 toolkit-independent
 toolkit scripts
 toolkits
@@ -19662,7 +19640,6 @@ universiteit
 universities
 university
 university-level
-unix&linux
 unix-based
 unix-daemon-like
 unix-gazing
@@ -20613,7 +20590,6 @@ wifi-internet
 wiith
 wiki's
 wiki-based
-wikipedia--serialization
 wikis
 wild
 wildfire
