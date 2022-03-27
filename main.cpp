@@ -380,8 +380,8 @@ void appendToMap(const std::list <wstring_t>& inList, std::map <wstring_t, size_
    {
       wstring_t str = *it;
 
-      rtrim(str, L"\x0023\x0026\x0027\x0028\x0029\x002a\x002d\x002e\x002f\x003a\x003b\x003c\x003d\x003e\x003f\x005c\x007e");
-      ltrim(str, L"\x0023\x0026\x0027\x0028\x0029\x002a\x002d\x002f\x005c\x007e");
+      rtrim(str, L"\x0023\x0026\x0027\x0028\x0029\x002a\x002d\x002e\x002f\x003a\x003b\x003c\x003d\x003e\x003f\x005c\x007e\x00a9\x00ae");
+      ltrim(str, L"\x0023\x0026\x0027\x0028\x0029\x002a\x002d\x002f\x005c\x007e\x00a9\x00ae");
 
       bool valid = !str.empty();
       if (valid)
@@ -664,6 +664,42 @@ int main(int argc, char* argv[])
       const wstring_t mainFile = cstring_to_wstring(argv[1]);
       loadFile(mainFile, mainFile + L"--dump.u16", mainMap);
       wtofile(mainFile, mainMap, wstring_t());
+
+      ///////////////////////////////////////////////////////////////
+      /*
+      std::map <wstring_t, size_t> diiMap;
+
+      for (auto it = mainMap.begin(); it != mainMap.end(); it++)
+      {
+         std::list <wstring_t> tmplist;
+
+         for (auto itt = mainMap.begin(); itt != mainMap.end(); itt++)
+         {
+            if (it != itt)
+            {
+               if (it->first.size() > 3)
+               {
+                  if (itt->first.find(it->first) == 0)
+                  {
+                     tmplist.push_back(itt->first);
+                  }
+               }
+            }
+         }
+         if (tmplist.size() > 1)
+         {
+            diiMap[it->first] = 0;
+
+            for (auto i = tmplist.begin(); i != tmplist.end(); i++)
+            {
+               diiMap[*i] = 0;
+            }
+            printf("<< sz=%d\n", diiMap.size());
+         }
+      }
+
+      wtofile(L"filtered", diiMap, wstring_t());
+      */
 
       if (argc == 3)
       {
