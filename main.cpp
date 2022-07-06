@@ -374,6 +374,21 @@ bool is_anydigit(const wstring_t& inStr, size_t start_id = 0)
    return result;
 }
 
+bool is_digit(const wstring_t& inStr, size_t start_id = 0)
+{
+   bool result = true;
+   while (start_id < inStr.size())
+   {
+      if (!iswdigit(inStr[start_id]))
+      {
+         result = false;
+         break;
+      }
+      start_id++;
+   }
+   return result;
+}
+
 void appendToMap(const std::list <wstring_t>& inList, std::map <wstring_t, size_t>& ioMap)
 {
    for (std::list <wstring_t>::const_iterator it = inList.begin(); it != inList.end(); ++it)
@@ -511,6 +526,7 @@ void loadFile(const std::wstring& filename_in, const std::wstring& filename_out,
    //////////////////////////////////////////////////////////////////////////
 
    FILE *pFile = _wfopen(filename_in.c_str(), L"rt, ccs=UTF-8");
+
    // MSDN: Allowed values of encoding are UNICODE, UTF-8, and UTF-16LE.
 
    if (pFile == NULL)
